@@ -25,6 +25,8 @@ size = Vector3(64, 0.1, 64)
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlwt5"]
 size = Vector3(64, 0.1, 64)
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ti2nx"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
 albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
 metallic = 0.25
@@ -54,6 +56,22 @@ mesh = SubResource("BoxMesh_yqqs5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=695270872]
 shape = SubResource("BoxShape3D_tlwt5")
+
+[node name="BoundryX+" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1731539391]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 32, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_ti2nx")
+
+[node name="BoundryX-" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1485169072]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -32, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_ti2nx")
+
+[node name="BoundryZ+" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=710925181]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 32)
+shape = SubResource("WorldBoundaryShape3D_ti2nx")
+
+[node name="BoundryZ-" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1210913361]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -32)
+shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
 [node name="House" type="MeshInstance3D" parent="." unique_id=811425483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -10.9732)
