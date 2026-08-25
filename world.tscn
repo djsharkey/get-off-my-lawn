@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://yj0kxcgigs0s" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://b5gcgdsohlixh" path="res://old_man.tscn" id="2_fj7yv"]
+[ext_resource type="Script" uid="uid://chb2ciuxx1da5" path="res://camera_rig.gd" id="3_036b0"]
 [ext_resource type="Shader" uid="uid://dcfgyptyscqqa" path="res://terrain.gdshader" id="3_aqk2v"]
 [ext_resource type="Script" uid="uid://bimbcxn6mmgln" path="res://terrain.gd" id="3_tlwt5"]
 
@@ -50,7 +51,7 @@ shader_parameter/height = 8.0
 shader_parameter/color_gradient = SubResource("GradientTexture1D_dwbse")
 shader_parameter/normal_map = SubResource("NoiseTexture2D_dwbse")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_aqk2v"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dwbse"]
 _surfaces = [{
 "aabb": AABB(-1.5, -0.021130754, -0.49999997, 3, 0.043024175, 1),
 "attribute_data": PackedByteArray("AACAPwAAgD85jmM/AACAP3IcRz8AAIA/qqoqPwAAgD/kOA4/AACAPziO4z4AAIA/qqqqPgAAgD84jmM+AACAPziO4z0AAIA/AAAAAAAAgD8AAIA/OY5jPzmOYz85jmM/chxHPzmOYz+qqio/OY5jP+Q4Dj85jmM/OI7jPjmOYz+qqqo+OY5jPziOYz45jmM/OI7jPTmOYz8AAAAAOY5jPwAAgD9yHEc/OY5jP3IcRz9yHEc/chxHP6qqKj9yHEc/5DgOP3IcRz84juM+chxHP6qqqj5yHEc/OI5jPnIcRz84juM9chxHPwAAAAByHEc/AACAP6qqKj85jmM/qqoqP3IcRz+qqio/qqoqP6qqKj/kOA4/qqoqPziO4z6qqio/qqqqPqqqKj84jmM+qqoqPziO4z2qqio/AAAAAKqqKj8AAIA/5DgOPzmOYz/kOA4/chxHP+Q4Dj+qqio/5DgOP+Q4Dj/kOA4/OI7jPuQ4Dj+qqqo+5DgOPziOYz7kOA4/OI7jPeQ4Dj8AAAAA5DgOPwAAgD84juM+OY5jPziO4z5yHEc/OI7jPqqqKj84juM+5DgOPziO4z44juM+OI7jPqqqqj44juM+OI5jPjiO4z44juM9OI7jPgAAAAA4juM+AACAP6qqqj45jmM/qqqqPnIcRz+qqqo+qqoqP6qqqj7kOA4/qqqqPjiO4z6qqqo+qqqqPqqqqj44jmM+qqqqPjiO4z2qqqo+AAAAAKqqqj4AAIA/OI5jPjmOYz84jmM+chxHPziOYz6qqio/OI5jPuQ4Dj84jmM+OI7jPjiOYz6qqqo+OI5jPjiOYz44jmM+OI7jPTiOYz4AAAAAOI5jPgAAgD84juM9OY5jPziO4z1yHEc/OI7jPaqqKj84juM95DgOPziO4z04juM+OI7jPaqqqj44juM9OI5jPjiO4z04juM9OI7jPQAAAAA4juM9AACAPwAAAAA5jmM/AAAAAHIcRz8AAAAAqqoqPwAAAADkOA4/AAAAADiO4z4AAAAAqqqqPgAAAAA4jmM+AAAAADiO4z0AAAAAAAAAAAAAAAA="),
@@ -162,7 +163,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007, 0, 0)
 
 [node name="Terrain" type="MeshInstance3D" parent="FlowerBed/Dirt" unique_id=664204197]
 material_override = SubResource("ShaderMaterial_aqk2v")
-mesh = SubResource("ArrayMesh_aqk2v")
+mesh = SubResource("ArrayMesh_dwbse")
 script = ExtResource("3_tlwt5")
 length = 3
 width = 1
@@ -223,6 +224,15 @@ mesh = SubResource("BoxMesh_fj7yv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shed/StaticBody3D" unique_id=753760366]
 shape = SubResource("BoxShape3D_036b0")
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=1682353331]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
+top_level = true
+script = ExtResource("3_036b0")
+
+[node name="Camera" type="Camera3D" parent="CameraRig" unique_id=509787415]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 3.5, 3.5)
+current = true
 
 [node name="Player" parent="." unique_id=198881104 instance=ExtResource("1_f3sb7")]
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)

@@ -15,9 +15,7 @@ points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4
 script = ExtResource("1_tjsre")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1682999848]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.1, -19)
 mesh = SubResource("CapsuleMesh_dunvj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1661647091]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.1, -19)
 shape = SubResource("ConvexPolygonShape3D_fs47u")
