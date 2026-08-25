@@ -1,7 +1,9 @@
 [gd_scene format=4 uid="uid://dwst6bfduiytc"]
 
-[ext_resource type="Shader" uid="uid://dcfgyptyscqqa" path="res://terrain.gdshader" id="1_i33q1"]
+[ext_resource type="Shader" uid="uid://dcfgyptyscqqa" path="res://shaders/terrain.gdshader" id="1_i33q1"]
 [ext_resource type="Script" uid="uid://bimbcxn6mmgln" path="res://terrain.gd" id="2_8mo8g"]
+[ext_resource type="Script" uid="uid://37e3lvh01cet" path="res://scripts/simple_outline.gd" id="3_8mo8g"]
+[ext_resource type="PackedScene" uid="uid://cdmsljeatqy07" path="res://scenes/weed.tscn" id="3_oefmf"]
 
 [sub_resource type="Gradient" id="Gradient_aqk2v"]
 colors = PackedColorArray(0, 0, 0, 1, 0.34501466, 0.114228286, 0, 1)
@@ -24,7 +26,7 @@ shader_parameter/height = 8.0
 shader_parameter/color_gradient = SubResource("GradientTexture1D_dwbse")
 shader_parameter/normal_map = SubResource("NoiseTexture2D_dwbse")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_oefmf"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_es314"]
 _surfaces = [{
 "aabb": AABB(-1.5, -0.021130754, -0.49999997, 3, 0.043024175, 1),
 "attribute_data": PackedByteArray("AACAPwAAgD85jmM/AACAP3IcRz8AAIA/qqoqPwAAgD/kOA4/AACAPziO4z4AAIA/qqqqPgAAgD84jmM+AACAPziO4z0AAIA/AAAAAAAAgD8AAIA/OY5jPzmOYz85jmM/chxHPzmOYz+qqio/OY5jP+Q4Dj85jmM/OI7jPjmOYz+qqqo+OY5jPziOYz45jmM/OI7jPTmOYz8AAAAAOY5jPwAAgD9yHEc/OY5jP3IcRz9yHEc/chxHP6qqKj9yHEc/5DgOP3IcRz84juM+chxHP6qqqj5yHEc/OI5jPnIcRz84juM9chxHPwAAAAByHEc/AACAP6qqKj85jmM/qqoqP3IcRz+qqio/qqoqP6qqKj/kOA4/qqoqPziO4z6qqio/qqqqPqqqKj84jmM+qqoqPziO4z2qqio/AAAAAKqqKj8AAIA/5DgOPzmOYz/kOA4/chxHP+Q4Dj+qqio/5DgOP+Q4Dj/kOA4/OI7jPuQ4Dj+qqqo+5DgOPziOYz7kOA4/OI7jPeQ4Dj8AAAAA5DgOPwAAgD84juM+OY5jPziO4z5yHEc/OI7jPqqqKj84juM+5DgOPziO4z44juM+OI7jPqqqqj44juM+OI5jPjiO4z44juM9OI7jPgAAAAA4juM+AACAP6qqqj45jmM/qqqqPnIcRz+qqqo+qqoqP6qqqj7kOA4/qqqqPjiO4z6qqqo+qqqqPqqqqj44jmM+qqqqPjiO4z2qqqo+AAAAAKqqqj4AAIA/OI5jPjmOYz84jmM+chxHPziOYz6qqio/OI5jPuQ4Dj84jmM+OI7jPjiOYz6qqqo+OI5jPjiOYz44jmM+OI7jPTiOYz4AAAAAOI5jPgAAgD84juM9OY5jPziO4z1yHEc/OI7jPaqqKj84juM95DgOPziO4z04juM+OI7jPaqqqj44juM9OI5jPjiO4z04juM9OI7jPQAAAAA4juM9AACAPwAAAAA5jmM/AAAAAHIcRz8AAAAAqqoqPwAAAADkOA4/AAAAADiO4z4AAAAAqqqqPgAAAAA4jmM+AAAAADiO4z0AAAAAAAAAAAAAAAA="),
@@ -60,16 +62,34 @@ size = Vector3(0.0871582, 0.25909424, 0.07763672)
 material = SubResource("StandardMaterial3D_ti2nx")
 size = Vector3(0.0871582, 0.25909424, 0.07763672)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbfbk"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mo8g"]
 albedo_color = Color(0, 0.8577099, 0, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_ioo17"]
-material = SubResource("StandardMaterial3D_gbfbk")
+[sub_resource type="BoxMesh" id="BoxMesh_wse8f"]
+material = SubResource("StandardMaterial3D_8mo8g")
 size = Vector3(0.0871582, 0.25909424, 0.07763672)
 
-[sub_resource type="BoxMesh" id="BoxMesh_wse8f"]
-material = SubResource("StandardMaterial3D_gbfbk")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sl70n"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vs0da"]
+_surfaces = [{
+"aabb": AABB(-0.058012858, -0.14398088, -0.053252116, 0.116025716, 0.28796175, 0.10650423),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"material": SubResource("ShaderMaterial_sl70n"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("5J5tvblvEz7kHlo95J5tPblvEz7kHlq95J5tPblvEz7kHlo95J5tvblvEz7kHlq95J5tvblvE77kHlo95J5tPblvE77kHlq95J5tPblvE77kHlo95J5tvblvE77kHlq95J5tPblvEz7kHlo95J5tvblvEz7kHlq95J5tPblvEz7kHlq95J5tvblvEz7kHlo95J5tPblvE77kHlo95J5tvblvE77kHlq95J5tPblvE77kHlq95J5tvblvE77kHlo95J5tPblvEz7kHlo95J5tvblvE77kHlo95J5tvblvEz7kHlo95J5tPblvE77kHlo95J5tPblvEz7kHlq95J5tvblvE77kHlq95J5tvblvEz7kHlq95J5tPblvE77kHlq9/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
+size = Vector3(1, 1, 1.7978821)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbfbk"]
+albedo_color = Color(0, 0.8577099, 0, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ic0uy"]
 material = SubResource("StandardMaterial3D_gbfbk")
@@ -82,7 +102,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007, 0, 0)
 
 [node name="Terrain" type="MeshInstance3D" parent="Dirt" unique_id=1414479495]
 material_override = SubResource("ShaderMaterial_aqk2v")
-mesh = SubResource("ArrayMesh_oefmf")
+mesh = SubResource("ArrayMesh_es314")
 script = ExtResource("2_8mo8g")
 length = 3
 width = 1
@@ -114,14 +134,25 @@ mesh = SubResource("BoxMesh_pkg7o")
 
 [node name="Weeds" type="Node3D" parent="Dirt" unique_id=543653402]
 
-[node name="weed" type="MeshInstance3D" parent="Dirt/Weeds" unique_id=183425804]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6129303, 0.07718888, -0.1603527)
-mesh = SubResource("BoxMesh_ioo17")
+[node name="weed" parent="Dirt/Weeds" unique_id=271173687 instance=ExtResource("3_oefmf")]
 
 [node name="weed2" type="MeshInstance3D" parent="Dirt/Weeds" unique_id=395182817]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2522991, 0.078204215, -0.081020355)
 mesh = SubResource("BoxMesh_wse8f")
+script = ExtResource("3_8mo8g")
+
+[node name="Outline_mesh" type="MeshInstance3D" parent="Dirt/Weeds/weed2" unique_id=1278382414]
+mesh = SubResource("ArrayMesh_vs0da")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Dirt/Weeds/weed2/Outline_mesh" unique_id=633126902]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Dirt/Weeds/weed2/Outline_mesh/StaticBody3D" unique_id=1484708060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.001876831)
+shape = SubResource("BoxShape3D_ot21c")
 
 [node name="weed3" type="MeshInstance3D" parent="Dirt/Weeds" unique_id=669659711]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58398366, 0.06888345, -0.2209301)
 mesh = SubResource("BoxMesh_ic0uy")
+
+[connection signal="mouse_entered" from="Dirt/Weeds/weed2/Outline_mesh/StaticBody3D" to="Dirt/Weeds/weed2" method="_on_static_body_3d_mouse_entered"]
+[connection signal="mouse_exited" from="Dirt/Weeds/weed2/Outline_mesh/StaticBody3D" to="Dirt/Weeds/weed2" method="_on_static_body_3d_mouse_exited"]

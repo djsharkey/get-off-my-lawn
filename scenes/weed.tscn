@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cdmsljeatqy07"]
+
+[ext_resource type="Script" uid="uid://dt0n6na4j4yio" path="res://scripts/weed.gd" id="1_04vrx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbfbk"]
+albedo_color = Color(0, 0.8577099, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ioo17"]
+material = SubResource("StandardMaterial3D_gbfbk")
+size = Vector3(0.08, 0.26, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
+size = Vector3(0.5, 0.26, 0.5)
+
+[node name="weed" type="Node3D" unique_id=271173687]
+script = ExtResource("1_04vrx")
+
+[node name="weed" type="MeshInstance3D" parent="." unique_id=1908428538]
+mesh = SubResource("BoxMesh_ioo17")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=352263736]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1082078124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0042425543, 0, -0.03630006)
+shape = SubResource("BoxShape3D_ot21c")
