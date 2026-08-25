@@ -1,10 +1,16 @@
 extends CharacterBody3D
 
-
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+var equipped_item: Item
 
 @onready var playerCamera = $Camera3D
+
+func _ready() -> void:
+	EventBus.item_grabbed.connect(_on_item_grabbed)
+	EventBus.item_used.connect(_on_item_used)
+	EventBus.item_dropped.connect(_on_item_dropped)
+
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -15,12 +21,25 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
+	# TODO: Handle item drop
+	if Input.is_action_just_pressed("drop_item"):
+		if equipped_item == null:
+			return
+
+		equipped_item.drop_item()
+
+	if Input.is_action_just_pressed("grab_item"):
+		if equipped_item != null:
+			return
+
+		equipped_item.grab_item(self)
+
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "up", "down")
 	# shift input by current camera angle for "smoothness"
 	input_dir = input_dir.rotated(playerCamera.rotation.x)
-	
+
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
@@ -30,3 +49,26 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _on_item_grabbed(item: Item, owner: Node3D):
+	if equipped_item == null:
+		equipped_item = item
+	else:
+		# TODO: Drop it first or put into inventory
+		return
+
+	item.grab_item(self)
+	equipped_item = item
+
+
+func _on_item_used(item: Item, owner: Node3D):
+	pass
+
+
+func _on_item_dropped(item: Item):
+	if equipped_item == null:
+		# Nothing to drop
+		return
+
+	# TODO: Apply an impulse and "toss" the item away from the player
+	equipped_item = null
