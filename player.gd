@@ -1,12 +1,10 @@
 extends CharacterBody3D
 
-
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+var equipped_item: Item
 
 @onready var playerCamera = $Camera3D
-
-var equipped_item: Item
 
 func _ready() -> void:
 	EventBus.item_grabbed.connect(_on_item_grabbed)
