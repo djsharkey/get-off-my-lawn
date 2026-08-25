@@ -188,22 +188,22 @@ mesh = SubResource("BoxMesh_036b0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31136703, 0.08534926, 0.1280384)
 mesh = SubResource("BoxMesh_dwbse")
 
-[node name="Flower4" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers/Flower4" unique_id=1800995298]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8625674, -0.018003166, -0.32723427)
+[node name="Flower5" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers" unique_id=1800995298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1739345, 0.067346096, -0.19919586)
 mesh = SubResource("BoxMesh_pkg7o")
 
 [node name="Weeds" type="Node3D" parent="FlowerBed/Dirt" unique_id=134061459]
 
-[node name="Flower4" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1368614890]
+[node name="weed" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1368614890]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6129303, 0.07718888, -0.1603527)
 mesh = SubResource("BoxMesh_ioo17")
 
-[node name="Flower4" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds/Flower4" unique_id=1211424467]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8652294, 0.0010153353, 0.07933235)
+[node name="weed2" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1211424467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2522991, 0.078204215, -0.081020355)
 mesh = SubResource("BoxMesh_wse8f")
 
-[node name="Flower4" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds/Flower4/Flower4" unique_id=1575154381]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6683154, -0.009320766, -0.13990974)
+[node name="weed3" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1575154381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58398366, 0.06888345, -0.2209301)
 mesh = SubResource("BoxMesh_ic0uy")
 
 [node name="House" type="MeshInstance3D" parent="." unique_id=811425483]

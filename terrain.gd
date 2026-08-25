@@ -25,6 +25,7 @@ const size := 64.0
 func get_height(x: float, y: float) -> float:
 	return noise.get_noise_2d(x, y) * height
 
+
 func get_normal(x: float, y: float) -> Vector3:
 	var epsilon := size / resolution
 	var normal := Vector3(
@@ -33,6 +34,7 @@ func get_normal(x: float, y: float) -> Vector3:
 		(get_height(x, y + epsilon) - get_height(x, y - epsilon)) / (2.0 * epsilon), 
 	)
 	return normal.normalized()
+
 
 func update_mesh() -> void:
 	var plane := PlaneMesh.new()
