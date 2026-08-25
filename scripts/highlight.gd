@@ -21,25 +21,6 @@ func _ready() -> void:
 	outline_object = MeshInstance3D.new()
 
 
-
-
-
-func _on_static_body_3d_mouse_entered() -> void:
-	#outline_object = MeshInstance3D.new()
-	outline_object.mesh = mesh_object.mesh
-	outline_object.set_surface_override_material(0, outline_material)
-	outline_object.scale = Vector3.ONE * scale_factor
-	mesh_object.add_child(outline_object)
-	
-
-
-
-func _on_static_body_3d_mouse_exited() -> void:
-	mesh_object.remove_child(outline_object)
-	#outline_object.queue_free()
-
-
-
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.name != "Player":
 		return
