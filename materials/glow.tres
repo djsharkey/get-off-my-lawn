@@ -6,5 +6,5 @@
 render_priority = 0
 shader = ExtResource("1_nwts5")
 shader_parameter/glow_color = Color(0.3, 0.6, 1, 1)
-shader_parameter/glow_intensity = 3.38999992422672
-shader_parameter/glow_sharpness = 1.999999955296
+shader_parameter/glow_intensity = 2.0
+shader_parameter/glow_sharpness = 2.0
