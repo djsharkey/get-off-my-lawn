@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cqgrm4803agni"]
+
+[ext_resource type="Script" uid="uid://dt0n6na4j4yio" path="res://scripts/highlight.gd" id="1_ryd67"]
+
+[node name="Highlighter" type="Node" unique_id=1685376104]
+script = ExtResource("1_ryd67")
