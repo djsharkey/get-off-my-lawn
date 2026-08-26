@@ -104,9 +104,10 @@ mesh = SubResource("BoxMesh_pkg7o")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.60973763, 0.085201874, -0.25594127)
 
 [node name="weed2" parent="Dirt/Weeds" unique_id=770653002 instance=ExtResource("3_oefmf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7362551, 0.12071589, -0.2782836)
-glow_intensity = 2.0
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0.7362551, 0.6351875, -0.2782836)
+_scale_factor = 2.0
+_glow_intensity = 10.0
+_glow_sharpness = 0.1
 
 [node name="weed3" parent="Dirt/Weeds" unique_id=2001969612 instance=ExtResource("3_oefmf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23728767, 0.08337867, 0.030558586)
-glow_intensity = 5.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23697701, 0.08162439, 0.028865933)
