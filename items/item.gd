@@ -12,6 +12,8 @@ var _original_parent: Node3D
 var player_near: bool = false
 var pickup_cooldown_duration: float= 2
 
+@onready var interactable: Interactable = $Interactable
+
 func _ready() -> void:
 	_original_parent = self.get_parent()
 	body_entered.connect(_on_body_entered)

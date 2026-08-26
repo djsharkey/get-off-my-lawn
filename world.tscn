@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://yj0kxcgigs0s" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="1_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://b5gcgdsohlixh" path="res://old_man.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://dabmpyttylbcv" path="res://autoload/ui_interaction_prompt.tscn" id="4_aqk2v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -106,3 +107,5 @@ shape = SubResource("BoxShape3D_036b0")
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
 
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
+
+[node name="CanvasLayer" parent="." unique_id=292273841 instance=ExtResource("4_aqk2v")]

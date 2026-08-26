@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://yod7nn4rpvu8"]
+
+[ext_resource type="Script" uid="uid://br8m0jtm5agxk" path="res://ui/ui_manager.gd" id="1_5tvr0"]
+[ext_resource type="PackedScene" uid="uid://dabmpyttylbcv" path="res://autoload/ui_interaction_prompt.tscn" id="2_jam4f"]
+
+[node name="UiManager" type="CanvasLayer" unique_id=1394922983]
+script = ExtResource("1_5tvr0")
+
+[node name="CanvasLayer" parent="." unique_id=292273841 instance=ExtResource("2_jam4f")]

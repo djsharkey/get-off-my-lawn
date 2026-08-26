@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dabmpyttylbcv"]
+
+[ext_resource type="Script" uid="uid://curnu5psuldey" path="res://ui/ui_interaction_prompt.gd" id="1_xn4e3"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=292273841]
+script = ExtResource("1_xn4e3")
+
+[node name="PromptLabel" type="Label" parent="." unique_id=1845697583]
+offset_right = 109.0
+offset_bottom = 23.0
+text = "[Item Prompt]"
