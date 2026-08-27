@@ -5,8 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="1_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://b5gcgdsohlixh" path="res://old_man.tscn" id="2_fj7yv"]
 [ext_resource type="Script" uid="uid://chb2ciuxx1da5" path="res://camera_rig.gd" id="3_036b0"]
-[ext_resource type="Shader" uid="uid://dcfgyptyscqqa" path="res://terrain.gdshader" id="3_aqk2v"]
-[ext_resource type="Script" uid="uid://bimbcxn6mmgln" path="res://terrain.gd" id="3_tlwt5"]
 [ext_resource type="Script" uid="uid://di35m5mqby708" path="res://distraction.gd" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://0w7lu2waantm" path="res://scenes/tractor_beam/tractor_beam.tscn" id="6_dwbse"]
 
@@ -33,78 +31,6 @@ size = Vector3(64, 0.1, 64)
 size = Vector3(64, 0.1, 64)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ti2nx"]
-
-[sub_resource type="Gradient" id="Gradient_aqk2v"]
-colors = PackedColorArray(0, 0, 0, 1, 0.34501466, 0.114228286, 0, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_dwbse"]
-gradient = SubResource("Gradient_aqk2v")
-width = 512
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_tlwt5"]
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_dwbse"]
-noise = SubResource("FastNoiseLite_tlwt5")
-seamless = true
-as_normal_map = true
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_aqk2v"]
-render_priority = 0
-shader = ExtResource("3_aqk2v")
-shader_parameter/height = 8.0
-shader_parameter/color_gradient = SubResource("GradientTexture1D_dwbse")
-shader_parameter/normal_map = SubResource("NoiseTexture2D_dwbse")
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_dwbse"]
-_surfaces = [{
-"aabb": AABB(-1.5, -0.021130754, -0.49999997, 3, 0.043024175, 1),
-"attribute_data": PackedByteArray("AACAPwAAgD85jmM/AACAP3IcRz8AAIA/qqoqPwAAgD/kOA4/AACAPziO4z4AAIA/qqqqPgAAgD84jmM+AACAPziO4z0AAIA/AAAAAAAAgD8AAIA/OY5jPzmOYz85jmM/chxHPzmOYz+qqio/OY5jP+Q4Dj85jmM/OI7jPjmOYz+qqqo+OY5jPziOYz45jmM/OI7jPTmOYz8AAAAAOY5jPwAAgD9yHEc/OY5jP3IcRz9yHEc/chxHP6qqKj9yHEc/5DgOP3IcRz84juM+chxHP6qqqj5yHEc/OI5jPnIcRz84juM9chxHPwAAAAByHEc/AACAP6qqKj85jmM/qqoqP3IcRz+qqio/qqoqP6qqKj/kOA4/qqoqPziO4z6qqio/qqqqPqqqKj84jmM+qqoqPziO4z2qqio/AAAAAKqqKj8AAIA/5DgOPzmOYz/kOA4/chxHP+Q4Dj+qqio/5DgOP+Q4Dj/kOA4/OI7jPuQ4Dj+qqqo+5DgOPziOYz7kOA4/OI7jPeQ4Dj8AAAAA5DgOPwAAgD84juM+OY5jPziO4z5yHEc/OI7jPqqqKj84juM+5DgOPziO4z44juM+OI7jPqqqqj44juM+OI5jPjiO4z44juM9OI7jPgAAAAA4juM+AACAP6qqqj45jmM/qqqqPnIcRz+qqqo+qqoqP6qqqj7kOA4/qqqqPjiO4z6qqqo+qqqqPqqqqj44jmM+qqqqPjiO4z2qqqo+AAAAAKqqqj4AAIA/OI5jPjmOYz84jmM+chxHPziOYz6qqio/OI5jPuQ4Dj84jmM+OI7jPjiOYz6qqqo+OI5jPjiOYz44jmM+OI7jPTiOYz4AAAAAOI5jPgAAgD84juM9OY5jPziO4z1yHEc/OI7jPaqqKj84juM95DgOPziO4z04juM+OI7jPaqqqj44juM9OI5jPjiO4z04juM9OI7jPQAAAAA4juM9AACAPwAAAAA5jmM/AAAAAHIcRz8AAAAAqqoqPwAAAADkOA4/AAAAADiO4z4AAAAAqqqqPgAAAAA4jmM+AAAAADiO4z0AAAAAAAAAAAAAAAA="),
-"format": 34359742487,
-"index_count": 486,
-"index_data": PackedByteArray("AAABAAoAAQALAAoAAQACAAsAAgAMAAsAAgADAAwAAwANAAwAAwAEAA0ABAAOAA0ABAAFAA4ABQAPAA4ABQAGAA8ABgAQAA8ABgAHABAABwARABAABwAIABEACAASABEACAAJABIACQATABIACgALABQACwAVABQACwAMABUADAAWABUADAANABYADQAXABYADQAOABcADgAYABcADgAPABgADwAZABgADwAQABkAEAAaABkAEAARABoAEQAbABoAEQASABsAEgAcABsAEgATABwAEwAdABwAFAAVAB4AFQAfAB4AFQAWAB8AFgAgAB8AFgAXACAAFwAhACAAFwAYACEAGAAiACEAGAAZACIAGQAjACIAGQAaACMAGgAkACMAGgAbACQAGwAlACQAGwAcACUAHAAmACUAHAAdACYAHQAnACYAHgAfACgAHwApACgAHwAgACkAIAAqACkAIAAhACoAIQArACoAIQAiACsAIgAsACsAIgAjACwAIwAtACwAIwAkAC0AJAAuAC0AJAAlAC4AJQAvAC4AJQAmAC8AJgAwAC8AJgAnADAAJwAxADAAKAApADIAKQAzADIAKQAqADMAKgA0ADMAKgArADQAKwA1ADQAKwAsADUALAA2ADUALAAtADYALQA3ADYALQAuADcALgA4ADcALgAvADgALwA5ADgALwAwADkAMAA6ADkAMAAxADoAMQA7ADoAMgAzADwAMwA9ADwAMwA0AD0ANAA+AD0ANAA1AD4ANQA/AD4ANQA2AD8ANgBAAD8ANgA3AEAANwBBAEAANwA4AEEAOABCAEEAOAA5AEIAOQBDAEIAOQA6AEMAOgBEAEMAOgA7AEQAOwBFAEQAPAA9AEYAPQBHAEYAPQA+AEcAPgBIAEcAPgA/AEgAPwBJAEgAPwBAAEkAQABKAEkAQABBAEoAQQBLAEoAQQBCAEsAQgBMAEsAQgBDAEwAQwBNAEwAQwBEAE0ARABOAE0ARABFAE4ARQBPAE4ARgBHAFAARwBRAFAARwBIAFEASABSAFEASABJAFIASQBTAFIASQBKAFMASgBUAFMASgBLAFQASwBVAFQASwBMAFUATABWAFUATABNAFYATQBXAFYATQBOAFcATgBYAFcATgBPAFgATwBZAFgAUABRAFoAUQBbAFoAUQBSAFsAUgBcAFsAUgBTAFwAUwBdAFwAUwBUAF0AVABeAF0AVABVAF4AVQBfAF4AVQBWAF8AVgBgAF8AVgBXAGAAVwBhAGAAVwBYAGEAWABiAGEAWABZAGIAWQBjAGIA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 100,
-"vertex_data": PackedByteArray("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")
-}]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ti2nx"]
-albedo_color = Color(0.9131539, 0.000749107, 0.925213, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ot21c"]
-material = SubResource("StandardMaterial3D_ti2nx")
-size = Vector3(0.0871582, 0.2654419, 0.07763672)
-
-[sub_resource type="BoxMesh" id="BoxMesh_aqk2v"]
-material = SubResource("StandardMaterial3D_ti2nx")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
-
-[sub_resource type="BoxMesh" id="BoxMesh_036b0"]
-material = SubResource("StandardMaterial3D_ti2nx")
-size = Vector3(0.0871582, 0.2654419, 0.07763672)
-
-[sub_resource type="BoxMesh" id="BoxMesh_dwbse"]
-material = SubResource("StandardMaterial3D_ti2nx")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
-
-[sub_resource type="BoxMesh" id="BoxMesh_pkg7o"]
-material = SubResource("StandardMaterial3D_ti2nx")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbfbk"]
-albedo_color = Color(0, 0.8577099, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ioo17"]
-material = SubResource("StandardMaterial3D_gbfbk")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
-
-[sub_resource type="BoxMesh" id="BoxMesh_wse8f"]
-material = SubResource("StandardMaterial3D_gbfbk")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ic0uy"]
-material = SubResource("StandardMaterial3D_gbfbk")
-size = Vector3(0.0871582, 0.25909424, 0.07763672)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
 albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
@@ -163,54 +89,9 @@ shape = SubResource("WorldBoundaryShape3D_ti2nx")
 [node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("1_tlwt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -16.4)
 
-[node name="Dirt" type="Node3D" parent="FlowerBed" unique_id=418058126]
+[node name="Dirt2" type="Node3D" parent="FlowerBed" unique_id=418058126]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007, 0, 0)
 
-[node name="Terrain" type="MeshInstance3D" parent="FlowerBed/Dirt" unique_id=664204197]
-material_override = SubResource("ShaderMaterial_aqk2v")
-mesh = SubResource("ArrayMesh_dwbse")
-script = ExtResource("3_tlwt5")
-length = 3
-width = 1
-resolution = 8
-noise = SubResource("FastNoiseLite_tlwt5")
-height = 4.0
-
-[node name="Flowers" type="Node3D" parent="FlowerBed/Dirt" unique_id=550710406]
-
-[node name="Flower" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers" unique_id=820953973]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2593074, 0.0765686, -0.29588318)
-mesh = SubResource("BoxMesh_ot21c")
-
-[node name="Flower2" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers" unique_id=970408175]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.70525455, 0.07974243, 0.14320564)
-mesh = SubResource("BoxMesh_aqk2v")
-
-[node name="Flower3" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers" unique_id=35184528]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2426858, 0.08217543, -0.31105042)
-mesh = SubResource("BoxMesh_036b0")
-
-[node name="Flower4" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers" unique_id=834342213]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31136703, 0.08534926, 0.1280384)
-mesh = SubResource("BoxMesh_dwbse")
-
-[node name="Flower5" type="MeshInstance3D" parent="FlowerBed/Dirt/Flowers" unique_id=1800995298]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1739345, 0.067346096, -0.19919586)
-mesh = SubResource("BoxMesh_pkg7o")
-
-[node name="Weeds" type="Node3D" parent="FlowerBed/Dirt" unique_id=134061459]
-
-[node name="weed" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1368614890]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6129303, 0.07718888, -0.1603527)
-mesh = SubResource("BoxMesh_ioo17")
-
-[node name="weed2" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1211424467]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2522991, 0.078204215, -0.081020355)
-mesh = SubResource("BoxMesh_wse8f")
-
-[node name="weed3" type="MeshInstance3D" parent="FlowerBed/Dirt/Weeds" unique_id=1575154381]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58398366, 0.06888345, -0.2209301)
-mesh = SubResource("BoxMesh_ic0uy")
 [node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.782557)
 
