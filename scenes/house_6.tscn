@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dfcg03u1y5mi8"]
+
+[ext_resource type="ArrayMesh" uid="uid://b6rigc0lmdgy3" path="res://models/kenneyAssets/city_kit_suburban/meshes/house_6.res" id="1_bsta0"]
+[ext_resource type="ArrayMesh" uid="uid://blh60i2ksfeap" path="res://models/kenneyAssets/building_kit/meshes/barricade_doorway-3.res" id="2_5yws8"]
+[ext_resource type="ArrayMesh" uid="uid://dfyc5mxe0lvfg" path="res://models/kenneyAssets/building_kit/meshes/barricade-window-2.res" id="3_pdjgs"]
+[ext_resource type="ArrayMesh" uid="uid://cweoij0ahbq4a" path="res://models/kenneyAssets/building_kit/meshes/barricade-window-1.res" id="4_feexx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
+size = Vector3(0.8253174, 0.41357422, 0.397789)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsta0"]
+size = Vector3(1.2398071, 0.41357422, 0.7982788)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5yws8"]
+size = Vector3(0.032478333, 0.33483887, 0.032333374)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pdjgs"]
+size = Vector3(0.15284777, 0.048568726, 0.80344963)
+
+[node name="House6" type="MeshInstance3D" unique_id=1733043793]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = ExtResource("1_bsta0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1408115678]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=357257803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26226807, 0.20678711, -0.3545723)
+shape = SubResource("BoxShape3D_ot21c")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=16963021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.055023193, 0.20678711, 0.24453735)
+shape = SubResource("BoxShape3D_bsta0")
+
+[node name="Pillar" type="CollisionShape3D" parent="StaticBody3D" unique_id=311113826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.61022836, 0.16741943, -0.6413459)
+shape = SubResource("BoxShape3D_5yws8")
+
+[node name="Pillar2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1370826462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.098677516, 0.16741943, -0.6413459)
+shape = SubResource("BoxShape3D_5yws8")
+
+[node name="Pillar3" type="CollisionShape3D" parent="StaticBody3D" unique_id=2092582848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18839432, 0.16741943, -0.24012645)
+shape = SubResource("BoxShape3D_5yws8")
+
+[node name="Pillar4" type="CollisionShape3D" parent="StaticBody3D" unique_id=1231922222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49895748, 0.16741943, -0.24012645)
+shape = SubResource("BoxShape3D_5yws8")
+
+[node name="HedgeBase" type="CollisionShape3D" parent="StaticBody3D" unique_id=434410093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63752717, 0.024284363, 0.24378602)
+shape = SubResource("BoxShape3D_pdjgs")
+
+[node name="BarricadeDoorway3" type="MeshInstance3D" parent="StaticBody3D" unique_id=1813273802]
+transform = Transform3D(-4.371139e-09, 0, 0.15, 0, 0.155, 0, -0.1, 0, -6.5567085e-09, 0.06248641, 0.11133647, 0.6636929)
+mesh = ExtResource("2_5yws8")
+
+[node name="BarricadeWindow2" type="MeshInstance3D" parent="." unique_id=1074033070]
+transform = Transform3D(-4.371139e-09, 0, -0.23, 0, 0.155, 0, 0.1, 0, -1.0053619e-08, 0.45452482, 0.11189748, -0.5744068)
+mesh = ExtResource("3_pdjgs")
+
+[node name="BarricadeWindow1" type="MeshInstance3D" parent="." unique_id=1902417754]
+transform = Transform3D(-0.1, 0, -3.3974057e-08, 0, 0.15, 0, 1.509958e-08, 0, -0.22500001, 0.6763602, 0.12199439, 0.045824897)
+mesh = ExtResource("4_feexx")

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bt4p4fhefengf"
-path="res://.godot/imported/barricade-doorway-a.glb-2f7da0214d476e8c47c9de92e345d24b.scn"
+uid="uid://bkib6f7middi0"
+path="res://.godot/imported/fence-3x2.glb-0907a7fdf6050e2c80454f3177d7c953.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/building_kit/barricade-doorway-a.glb"
-dest_files=["res://.godot/imported/barricade-doorway-a.glb-2f7da0214d476e8c47c9de92e345d24b.scn"]
+source_file="res://models/kenneyAssets/city_kit_suburban/fence-3x2.glb"
+dest_files=["res://.godot/imported/fence-3x2.glb-0907a7fdf6050e2c80454f3177d7c953.scn"]
 
 [params]
 
@@ -39,19 +39,7 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"meshes": {
-"barricade-doorway-a_barricade-doorway-a": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://models/kenneyAssets/building_kit/meshes/barricade_doorway-1.res",
-"save_to_file/path": "uid://cl1x1hhnax1o3"
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1
