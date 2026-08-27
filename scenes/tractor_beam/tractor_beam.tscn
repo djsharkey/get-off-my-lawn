@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://0w7lu2waantm"]
+
+[ext_resource type="Material" uid="uid://tboj02tdh7ev" path="res://materials/glow.tres" id="1_u750o"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nc14k"]
+material = ExtResource("1_u750o")
+bottom_radius = 0.25
+cap_top = false
+
+[sub_resource type="Animation" id="Animation_64ovv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OuterBeam:mesh:material:shader_parameter/glow_intensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BeamRing:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BeamRing:mesh:bottom_radius")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.25]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BeamRing:mesh:top_radius")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.3]
+}
+
+[sub_resource type="Animation" id="Animation_2it0q"]
+resource_name = "tractoring"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OuterBeam:mesh:material:shader_parameter/glow_intensity")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.0, 2.999999932944, 7.999999821184, 2.999999932944, 1.999999955296]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BeamRing:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -1, 0), Vector3(0, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BeamRing:mesh:bottom_radius")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.25, 0.5]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BeamRing:mesh:top_radius")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.3, 0.65]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mbbde"]
+_data = {
+&"RESET": SubResource("Animation_64ovv"),
+&"tractoring": SubResource("Animation_2it0q")
+}
+
+[sub_resource type="Shader" id="Shader_tgo5f"]
+code = "shader_type spatial;
+render_mode blend_add, unshaded;
+
+uniform vec4 glow_color: source_color = vec4(0.3, 0.6, 1.0, 1.0);
+uniform float glow_intensity: hint_range(0.0, 10.0, 0.01) = 2.0;
+uniform float glow_sharpness: hint_range(0.0, 10.0, 0.01) = 2.0;
+
+
+void fragment() {
+	float fresnel = pow(1.0 - abs(dot(NORMAL, VIEW)), glow_sharpness);
+	float alpha = fresnel * glow_intensity;
+	ALBEDO = glow_color.rgb;
+	ALPHA = alpha;
+	EMISSION = glow_color.rgb * alpha;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8dxey"]
+render_priority = 0
+shader = SubResource("Shader_tgo5f")
+shader_parameter/glow_color = Color(0.5176471, 0.47843137, 1, 1)
+shader_parameter/glow_intensity = 4.99999988824
+shader_parameter/glow_sharpness = 0.999999977648
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yqqs5"]
+material = SubResource("ShaderMaterial_8dxey")
+top_radius = 0.3
+bottom_radius = 0.25
+height = 0.1
+
+[node name="TractorBeam" type="Area3D" unique_id=1667081487]
+
+[node name="OuterBeam" type="MeshInstance3D" parent="." unique_id=2140448907]
+mesh = SubResource("CylinderMesh_nc14k")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1436503463]
+libraries/ = SubResource("AnimationLibrary_mbbde")
+
+[node name="BeamRing" type="MeshInstance3D" parent="." unique_id=1751533303]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh = SubResource("CylinderMesh_yqqs5")

@@ -2,11 +2,13 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+@export var rotation_speed: float = TAU * 2
 var equipped_item: Item
 @onready var camera_rig: Node3D = $"../CameraRig"
 @onready var player: CharacterBody3D = $"."
 @onready var old_man: CharacterBody3D = $"../OldMan"
 
+@onready var player_model: Node3D = $Model
 
 func _ready() -> void:
 	EventBus.item_grabbed.connect(_on_item_grabbed)
@@ -46,10 +48,15 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "up", "down")
 
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y))#.normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		player_model.rotation.y = rotate_toward(
+			player_model.rotation.y,
+			Vector2(direction.x, -direction.z).angle(),
+			rotation_speed * delta
+		)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
