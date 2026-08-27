@@ -8,7 +8,7 @@ signal transitioned(state_name: String)
 var actor: CharacterBody3D
 
 ## Called when entering this state. Use for initializations or playing animations.
-func enter() -> void:
+func enter(_data: Dictionary = {}) -> void:
 	pass
 
 ## Called when exiting this state. Use for cleanup or clearing values.

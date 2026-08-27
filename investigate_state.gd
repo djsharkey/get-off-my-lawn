@@ -1,8 +1,16 @@
 extends State
 
-# Get reference for "point of interest" (should be player position for now)
-# Start to move toward that location
-# Reset to idle after some amount of time
+var activeDistraction: Node3D
 
-func _ready():
-	pass 
+func enter(_data: Dictionary = {}) -> void:
+	activeDistraction = actor.distractions[0]
+
+func physics_update(_delta: float) -> void:
+	if !activeDistraction:
+		transitioned.emit("IdleState")
+	var direction = actor.global_position.direction_to(activeDistraction.global_position)
+	actor.velocity = direction * actor.speed
+		
+	if actor.global_position.distance_to(activeDistraction.global_position) < 5.0:
+		actor.velocity = Vector3.ZERO
+		transitioned.emit("IdleState")
