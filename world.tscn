@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://chb2ciuxx1da5" path="res://camera_rig.gd" id="3_036b0"]
 [ext_resource type="Script" uid="uid://di35m5mqby708" path="res://distraction.gd" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://0w7lu2waantm" path="res://scenes/tractor_beam/tractor_beam.tscn" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://0xg7405rywij" path="res://scenes/yard.tscn" id="4_036b0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -22,7 +23,7 @@ sky = SubResource("Sky_f3sb7")
 glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3sb7"]
-albedo_color = Color(0.34509805, 1, 0.49411765, 1)
+albedo_color = Color(0.26833647, 0.49269694, 1.92523e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_yqqs5"]
 material = SubResource("StandardMaterial3D_f3sb7")
@@ -51,6 +52,10 @@ size = Vector3(2, 3, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
 size = Vector3(2, 3, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aqk2v"]
+material = SubResource("StandardMaterial3D_fj7yv")
+size = Vector3(0.44056702, 0.83825684, 0.47808838)
 
 [node name="World" type="Node3D" unique_id=198200431]
 script = ExtResource("1_036b0")
@@ -119,7 +124,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.782557)
 
 [node name="House" type="MeshInstance3D" parent="." unique_id=811425483]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -10.9732)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -4.708416)
 mesh = SubResource("BoxMesh_dunvj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="House" unique_id=1943265210]
@@ -128,7 +133,7 @@ mesh = SubResource("BoxMesh_dunvj")
 shape = SubResource("BoxShape3D_aqk2v")
 
 [node name="Shed" type="MeshInstance3D" parent="." unique_id=1934414410]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -14.939)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -8.674216)
 mesh = SubResource("BoxMesh_fj7yv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shed" unique_id=988612512]
@@ -178,3 +183,15 @@ text = "TOGGLE THAT ONE DISTRACTION"
 visible = false
 
 [connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]
+
+[node name="Yard" parent="." unique_id=905096459 instance=ExtResource("4_036b0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.635656, -3.8146973e-06, -27.260149)
+
+[node name="compost_bin" type="MeshInstance3D" parent="." unique_id=914098660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.511292, 0.41912842, -28.400515)
+mesh = SubResource("BoxMesh_aqk2v")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="compost_bin" unique_id=799026919]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="compost_bin/StaticBody3D" unique_id=1617049801]
+shape = SubResource("BoxShape3D_036b0")

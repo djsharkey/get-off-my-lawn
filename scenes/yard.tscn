@@ -1,0 +1,3077 @@
+[gd_scene format=3 uid="uid://0xg7405rywij"]
+
+[ext_resource type="PackedScene" uid="uid://c2iak7f72snbb" path="res://scenes/grass_leaf_large.tscn" id="1_e7vks"]
+
+[node name="Yard" type="Node3D" unique_id=905096459]
+
+[node name="pivot" type="Node3D" parent="." unique_id=378766166]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot" unique_id=1959200375 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot2" type="Node3D" parent="." unique_id=616617443]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot2" unique_id=313857202 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot3" type="Node3D" parent="." unique_id=458314275]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot3" unique_id=647744596 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot4" type="Node3D" parent="." unique_id=905688345]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot4" unique_id=1842954108 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot5" type="Node3D" parent="." unique_id=262328744]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot5" unique_id=1871499653 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot6" type="Node3D" parent="." unique_id=1202300019]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot6" unique_id=519199738 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot7" type="Node3D" parent="." unique_id=1189492671]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot7" unique_id=1782797213 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot8" type="Node3D" parent="." unique_id=383137360]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot8" unique_id=1115941322 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot9" type="Node3D" parent="." unique_id=512207659]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot9" unique_id=1191241286 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot10" type="Node3D" parent="." unique_id=883506490]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot10" unique_id=467376910 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot11" type="Node3D" parent="." unique_id=1723784424]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot11" unique_id=1271899277 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot12" type="Node3D" parent="." unique_id=401260132]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot12" unique_id=1613940070 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot13" type="Node3D" parent="." unique_id=387651408]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot13" unique_id=1643027453 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot14" type="Node3D" parent="." unique_id=578399980]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot14" unique_id=1340044902 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot15" type="Node3D" parent="." unique_id=1896747187]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot15" unique_id=995797065 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot16" type="Node3D" parent="." unique_id=1193710392]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot16" unique_id=948435819 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot17" type="Node3D" parent="." unique_id=467737116]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot17" unique_id=283076162 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot18" type="Node3D" parent="." unique_id=127240822]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot18" unique_id=396029208 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot19" type="Node3D" parent="." unique_id=277734886]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot19" unique_id=1868380240 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot20" type="Node3D" parent="." unique_id=1753111895]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot20" unique_id=1918213892 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot21" type="Node3D" parent="." unique_id=2092028361]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot21" unique_id=910510955 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot22" type="Node3D" parent="." unique_id=1234910799]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot22" unique_id=800399406 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot23" type="Node3D" parent="." unique_id=1827227023]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot23" unique_id=1807133706 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot24" type="Node3D" parent="." unique_id=1287887191]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot24" unique_id=941718036 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot25" type="Node3D" parent="." unique_id=1358685299]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot25" unique_id=1585357931 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot26" type="Node3D" parent="." unique_id=1539284262]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot26" unique_id=370025564 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot27" type="Node3D" parent="." unique_id=730475447]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot27" unique_id=1530111347 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot28" type="Node3D" parent="." unique_id=1095930526]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot28" unique_id=1228142118 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot29" type="Node3D" parent="." unique_id=154706006]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot29" unique_id=302142170 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot30" type="Node3D" parent="." unique_id=793561736]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot30" unique_id=1863730829 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot31" type="Node3D" parent="." unique_id=192490261]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot31" unique_id=1424219850 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot32" type="Node3D" parent="." unique_id=864849981]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot32" unique_id=183669661 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot33" type="Node3D" parent="." unique_id=2048569699]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot33" unique_id=1741483348 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot34" type="Node3D" parent="." unique_id=812085798]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot34" unique_id=880967018 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot35" type="Node3D" parent="." unique_id=428654054]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot35" unique_id=2039174805 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot36" type="Node3D" parent="." unique_id=1302164549]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot36" unique_id=1489804334 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot37" type="Node3D" parent="." unique_id=1710481183]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot37" unique_id=851380398 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot38" type="Node3D" parent="." unique_id=1218801134]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot38" unique_id=278162678 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot39" type="Node3D" parent="." unique_id=217090214]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot39" unique_id=240602022 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot40" type="Node3D" parent="." unique_id=2083944956]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot40" unique_id=1490352160 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot41" type="Node3D" parent="." unique_id=1587729475]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot41" unique_id=1187608624 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot42" type="Node3D" parent="." unique_id=1339316844]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot42" unique_id=2089534288 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot43" type="Node3D" parent="." unique_id=509427087]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot43" unique_id=243243684 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot44" type="Node3D" parent="." unique_id=1893547895]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot44" unique_id=1040040066 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot45" type="Node3D" parent="." unique_id=1009501058]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot45" unique_id=1953469147 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot46" type="Node3D" parent="." unique_id=1978006919]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot46" unique_id=570496228 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot47" type="Node3D" parent="." unique_id=1398591732]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot47" unique_id=417660747 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot48" type="Node3D" parent="." unique_id=517405352]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot48" unique_id=2141308488 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot49" type="Node3D" parent="." unique_id=828363370]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot49" unique_id=1057715457 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot50" type="Node3D" parent="." unique_id=636971056]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot50" unique_id=1907379478 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot51" type="Node3D" parent="." unique_id=206633427]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot51" unique_id=1929449855 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot52" type="Node3D" parent="." unique_id=204326423]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot52" unique_id=1162827196 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot53" type="Node3D" parent="." unique_id=737864241]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot53" unique_id=2067214942 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot54" type="Node3D" parent="." unique_id=1651671160]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot54" unique_id=463186495 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot55" type="Node3D" parent="." unique_id=1395051695]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot55" unique_id=1598600689 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot56" type="Node3D" parent="." unique_id=1006873184]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot56" unique_id=849474012 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot57" type="Node3D" parent="." unique_id=1431548800]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot57" unique_id=578512661 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot58" type="Node3D" parent="." unique_id=1722471424]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot58" unique_id=1159273392 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot59" type="Node3D" parent="." unique_id=1328661480]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot59" unique_id=986080110 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot60" type="Node3D" parent="." unique_id=1411438229]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot60" unique_id=865575890 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot61" type="Node3D" parent="." unique_id=1137552254]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot61" unique_id=798196356 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot62" type="Node3D" parent="." unique_id=2120735496]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot62" unique_id=1081361475 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot63" type="Node3D" parent="." unique_id=457783335]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot63" unique_id=1206637143 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot64" type="Node3D" parent="." unique_id=1571818903]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot64" unique_id=879214855 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot65" type="Node3D" parent="." unique_id=2144848657]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot65" unique_id=1493449345 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot66" type="Node3D" parent="." unique_id=2042000016]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot66" unique_id=326164845 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot67" type="Node3D" parent="." unique_id=724921049]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot67" unique_id=1281557204 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot68" type="Node3D" parent="." unique_id=1708903965]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot68" unique_id=2049162593 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot69" type="Node3D" parent="." unique_id=900338952]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot69" unique_id=569694370 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot70" type="Node3D" parent="." unique_id=666490513]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot70" unique_id=320365228 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot71" type="Node3D" parent="." unique_id=1894979130]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot71" unique_id=830598693 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot72" type="Node3D" parent="." unique_id=1897601493]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot72" unique_id=170409553 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot73" type="Node3D" parent="." unique_id=1157886162]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot73" unique_id=1199524031 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot74" type="Node3D" parent="." unique_id=1005946069]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot74" unique_id=246545489 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot75" type="Node3D" parent="." unique_id=619942082]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot75" unique_id=623116192 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot76" type="Node3D" parent="." unique_id=1825921408]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot76" unique_id=1605564856 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot77" type="Node3D" parent="." unique_id=533161234]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot77" unique_id=1563327317 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot78" type="Node3D" parent="." unique_id=454174800]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot78" unique_id=1225350231 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot79" type="Node3D" parent="." unique_id=1316946579]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot79" unique_id=1299075671 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot80" type="Node3D" parent="." unique_id=1609036359]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot80" unique_id=971542376 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot81" type="Node3D" parent="." unique_id=1952998100]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot81" unique_id=433312356 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot82" type="Node3D" parent="." unique_id=1233577045]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot82" unique_id=813318665 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot83" type="Node3D" parent="." unique_id=1279323144]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot83" unique_id=2105614361 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot84" type="Node3D" parent="." unique_id=1851373615]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot84" unique_id=486882056 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot85" type="Node3D" parent="." unique_id=308855467]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot85" unique_id=705454790 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot86" type="Node3D" parent="." unique_id=2097061188]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot86" unique_id=1504859831 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot87" type="Node3D" parent="." unique_id=1599948408]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot87" unique_id=640964392 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot88" type="Node3D" parent="." unique_id=902466273]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot88" unique_id=1447187773 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot89" type="Node3D" parent="." unique_id=524030491]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot89" unique_id=1351569521 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot90" type="Node3D" parent="." unique_id=1158441564]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot90" unique_id=1142103182 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot91" type="Node3D" parent="." unique_id=872068042]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot91" unique_id=468709997 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot92" type="Node3D" parent="." unique_id=1037787849]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot92" unique_id=2090794159 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot93" type="Node3D" parent="." unique_id=79627152]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot93" unique_id=2120786688 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot94" type="Node3D" parent="." unique_id=378386947]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot94" unique_id=279604850 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot95" type="Node3D" parent="." unique_id=2144059371]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot95" unique_id=1380430044 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot96" type="Node3D" parent="." unique_id=2011731292]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot96" unique_id=1406765644 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot97" type="Node3D" parent="." unique_id=2054370922]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot97" unique_id=62933343 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot98" type="Node3D" parent="." unique_id=1680897955]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot98" unique_id=2128753065 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot99" type="Node3D" parent="." unique_id=90814329]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot99" unique_id=660209718 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot100" type="Node3D" parent="." unique_id=776958528]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot100" unique_id=298040512 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot101" type="Node3D" parent="." unique_id=107660987]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot101" unique_id=1336511205 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot102" type="Node3D" parent="." unique_id=2070138973]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot102" unique_id=1193465413 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot103" type="Node3D" parent="." unique_id=175901288]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot103" unique_id=748533232 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot104" type="Node3D" parent="." unique_id=1991013353]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot104" unique_id=1200756696 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot105" type="Node3D" parent="." unique_id=1653825371]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot105" unique_id=1018321435 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot106" type="Node3D" parent="." unique_id=2016724165]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot106" unique_id=366378519 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot107" type="Node3D" parent="." unique_id=1151915800]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot107" unique_id=1529285811 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot108" type="Node3D" parent="." unique_id=834377151]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot108" unique_id=2055669088 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot109" type="Node3D" parent="." unique_id=351659507]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot109" unique_id=367392264 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot110" type="Node3D" parent="." unique_id=1496336577]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot110" unique_id=1908192602 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot111" type="Node3D" parent="." unique_id=271638214]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot111" unique_id=844299165 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot112" type="Node3D" parent="." unique_id=1896542424]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot112" unique_id=970845843 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot113" type="Node3D" parent="." unique_id=686493917]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot113" unique_id=286891372 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot114" type="Node3D" parent="." unique_id=304575772]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot114" unique_id=1132963737 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot115" type="Node3D" parent="." unique_id=1926735254]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot115" unique_id=836264092 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot116" type="Node3D" parent="." unique_id=1235038213]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot116" unique_id=2037432073 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot117" type="Node3D" parent="." unique_id=1264839252]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot117" unique_id=1954602321 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot118" type="Node3D" parent="." unique_id=317147534]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot118" unique_id=1945539993 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot119" type="Node3D" parent="." unique_id=2078196178]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot119" unique_id=871364684 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot120" type="Node3D" parent="." unique_id=1765014224]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot120" unique_id=888611602 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot121" type="Node3D" parent="." unique_id=1565030203]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot121" unique_id=1957322012 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot122" type="Node3D" parent="." unique_id=1396904679]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot122" unique_id=500190326 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot123" type="Node3D" parent="." unique_id=1639383198]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot123" unique_id=868924974 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot124" type="Node3D" parent="." unique_id=2048046580]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot124" unique_id=425597999 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot125" type="Node3D" parent="." unique_id=331061417]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot125" unique_id=99808606 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot126" type="Node3D" parent="." unique_id=663451227]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot126" unique_id=1117263324 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot127" type="Node3D" parent="." unique_id=889585805]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot127" unique_id=2031049125 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot128" type="Node3D" parent="." unique_id=1641786165]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot128" unique_id=2120389801 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot129" type="Node3D" parent="." unique_id=1046419434]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot129" unique_id=704866497 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot130" type="Node3D" parent="." unique_id=1394398911]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot130" unique_id=1265537529 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot131" type="Node3D" parent="." unique_id=573258452]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot131" unique_id=2087108716 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot132" type="Node3D" parent="." unique_id=1505225170]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot132" unique_id=410526414 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot133" type="Node3D" parent="." unique_id=991633707]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot133" unique_id=833570065 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot134" type="Node3D" parent="." unique_id=390995342]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot134" unique_id=900771726 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot135" type="Node3D" parent="." unique_id=971950028]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot135" unique_id=728394854 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot136" type="Node3D" parent="." unique_id=1915186961]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot136" unique_id=653060688 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot137" type="Node3D" parent="." unique_id=854679788]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot137" unique_id=1241243043 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot138" type="Node3D" parent="." unique_id=1777240738]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot138" unique_id=760260305 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot139" type="Node3D" parent="." unique_id=1875615824]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot139" unique_id=24753313 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot140" type="Node3D" parent="." unique_id=743027251]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot140" unique_id=1306448855 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot141" type="Node3D" parent="." unique_id=1090207316]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot141" unique_id=275915860 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot142" type="Node3D" parent="." unique_id=104888948]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot142" unique_id=2097659558 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot143" type="Node3D" parent="." unique_id=352406633]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot143" unique_id=853515029 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot144" type="Node3D" parent="." unique_id=445926227]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot144" unique_id=507768095 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot145" type="Node3D" parent="." unique_id=1262424366]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot145" unique_id=1266307699 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot146" type="Node3D" parent="." unique_id=1099399009]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot146" unique_id=1802666306 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot147" type="Node3D" parent="." unique_id=1620945564]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot147" unique_id=1322710660 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot148" type="Node3D" parent="." unique_id=1928725102]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot148" unique_id=577623425 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot149" type="Node3D" parent="." unique_id=1149650664]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot149" unique_id=335176491 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot150" type="Node3D" parent="." unique_id=679349477]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot150" unique_id=886669777 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot151" type="Node3D" parent="." unique_id=648938704]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot151" unique_id=994489980 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot152" type="Node3D" parent="." unique_id=1154879956]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot152" unique_id=81906569 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot153" type="Node3D" parent="." unique_id=1613353803]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot153" unique_id=755973 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot154" type="Node3D" parent="." unique_id=1696413596]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot154" unique_id=883174479 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot155" type="Node3D" parent="." unique_id=1606866509]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot155" unique_id=299445708 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot156" type="Node3D" parent="." unique_id=1265345140]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot156" unique_id=1291023352 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot157" type="Node3D" parent="." unique_id=1128996350]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot157" unique_id=2082477526 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot158" type="Node3D" parent="." unique_id=1284138855]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot158" unique_id=557192428 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot159" type="Node3D" parent="." unique_id=97383408]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot159" unique_id=2093441234 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot160" type="Node3D" parent="." unique_id=2118371203]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot160" unique_id=113660918 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot161" type="Node3D" parent="." unique_id=950296187]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot161" unique_id=1609164195 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot162" type="Node3D" parent="." unique_id=1039068355]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot162" unique_id=1787234303 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot163" type="Node3D" parent="." unique_id=1976263813]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot163" unique_id=658489788 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot164" type="Node3D" parent="." unique_id=229558380]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot164" unique_id=1566547410 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot165" type="Node3D" parent="." unique_id=286116477]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot165" unique_id=1827314822 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot166" type="Node3D" parent="." unique_id=614920792]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot166" unique_id=1693274335 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot167" type="Node3D" parent="." unique_id=1814281430]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot167" unique_id=1861822688 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot168" type="Node3D" parent="." unique_id=1308722287]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot168" unique_id=670416221 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot169" type="Node3D" parent="." unique_id=529583381]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot169" unique_id=2018301420 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot170" type="Node3D" parent="." unique_id=1950333351]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot170" unique_id=85438836 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot171" type="Node3D" parent="." unique_id=1986705753]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot171" unique_id=560618114 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot172" type="Node3D" parent="." unique_id=444199960]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot172" unique_id=551824400 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot173" type="Node3D" parent="." unique_id=361632303]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot173" unique_id=151876491 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot174" type="Node3D" parent="." unique_id=213562676]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot174" unique_id=640856651 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot175" type="Node3D" parent="." unique_id=534345976]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot175" unique_id=1646868533 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot176" type="Node3D" parent="." unique_id=1190727805]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot176" unique_id=1092274658 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot177" type="Node3D" parent="." unique_id=1841836722]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot177" unique_id=826609482 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot178" type="Node3D" parent="." unique_id=856058594]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot178" unique_id=957910984 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot179" type="Node3D" parent="." unique_id=1788596768]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot179" unique_id=203845405 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot180" type="Node3D" parent="." unique_id=1161420301]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot180" unique_id=1008013343 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot181" type="Node3D" parent="." unique_id=697034416]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot181" unique_id=1943906109 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot182" type="Node3D" parent="." unique_id=1523959]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot182" unique_id=377220701 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot183" type="Node3D" parent="." unique_id=1716222887]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot183" unique_id=1228926579 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot184" type="Node3D" parent="." unique_id=1477793039]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot184" unique_id=975956132 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot185" type="Node3D" parent="." unique_id=20873593]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot185" unique_id=1255865861 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot186" type="Node3D" parent="." unique_id=1065302122]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot186" unique_id=885381818 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot187" type="Node3D" parent="." unique_id=692075875]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot187" unique_id=221365997 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot188" type="Node3D" parent="." unique_id=751985939]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot188" unique_id=92223713 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot189" type="Node3D" parent="." unique_id=1572191720]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot189" unique_id=1084790371 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot190" type="Node3D" parent="." unique_id=1709817358]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot190" unique_id=1325464860 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot191" type="Node3D" parent="." unique_id=938481681]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot191" unique_id=1435170290 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot192" type="Node3D" parent="." unique_id=1887677605]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot192" unique_id=1779915918 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot193" type="Node3D" parent="." unique_id=1911422208]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot193" unique_id=1446184411 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot194" type="Node3D" parent="." unique_id=459441575]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot194" unique_id=1702022968 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot195" type="Node3D" parent="." unique_id=74158258]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot195" unique_id=1640885867 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot196" type="Node3D" parent="." unique_id=1629039940]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot196" unique_id=1768641454 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot197" type="Node3D" parent="." unique_id=1551032225]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot197" unique_id=288311175 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot198" type="Node3D" parent="." unique_id=1236655819]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot198" unique_id=2092000415 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot199" type="Node3D" parent="." unique_id=994468685]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot199" unique_id=893282694 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot200" type="Node3D" parent="." unique_id=167508519]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot200" unique_id=847535262 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot201" type="Node3D" parent="." unique_id=1227682606]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot201" unique_id=1802693934 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot202" type="Node3D" parent="." unique_id=536872153]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot202" unique_id=1594079410 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot203" type="Node3D" parent="." unique_id=1789708959]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot203" unique_id=175624049 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot204" type="Node3D" parent="." unique_id=1481323858]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot204" unique_id=1688691220 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot205" type="Node3D" parent="." unique_id=1394357398]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot205" unique_id=551278508 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot206" type="Node3D" parent="." unique_id=2047075975]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot206" unique_id=1689272981 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot207" type="Node3D" parent="." unique_id=1677355968]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot207" unique_id=1079229576 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot208" type="Node3D" parent="." unique_id=90304631]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot208" unique_id=1051801460 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot209" type="Node3D" parent="." unique_id=483835325]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot209" unique_id=1662778807 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot210" type="Node3D" parent="." unique_id=1036606220]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot210" unique_id=1001455736 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot211" type="Node3D" parent="." unique_id=485402404]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot211" unique_id=135325080 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot212" type="Node3D" parent="." unique_id=2121363511]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot212" unique_id=213461926 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot213" type="Node3D" parent="." unique_id=986225983]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot213" unique_id=63522989 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot214" type="Node3D" parent="." unique_id=2114846836]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot214" unique_id=127642147 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot215" type="Node3D" parent="." unique_id=1887004130]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 0)
+
+[node name="Grass_leaf_large_pivot" parent="pivot215" unique_id=517413655 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot216" type="Node3D" parent="." unique_id=1612582228]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 0.484034)
+
+[node name="Grass_leaf_large_pivot" parent="pivot216" unique_id=1786004512 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot217" type="Node3D" parent="." unique_id=1191591301]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot217" unique_id=1157824944 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot218" type="Node3D" parent="." unique_id=1949441771]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot218" unique_id=1710877905 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot219" type="Node3D" parent="." unique_id=294517117]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot219" unique_id=2047786323 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot220" type="Node3D" parent="." unique_id=1969554940]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot220" unique_id=497064905 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot221" type="Node3D" parent="." unique_id=1203686984]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot221" unique_id=1060891975 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot222" type="Node3D" parent="." unique_id=1286279906]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot222" unique_id=744873178 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot223" type="Node3D" parent="." unique_id=1002061136]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 0.97797203)
+
+[node name="Grass_leaf_large_pivot" parent="pivot223" unique_id=757684885 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot224" type="Node3D" parent="." unique_id=909587474]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 1.4620061)
+
+[node name="Grass_leaf_large_pivot" parent="pivot224" unique_id=452456295 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot225" type="Node3D" parent="." unique_id=1102838410]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot225" unique_id=1242229679 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot226" type="Node3D" parent="." unique_id=1308699605]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot226" unique_id=1104024305 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot227" type="Node3D" parent="." unique_id=726605033]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot227" unique_id=919746527 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot228" type="Node3D" parent="." unique_id=1143066845]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot228" unique_id=735613464 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot229" type="Node3D" parent="." unique_id=50635014]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot229" unique_id=479452688 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot230" type="Node3D" parent="." unique_id=329100381]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot230" unique_id=564968698 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot231" type="Node3D" parent="." unique_id=183942846]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot231" unique_id=572421765 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot232" type="Node3D" parent="." unique_id=1691794346]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot232" unique_id=243619192 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot233" type="Node3D" parent="." unique_id=1155082724]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot233" unique_id=993692455 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot234" type="Node3D" parent="." unique_id=1187919348]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot234" unique_id=557455699 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot235" type="Node3D" parent="." unique_id=623690674]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot235" unique_id=120951978 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot236" type="Node3D" parent="." unique_id=662076865]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot236" unique_id=1524504141 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot237" type="Node3D" parent="." unique_id=794639556]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot237" unique_id=1102490085 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot238" type="Node3D" parent="." unique_id=1985803794]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot238" unique_id=1312914647 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot239" type="Node3D" parent="." unique_id=448230974]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot239" unique_id=1776490042 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot240" type="Node3D" parent="." unique_id=1467353985]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot240" unique_id=299360463 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot241" type="Node3D" parent="." unique_id=1485881225]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot241" unique_id=567027043 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot242" type="Node3D" parent="." unique_id=206953505]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot242" unique_id=1419410430 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot243" type="Node3D" parent="." unique_id=1656398374]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot243" unique_id=377484640 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot244" type="Node3D" parent="." unique_id=1953206035]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot244" unique_id=1377621276 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot245" type="Node3D" parent="." unique_id=1978030480]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot245" unique_id=1547930306 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot246" type="Node3D" parent="." unique_id=1603929588]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot246" unique_id=332699181 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot247" type="Node3D" parent="." unique_id=937873391]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 1.9667226)
+
+[node name="Grass_leaf_large_pivot" parent="pivot247" unique_id=999722144 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot248" type="Node3D" parent="." unique_id=1588983445]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 2.4507565)
+
+[node name="Grass_leaf_large_pivot" parent="pivot248" unique_id=492373830 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot249" type="Node3D" parent="." unique_id=1596649291]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot249" unique_id=753354254 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot250" type="Node3D" parent="." unique_id=1939880745]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot250" unique_id=2061787558 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot251" type="Node3D" parent="." unique_id=1739217851]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot251" unique_id=577050206 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot252" type="Node3D" parent="." unique_id=2093004213]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot252" unique_id=100578501 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot253" type="Node3D" parent="." unique_id=1766177837]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot253" unique_id=1336339864 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot254" type="Node3D" parent="." unique_id=1176515519]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot254" unique_id=1354802447 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot255" type="Node3D" parent="." unique_id=1491062558]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 2.9446945)
+
+[node name="Grass_leaf_large_pivot" parent="pivot255" unique_id=1596249296 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot256" type="Node3D" parent="." unique_id=464575933]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 3.4287286)
+
+[node name="Grass_leaf_large_pivot" parent="pivot256" unique_id=67305783 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot257" type="Node3D" parent="." unique_id=271656081]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot257" unique_id=823901475 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot258" type="Node3D" parent="." unique_id=1180832996]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot258" unique_id=1393656416 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot259" type="Node3D" parent="." unique_id=418622292]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot259" unique_id=91482383 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot260" type="Node3D" parent="." unique_id=1892263212]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot260" unique_id=1403202833 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot261" type="Node3D" parent="." unique_id=61243478]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot261" unique_id=2109032642 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot262" type="Node3D" parent="." unique_id=833880544]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot262" unique_id=660077854 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot263" type="Node3D" parent="." unique_id=1936746393]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot263" unique_id=2042936773 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot264" type="Node3D" parent="." unique_id=1517444459]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot264" unique_id=336709824 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot265" type="Node3D" parent="." unique_id=1769530733]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot265" unique_id=496646236 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot266" type="Node3D" parent="." unique_id=1883109896]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot266" unique_id=1287136973 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot267" type="Node3D" parent="." unique_id=1465002229]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot267" unique_id=1853512756 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot268" type="Node3D" parent="." unique_id=1495146796]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot268" unique_id=1430843674 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot269" type="Node3D" parent="." unique_id=474157982]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot269" unique_id=1380299757 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot270" type="Node3D" parent="." unique_id=1825317421]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot270" unique_id=1025997526 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot271" type="Node3D" parent="." unique_id=2014697229]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot271" unique_id=1661230211 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot272" type="Node3D" parent="." unique_id=1671077303]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot272" unique_id=1363541921 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot273" type="Node3D" parent="." unique_id=16122440]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot273" unique_id=132730479 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot274" type="Node3D" parent="." unique_id=1239032292]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot274" unique_id=279077345 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot275" type="Node3D" parent="." unique_id=1547023784]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot275" unique_id=1392689557 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot276" type="Node3D" parent="." unique_id=474780788]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot276" unique_id=409979585 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot277" type="Node3D" parent="." unique_id=892285783]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot277" unique_id=242319318 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot278" type="Node3D" parent="." unique_id=2134878188]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot278" unique_id=1953745080 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot279" type="Node3D" parent="." unique_id=1423929267]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot279" unique_id=2098705628 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot280" type="Node3D" parent="." unique_id=1857008159]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot280" unique_id=988967388 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot281" type="Node3D" parent="." unique_id=1935127311]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot281" unique_id=1994921747 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot282" type="Node3D" parent="." unique_id=745307293]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot282" unique_id=1363262979 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot283" type="Node3D" parent="." unique_id=914956209]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot283" unique_id=1519147953 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot284" type="Node3D" parent="." unique_id=1255597084]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot284" unique_id=1556808792 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot285" type="Node3D" parent="." unique_id=1482168971]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot285" unique_id=1924471096 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot286" type="Node3D" parent="." unique_id=1974747490]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot286" unique_id=388172360 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot287" type="Node3D" parent="." unique_id=567936345]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot287" unique_id=419977377 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot288" type="Node3D" parent="." unique_id=709283271]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot288" unique_id=39278337 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot289" type="Node3D" parent="." unique_id=812171331]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot289" unique_id=1574355104 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot290" type="Node3D" parent="." unique_id=959341678]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot290" unique_id=1637488602 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot291" type="Node3D" parent="." unique_id=1808799249]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot291" unique_id=1550630744 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot292" type="Node3D" parent="." unique_id=1507693503]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot292" unique_id=888675098 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot293" type="Node3D" parent="." unique_id=288647253]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot293" unique_id=1335406411 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot294" type="Node3D" parent="." unique_id=1036354422]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot294" unique_id=1708121970 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot295" type="Node3D" parent="." unique_id=946380414]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot295" unique_id=1158241847 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot296" type="Node3D" parent="." unique_id=1243648109]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot296" unique_id=1154492288 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot297" type="Node3D" parent="." unique_id=1109792434]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot297" unique_id=403108858 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot298" type="Node3D" parent="." unique_id=1796755659]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot298" unique_id=1756814046 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot299" type="Node3D" parent="." unique_id=1037796039]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot299" unique_id=2043571963 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot300" type="Node3D" parent="." unique_id=9403559]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.48476672, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot300" unique_id=2059340646 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot301" type="Node3D" parent="." unique_id=1465706059]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot301" unique_id=857466748 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot302" type="Node3D" parent="." unique_id=1663267439]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0.9653578, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot302" unique_id=581423317 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot303" type="Node3D" parent="." unique_id=1300160407]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot303" unique_id=91001173 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot304" type="Node3D" parent="." unique_id=2052437358]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.4501245, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot304" unique_id=2030791674 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot305" type="Node3D" parent="." unique_id=1079925670]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot305" unique_id=951432534 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot306" type="Node3D" parent="." unique_id=1573802085]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot306" unique_id=690716777 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot307" type="Node3D" parent="." unique_id=278124934]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot307" unique_id=540858611 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot308" type="Node3D" parent="." unique_id=956068830]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot308" unique_id=1662388534 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot309" type="Node3D" parent="." unique_id=357588649]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot309" unique_id=1160560866 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot310" type="Node3D" parent="." unique_id=1003472132]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot310" unique_id=1944685645 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot311" type="Node3D" parent="." unique_id=1696606658]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot311" unique_id=1614386332 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot312" type="Node3D" parent="." unique_id=2077659125]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot312" unique_id=1458110061 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot313" type="Node3D" parent="." unique_id=1919660191]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot313" unique_id=1027992290 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot314" type="Node3D" parent="." unique_id=1504592964]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 1.9390719, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot314" unique_id=1278733473 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot315" type="Node3D" parent="." unique_id=831415714]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot315" unique_id=164406166 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot316" type="Node3D" parent="." unique_id=1899288340]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.4238386, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot316" unique_id=2047147056 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot317" type="Node3D" parent="." unique_id=285732746]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot317" unique_id=225226767 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot318" type="Node3D" parent="." unique_id=1513923306]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 2.9044297, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot318" unique_id=726819924 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot319" type="Node3D" parent="." unique_id=1928215543]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot319" unique_id=586012897 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot320" type="Node3D" parent="." unique_id=356564232]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.3891964, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot320" unique_id=1266463345 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot321" type="Node3D" parent="." unique_id=1397169300]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot321" unique_id=1767377146 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot322" type="Node3D" parent="." unique_id=842868517]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot322" unique_id=745838158 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot323" type="Node3D" parent="." unique_id=1942238910]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot323" unique_id=1832616620 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot324" type="Node3D" parent="." unique_id=1922232423]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot324" unique_id=274799154 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot325" type="Node3D" parent="." unique_id=524116460]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot325" unique_id=2054012633 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot326" type="Node3D" parent="." unique_id=655514725]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot326" unique_id=57055826 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot327" type="Node3D" parent="." unique_id=1907114838]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot327" unique_id=999130438 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot328" type="Node3D" parent="." unique_id=460422009]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot328" unique_id=1034052962 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot329" type="Node3D" parent="." unique_id=881969723]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot329" unique_id=365980013 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot330" type="Node3D" parent="." unique_id=1444550798]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot330" unique_id=197244730 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot331" type="Node3D" parent="." unique_id=1732176618]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot331" unique_id=421147084 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot332" type="Node3D" parent="." unique_id=391263322]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot332" unique_id=1834399240 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot333" type="Node3D" parent="." unique_id=1243114529]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot333" unique_id=260848400 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot334" type="Node3D" parent="." unique_id=1441289034]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot334" unique_id=370978814 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot335" type="Node3D" parent="." unique_id=363380838]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot335" unique_id=1358731324 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot336" type="Node3D" parent="." unique_id=266629747]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot336" unique_id=961050552 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot337" type="Node3D" parent="." unique_id=1678060633]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot337" unique_id=1090527059 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot338" type="Node3D" parent="." unique_id=1355086788]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot338" unique_id=280549465 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot339" type="Node3D" parent="." unique_id=1680660930]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot339" unique_id=344091824 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot340" type="Node3D" parent="." unique_id=1211603575]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot340" unique_id=1669970535 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot341" type="Node3D" parent="." unique_id=641852207]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot341" unique_id=316038425 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot342" type="Node3D" parent="." unique_id=130739292]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot342" unique_id=889440062 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot343" type="Node3D" parent="." unique_id=64685789]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot343" unique_id=102511089 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot344" type="Node3D" parent="." unique_id=1752599540]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot344" unique_id=1615504373 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot345" type="Node3D" parent="." unique_id=592171524]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot345" unique_id=471171427 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot346" type="Node3D" parent="." unique_id=1470400609]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot346" unique_id=1498161290 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot347" type="Node3D" parent="." unique_id=1267945338]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot347" unique_id=262692263 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot348" type="Node3D" parent="." unique_id=1297095440]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot348" unique_id=1211895805 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot349" type="Node3D" parent="." unique_id=1695941257]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot349" unique_id=491192666 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot350" type="Node3D" parent="." unique_id=124074481]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot350" unique_id=1173935730 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot351" type="Node3D" parent="." unique_id=316151351]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot351" unique_id=1700071411 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot352" type="Node3D" parent="." unique_id=1634989668]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot352" unique_id=813037039 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot353" type="Node3D" parent="." unique_id=382467217]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot353" unique_id=1917880159 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot354" type="Node3D" parent="." unique_id=1658057419]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot354" unique_id=1815892950 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot355" type="Node3D" parent="." unique_id=636312889]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot355" unique_id=1967992514 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot356" type="Node3D" parent="." unique_id=1940569384]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot356" unique_id=324095719 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot357" type="Node3D" parent="." unique_id=281265131]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot357" unique_id=1961688724 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot358" type="Node3D" parent="." unique_id=2058140964]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot358" unique_id=1130467196 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot359" type="Node3D" parent="." unique_id=1305426149]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot359" unique_id=14528104 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot360" type="Node3D" parent="." unique_id=1211441164]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot360" unique_id=529305256 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot361" type="Node3D" parent="." unique_id=545953443]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot361" unique_id=745341070 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot362" type="Node3D" parent="." unique_id=701491640]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 3.8925695, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot362" unique_id=1116554425 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot363" type="Node3D" parent="." unique_id=1011313916]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot363" unique_id=1267479167 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot364" type="Node3D" parent="." unique_id=824192042]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.3773365, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot364" unique_id=1919921787 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot365" type="Node3D" parent="." unique_id=810534022]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot365" unique_id=1124768638 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot366" type="Node3D" parent="." unique_id=966013673]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 4.8579273, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot366" unique_id=1735423347 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot367" type="Node3D" parent="." unique_id=378235058]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot367" unique_id=1264225715 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot368" type="Node3D" parent="." unique_id=1315221713]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.3426943, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot368" unique_id=1513714171 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot369" type="Node3D" parent="." unique_id=606573194]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot369" unique_id=1398785724 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot370" type="Node3D" parent="." unique_id=110484314]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot370" unique_id=1614649554 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot371" type="Node3D" parent="." unique_id=2018020485]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot371" unique_id=1126675247 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot372" type="Node3D" parent="." unique_id=474169580]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot372" unique_id=1528484165 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot373" type="Node3D" parent="." unique_id=223949019]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot373" unique_id=1718842455 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot374" type="Node3D" parent="." unique_id=1855042057]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot374" unique_id=1496665242 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot375" type="Node3D" parent="." unique_id=169995175]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot375" unique_id=200394990 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot376" type="Node3D" parent="." unique_id=941581311]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot376" unique_id=995557047 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot377" type="Node3D" parent="." unique_id=916434645]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot377" unique_id=532911220 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot378" type="Node3D" parent="." unique_id=1796599086]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 5.8316417, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot378" unique_id=520483739 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot379" type="Node3D" parent="." unique_id=1190788652]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot379" unique_id=305156357 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot380" type="Node3D" parent="." unique_id=1311818719]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.316408, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot380" unique_id=1072522852 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot381" type="Node3D" parent="." unique_id=2002232037]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot381" unique_id=1892232608 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot382" type="Node3D" parent="." unique_id=1644574883]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 6.7969995, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot382" unique_id=1660555086 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot383" type="Node3D" parent="." unique_id=2094318400]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot383" unique_id=623778770 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot384" type="Node3D" parent="." unique_id=168970062]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.281766, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot384" unique_id=944656480 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot385" type="Node3D" parent="." unique_id=20454839]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot385" unique_id=942379899 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot386" type="Node3D" parent="." unique_id=1377796571]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot386" unique_id=357598067 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot387" type="Node3D" parent="." unique_id=1792237817]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot387" unique_id=1481310879 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot388" type="Node3D" parent="." unique_id=2091946640]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot388" unique_id=166694355 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot389" type="Node3D" parent="." unique_id=1140961608]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot389" unique_id=425286883 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot390" type="Node3D" parent="." unique_id=1699747448]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot390" unique_id=1058155214 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot391" type="Node3D" parent="." unique_id=1350838654]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot391" unique_id=1704915423 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot392" type="Node3D" parent="." unique_id=1241895705]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot392" unique_id=1982403105 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot393" type="Node3D" parent="." unique_id=1145111370]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot393" unique_id=1034715767 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot394" type="Node3D" parent="." unique_id=1139062728]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot394" unique_id=1014564136 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot395" type="Node3D" parent="." unique_id=1191312160]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot395" unique_id=1251842920 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot396" type="Node3D" parent="." unique_id=586532378]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot396" unique_id=600236034 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot397" type="Node3D" parent="." unique_id=839310046]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot397" unique_id=1744558173 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot398" type="Node3D" parent="." unique_id=1407338641]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot398" unique_id=1630894192 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot399" type="Node3D" parent="." unique_id=1946415226]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot399" unique_id=1189023328 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot400" type="Node3D" parent="." unique_id=1852538077]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot400" unique_id=1137696308 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot401" type="Node3D" parent="." unique_id=2108241782]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot401" unique_id=1553082231 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot402" type="Node3D" parent="." unique_id=1538468046]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot402" unique_id=1455276322 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot403" type="Node3D" parent="." unique_id=1633367806]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot403" unique_id=370386468 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot404" type="Node3D" parent="." unique_id=667319288]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot404" unique_id=115674517 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot405" type="Node3D" parent="." unique_id=756053633]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot405" unique_id=708348149 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot406" type="Node3D" parent="." unique_id=437143394]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot406" unique_id=1912974471 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot407" type="Node3D" parent="." unique_id=1662992427]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot407" unique_id=2137479781 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot408" type="Node3D" parent="." unique_id=1110398478]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot408" unique_id=501575443 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot409" type="Node3D" parent="." unique_id=2119923888]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot409" unique_id=967501180 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot410" type="Node3D" parent="." unique_id=376287749]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot410" unique_id=1236038623 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot411" type="Node3D" parent="." unique_id=1643885086]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot411" unique_id=1130627331 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot412" type="Node3D" parent="." unique_id=877090265]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot412" unique_id=937473509 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot413" type="Node3D" parent="." unique_id=1766454698]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot413" unique_id=1905581118 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot414" type="Node3D" parent="." unique_id=1650052935]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot414" unique_id=1371422498 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot415" type="Node3D" parent="." unique_id=1116676963]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot415" unique_id=1089396197 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot416" type="Node3D" parent="." unique_id=1854921584]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot416" unique_id=1168178181 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot417" type="Node3D" parent="." unique_id=281382022]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot417" unique_id=226415231 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot418" type="Node3D" parent="." unique_id=1777880682]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot418" unique_id=1934116504 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot419" type="Node3D" parent="." unique_id=307468660]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot419" unique_id=24975245 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot420" type="Node3D" parent="." unique_id=264044819]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot420" unique_id=1524796104 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot421" type="Node3D" parent="." unique_id=1851437351]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot421" unique_id=1960460712 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot422" type="Node3D" parent="." unique_id=1886273090]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot422" unique_id=1190023545 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot423" type="Node3D" parent="." unique_id=2109154076]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot423" unique_id=603377951 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot424" type="Node3D" parent="." unique_id=718707813]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot424" unique_id=1870409739 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot425" type="Node3D" parent="." unique_id=561786511]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot425" unique_id=1121425770 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot426" type="Node3D" parent="." unique_id=2008976762]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 7.744462, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot426" unique_id=770846019 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot427" type="Node3D" parent="." unique_id=1648993145]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot427" unique_id=1808965271 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot428" type="Node3D" parent="." unique_id=2011645816]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.229229, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot428" unique_id=218162379 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot429" type="Node3D" parent="." unique_id=396765945]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot429" unique_id=1226913072 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot430" type="Node3D" parent="." unique_id=787986105]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 8.70982, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot430" unique_id=1973190793 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot431" type="Node3D" parent="." unique_id=26174456]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot431" unique_id=987740451 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot432" type="Node3D" parent="." unique_id=1811449342]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.194587, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot432" unique_id=570251966 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot433" type="Node3D" parent="." unique_id=1270424734]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot433" unique_id=425630028 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot434" type="Node3D" parent="." unique_id=802791582]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot434" unique_id=1108446070 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot435" type="Node3D" parent="." unique_id=125701736]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot435" unique_id=509535710 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot436" type="Node3D" parent="." unique_id=1011980232]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot436" unique_id=89146347 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot437" type="Node3D" parent="." unique_id=1448145482]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot437" unique_id=1059257579 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot438" type="Node3D" parent="." unique_id=912496081]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot438" unique_id=1571044317 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot439" type="Node3D" parent="." unique_id=729071412]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot439" unique_id=1087938188 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot440" type="Node3D" parent="." unique_id=1673411785]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot440" unique_id=1983054320 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot441" type="Node3D" parent="." unique_id=1198370997]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot441" unique_id=1237773987 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot442" type="Node3D" parent="." unique_id=452081853]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 9.683534, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot442" unique_id=650237475 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot443" type="Node3D" parent="." unique_id=1982374222]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot443" unique_id=124328069 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot444" type="Node3D" parent="." unique_id=6165879]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.168301, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot444" unique_id=1512987563 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot445" type="Node3D" parent="." unique_id=199209430]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot445" unique_id=1054636189 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot446" type="Node3D" parent="." unique_id=274615977]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 10.648891, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot446" unique_id=1373489933 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot447" type="Node3D" parent="." unique_id=1822982228]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot447" unique_id=1464379576 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot448" type="Node3D" parent="." unique_id=253993648]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.133658, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot448" unique_id=1125585878 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot449" type="Node3D" parent="." unique_id=1091304577]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot449" unique_id=1620972863 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot450" type="Node3D" parent="." unique_id=561461437]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot450" unique_id=1581991881 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot451" type="Node3D" parent="." unique_id=1413341377]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot451" unique_id=2133579925 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot452" type="Node3D" parent="." unique_id=265415051]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot452" unique_id=305521783 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot453" type="Node3D" parent="." unique_id=327829599]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot453" unique_id=1489960283 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot454" type="Node3D" parent="." unique_id=2067431261]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot454" unique_id=2040722548 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot455" type="Node3D" parent="." unique_id=1814015393]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot455" unique_id=865867919 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot456" type="Node3D" parent="." unique_id=1003057841]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot456" unique_id=499759261 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot457" type="Node3D" parent="." unique_id=546280125]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot457" unique_id=761724026 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot458" type="Node3D" parent="." unique_id=1393081388]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot458" unique_id=1397192712 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot459" type="Node3D" parent="." unique_id=797033178]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot459" unique_id=560677550 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot460" type="Node3D" parent="." unique_id=2132299073]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot460" unique_id=1460104451 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot461" type="Node3D" parent="." unique_id=1254794226]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot461" unique_id=470135849 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot462" type="Node3D" parent="." unique_id=1211190102]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot462" unique_id=1380553552 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot463" type="Node3D" parent="." unique_id=498984471]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot463" unique_id=388642205 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot464" type="Node3D" parent="." unique_id=786855800]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot464" unique_id=1884185879 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot465" type="Node3D" parent="." unique_id=73324260]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot465" unique_id=1287748472 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot466" type="Node3D" parent="." unique_id=51728454]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot466" unique_id=361681672 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot467" type="Node3D" parent="." unique_id=127054608]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot467" unique_id=1400378770 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot468" type="Node3D" parent="." unique_id=271075099]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot468" unique_id=373461015 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot469" type="Node3D" parent="." unique_id=315327226]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot469" unique_id=293594934 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot470" type="Node3D" parent="." unique_id=1306839574]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot470" unique_id=366571615 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot471" type="Node3D" parent="." unique_id=1701502400]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 3.9232283)
+
+[node name="Grass_leaf_large_pivot" parent="pivot471" unique_id=1578154273 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot472" type="Node3D" parent="." unique_id=883377851]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 4.4072623)
+
+[node name="Grass_leaf_large_pivot" parent="pivot472" unique_id=307635409 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot473" type="Node3D" parent="." unique_id=308831208]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot473" unique_id=2024904030 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot474" type="Node3D" parent="." unique_id=439131114]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot474" unique_id=1411378535 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot475" type="Node3D" parent="." unique_id=87201987]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot475" unique_id=1582595034 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot476" type="Node3D" parent="." unique_id=1177032956]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot476" unique_id=828799260 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot477" type="Node3D" parent="." unique_id=1683202190]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot477" unique_id=775212277 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot478" type="Node3D" parent="." unique_id=422209514]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot478" unique_id=304872504 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot479" type="Node3D" parent="." unique_id=1715500922]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 4.9012003)
+
+[node name="Grass_leaf_large_pivot" parent="pivot479" unique_id=894129690 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot480" type="Node3D" parent="." unique_id=983789113]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 5.3852344)
+
+[node name="Grass_leaf_large_pivot" parent="pivot480" unique_id=1943247327 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot481" type="Node3D" parent="." unique_id=1205139306]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot481" unique_id=2031686935 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot482" type="Node3D" parent="." unique_id=890426161]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot482" unique_id=1144242324 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot483" type="Node3D" parent="." unique_id=967163622]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot483" unique_id=100844712 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot484" type="Node3D" parent="." unique_id=685955372]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot484" unique_id=1673787559 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot485" type="Node3D" parent="." unique_id=520361979]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot485" unique_id=836939935 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot486" type="Node3D" parent="." unique_id=746732716]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot486" unique_id=1560931448 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot487" type="Node3D" parent="." unique_id=1203739833]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot487" unique_id=239749983 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot488" type="Node3D" parent="." unique_id=1235870903]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot488" unique_id=641783086 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot489" type="Node3D" parent="." unique_id=105500408]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot489" unique_id=1989802448 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot490" type="Node3D" parent="." unique_id=1229204005]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 11.637032, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot490" unique_id=760851779 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot491" type="Node3D" parent="." unique_id=99777140]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot491" unique_id=485490590 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot492" type="Node3D" parent="." unique_id=3966358]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.1217985, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot492" unique_id=800331504 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot493" type="Node3D" parent="." unique_id=49481584]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot493" unique_id=626093086 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot494" type="Node3D" parent="." unique_id=1870111435]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 12.602389, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot494" unique_id=902327421 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot495" type="Node3D" parent="." unique_id=1531852276]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot495" unique_id=565478574 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot496" type="Node3D" parent="." unique_id=2070790718]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.087156, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot496" unique_id=962504716 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot497" type="Node3D" parent="." unique_id=1855627664]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot497" unique_id=1712146411 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot498" type="Node3D" parent="." unique_id=921725731]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot498" unique_id=859797609 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot499" type="Node3D" parent="." unique_id=1153378767]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot499" unique_id=1673971530 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot500" type="Node3D" parent="." unique_id=2031123405]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot500" unique_id=602427788 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot501" type="Node3D" parent="." unique_id=888091549]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot501" unique_id=1342070282 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot502" type="Node3D" parent="." unique_id=1596906351]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot502" unique_id=445848258 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot503" type="Node3D" parent="." unique_id=1331861693]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 5.8899508)
+
+[node name="Grass_leaf_large_pivot" parent="pivot503" unique_id=897071386 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot504" type="Node3D" parent="." unique_id=306122975]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 6.373985)
+
+[node name="Grass_leaf_large_pivot" parent="pivot504" unique_id=1877306393 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot505" type="Node3D" parent="." unique_id=916157032]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot505" unique_id=422051325 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot506" type="Node3D" parent="." unique_id=575302236]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 13.576103, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot506" unique_id=518895611 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot507" type="Node3D" parent="." unique_id=515380873]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot507" unique_id=294167995 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot508" type="Node3D" parent="." unique_id=1435897519]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.06087, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot508" unique_id=606818728 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot509" type="Node3D" parent="." unique_id=2129512962]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot509" unique_id=2696607 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot510" type="Node3D" parent="." unique_id=1531742046]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 14.541462, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot510" unique_id=955252624 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot511" type="Node3D" parent="." unique_id=1970242787]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 6.867923)
+
+[node name="Grass_leaf_large_pivot" parent="pivot511" unique_id=315696763 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="pivot512" type="Node3D" parent="." unique_id=889788303]
+transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 15.026228, -0.05, 7.351957)
+
+[node name="Grass_leaf_large_pivot" parent="pivot512" unique_id=1848968867 instance=ExtResource("1_e7vks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
