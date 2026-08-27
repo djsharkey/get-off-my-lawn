@@ -4,9 +4,6 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 @export var rotation_speed: float = TAU * 2
 var equipped_item: Item
-@onready var camera_rig: Node3D = $"../CameraRig"
-@onready var player: CharacterBody3D = $"."
-@onready var old_man: CharacterBody3D = $"../OldMan"
 
 @onready var player_model: Node3D = $Model
 
@@ -39,10 +36,13 @@ func _physics_process(delta):
 		equipped_item.grab_item(self)
 
 	if Input.is_action_just_pressed("debug_focus_oldman"):
-		camera_rig.focus_on(old_man)
+		%CameraRig.focus_on(%OldMan)
 
 	if Input.is_action_just_pressed("debug_focus_player"):
-		camera_rig.focus_on(player)
+		%CameraRig.focus_on(%Player)
+
+	if Input.is_action_just_pressed("complete_task"):
+		%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1) 
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
