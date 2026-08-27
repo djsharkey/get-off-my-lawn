@@ -3,14 +3,11 @@ extends Node3D
 @export var default_speed := 4.0
 @export var transition_speed := 2.0
 
-@onready var player := $"../Player"
-@onready var old_man := $"../OldMan"
-
 var target: CharacterBody3D
 var is_transition := false
 
 func _ready() -> void:
-	target = player
+	target = %Player
 
 func _physics_process(delta: float) -> void:
 	var desired_pos := target.global_position
