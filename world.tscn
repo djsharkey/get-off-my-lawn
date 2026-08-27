@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://bk0mxc0k4b1nx"]
 
+[ext_resource type="Script" uid="uid://b3xkm4gs5jinw" path="res://world.gd" id="1_036b0"]
 [ext_resource type="PackedScene" uid="uid://yj0kxcgigs0s" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="1_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://b5gcgdsohlixh" path="res://old_man.tscn" id="2_fj7yv"]
+[ext_resource type="Script" uid="uid://di35m5mqby708" path="res://distraction.gd" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://0w7lu2waantm" path="res://scenes/tractor_beam/tractor_beam.tscn" id="6_dwbse"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -48,6 +51,7 @@ size = Vector3(2, 3, 2)
 size = Vector3(2, 3, 2)
 
 [node name="World" type="Node3D" unique_id=198200431]
+script = ExtResource("1_036b0")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1300189680]
 environment = SubResource("Environment_fj7yv")
@@ -84,6 +88,9 @@ shape = SubResource("WorldBoundaryShape3D_ti2nx")
 [node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("1_tlwt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -16.4)
 
+[node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.782557)
+
 [node name="House" type="MeshInstance3D" parent="." unique_id=811425483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -10.9732)
 mesh = SubResource("BoxMesh_dunvj")
@@ -106,4 +113,28 @@ shape = SubResource("BoxShape3D_036b0")
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
 
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7828107, 1.1, -17.181734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.625526, 1.1, -17.181734)
+
+[node name="Distraction_Parent" type="Node3D" parent="." unique_id=1764872477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.742409, 0, -25.132105)
+
+[node name="Distraction" type="Node3D" parent="Distraction_Parent" unique_id=200227559]
+script = ExtResource("4_aqk2v")
+
+[node name="ToggleMockDistraction" type="Control" parent="." unique_id=1691881615]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ToggleMockDistraction" unique_id=1192996948]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "TOGGLE THAT ONE DISTRACTION"
+
+[node name="TractorBeam" parent="." unique_id=1667081487 instance=ExtResource("6_dwbse")]
+visible = false
+
+[connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]

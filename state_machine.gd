@@ -38,8 +38,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if current_state:
 		current_state.handle_input(event)
 
-func transition_to_state():
-	pass
+func transition_to_state(new_state: String):
+	on_child_transition(new_state)
 
 ## Changes execution flow from the current state to a target state.
 func on_child_transition(new_state_name: String) -> void:
