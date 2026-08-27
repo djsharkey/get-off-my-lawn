@@ -1,7 +1,5 @@
 extends CanvasLayer
 
-@onready var prompt_label: Label = $PromptLabel
-
 func _ready() -> void:
 	visible = false
 
