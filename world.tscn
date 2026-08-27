@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://yj0kxcgigs0s" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="1_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://b5gcgdsohlixh" path="res://old_man.tscn" id="2_fj7yv"]
+[ext_resource type="Script" uid="uid://chb2ciuxx1da5" path="res://camera_rig.gd" id="3_036b0"]
 [ext_resource type="Script" uid="uid://di35m5mqby708" path="res://distraction.gd" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://0w7lu2waantm" path="res://scenes/tractor_beam/tractor_beam.tscn" id="6_dwbse"]
 
@@ -88,6 +89,9 @@ shape = SubResource("WorldBoundaryShape3D_ti2nx")
 [node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("1_tlwt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -16.4)
 
+[node name="Dirt2" type="Node3D" parent="FlowerBed" unique_id=418058126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007, 0, 0)
+
 [node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.782557)
 
@@ -108,6 +112,15 @@ mesh = SubResource("BoxMesh_fj7yv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shed/StaticBody3D" unique_id=753760366]
 shape = SubResource("BoxShape3D_036b0")
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=1682353331]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
+top_level = true
+script = ExtResource("3_036b0")
+
+[node name="Camera" type="Camera3D" parent="CameraRig" unique_id=509787415]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 3.5, 3.5)
+current = true
 
 [node name="Player" parent="." unique_id=198881104 instance=ExtResource("1_f3sb7")]
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
