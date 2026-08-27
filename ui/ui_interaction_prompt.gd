@@ -5,7 +5,6 @@ func _ready() -> void:
 
 
 func show_prompt(text: String) -> void:
-	prompt_label.text = text
 	visible =true
 
 
