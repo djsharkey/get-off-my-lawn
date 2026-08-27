@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://0xg7405rywij" path="res://scenes/yard.tscn" id="1_paxxb"]
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="2_gldc4"]
+[ext_resource type="PackedScene" uid="uid://2hgcrpnvgq6u" path="res://models/kenneyAssets/retro_urban_kit/wall-b-window.glb" id="3_gldc4"]
+[ext_resource type="PackedScene" uid="uid://wblx388qeyjk" path="res://models/kenneyAssets/retro_urban_kit/wall-b.glb" id="4_0cso3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3sb7"]
 albedo_color = Color(0.26833647, 0.49269694, 1.92523e-07, 1)
@@ -15,17 +17,23 @@ size = Vector3(64, 0.1, 64)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ti2nx"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
-albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cso3"]
+transparency = 1
+albedo_color = Color(0, 0.9019608, 0.91764706, 0.18039216)
 metallic = 0.25
 roughness = 0.75
 
 [sub_resource type="BoxMesh" id="BoxMesh_dunvj"]
-material = SubResource("StandardMaterial3D_fj7yv")
+material = SubResource("StandardMaterial3D_0cso3")
 size = Vector3(10, 5, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aqk2v"]
 size = Vector3(10, 5, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
+albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
+metallic = 0.25
+roughness = 0.75
 
 [sub_resource type="BoxMesh" id="BoxMesh_fj7yv"]
 material = SubResource("StandardMaterial3D_fj7yv")
@@ -97,3 +105,9 @@ mesh = SubResource("BoxMesh_aqk2v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="compost_bin2/StaticBody3D" unique_id=346754708]
 shape = SubResource("BoxShape3D_036b0")
+
+[node name="wall-b-window2" parent="." unique_id=1097026405 instance=ExtResource("3_gldc4")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.4802756, -0.05000305, -8.176201)
+
+[node name="wall-b2" parent="." unique_id=1132795467 instance=ExtResource("4_0cso3")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.4876451, -0.050002098, -5.1510663)
