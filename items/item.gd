@@ -10,7 +10,7 @@ extends Area3D
 @export var required_hold_duration: float = 0
 var _original_parent: Node3D
 var player_near: bool = false
-var pickup_cooldown_duration: float= 2
+var pickup_cooldown_duration: float = 2
 
 @onready var interactable: Interactable = $Interactable
 
@@ -26,6 +26,7 @@ func _on_body_entered(body: Node3D) ->  void:
 
 	player_near = true
 	grab_item(body)
+	EventBus.player_detected.emit()
 
 
 func _on_body_exited(body: Node3D) ->  void:
