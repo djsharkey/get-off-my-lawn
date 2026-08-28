@@ -1,9 +1,10 @@
-[gd_scene format=3 uid="uid://dfcg03u1y5mi8"]
+[gd_scene format=4 uid="uid://dfcg03u1y5mi8"]
 
-[ext_resource type="ArrayMesh" uid="uid://b6rigc0lmdgy3" path="res://models/kenneyAssets/city_kit_suburban/meshes/house_6.res" id="1_bsta0"]
-[ext_resource type="ArrayMesh" uid="uid://blh60i2ksfeap" path="res://models/kenneyAssets/building_kit/meshes/barricade_doorway-3.res" id="2_5yws8"]
-[ext_resource type="ArrayMesh" uid="uid://dfyc5mxe0lvfg" path="res://models/kenneyAssets/building_kit/meshes/barricade-window-2.res" id="3_pdjgs"]
-[ext_resource type="ArrayMesh" uid="uid://cweoij0ahbq4a" path="res://models/kenneyAssets/building_kit/meshes/barricade-window-1.res" id="4_feexx"]
+[ext_resource type="ArrayMesh" uid="uid://c30mw0ui4bllf" path="res://models/kenneyAssets/city_kit_suburban/meshes/house_6.res" id="1_bsta0"]
+[ext_resource type="ArrayMesh" uid="uid://ck6k5e01nx4le" path="res://models/kenneyAssets/building_kit/meshes/barricade_doorway-3.res" id="2_5yws8"]
+[ext_resource type="ArrayMesh" uid="uid://1mcodrw4086s" path="res://models/kenneyAssets/building_kit/meshes/barricade-window-2.res" id="3_pdjgs"]
+[ext_resource type="ArrayMesh" uid="uid://crroel2nety63" path="res://models/kenneyAssets/building_kit/meshes/barricade-window-1.res" id="4_feexx"]
+[ext_resource type="PackedScene" uid="uid://b26kxy735y7rt" path="res://scenes/plants/hedge_overgrowth.tscn" id="5_yxp34"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
 size = Vector3(0.8253174, 0.41357422, 0.397789)
@@ -16,6 +17,45 @@ size = Vector3(0.032478333, 0.33483887, 0.032333374)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pdjgs"]
 size = Vector3(0.15284777, 0.048568726, 0.80344963)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_feexx"]
+resource_name = "grass"
+albedo_color = Color(0.80670613, 0.8971989, 0.37425575, 1)
+metallic = 0.45
+rim = 0.85
+rim_tint = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pix1t"]
+_surfaces = [{
+"aabb": AABB(-0.0799168, 0, 0.465, 0.1598336, 0.4784801, 0.034999996),
+"format": 34896613377,
+"index_count": 156,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAwAEAAEABQADAAAABAADAAUAAQAEAAYABQAGAAQAAgABAAYAAAAHAAUAAgAHAAAACAAFAAcACQAFAAgACgAIAAcACQAIAAoABQAJAAsABQALAAYADAAJAAoACwAJAAwADQAKAAcABwACAA0ACgAOAAwADwAOAAoACgANAA8ADAAOAA8ADwAQAAwADwANABEAEQAQAA8ADAAQABEADQACABEAEQASAAwAEgALAAwAAgATABEAFAASABEAEQATABQACwASABQAAgAVABMAFAATABUAAgAWABUAFAAXAAsAAgAGABYACwAXABgAGAAXABQACwAYAAYAFQAZABQAGQAYABQAFQAWABoAGgAZABUAGgAWAAYAGAAZABoABgAbABoAGgAbABgAGAAbAAYA"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("AAAnz0iSAAAAACfP//8AAPwii7H//wAAAAD//0iSAAAAAP////8AAPwi//9IkgAA////////AAD8IouxSJIAAPwi//8AAAAAbHj//wAAAAD8IpwdAAAAAGx4//8kSQAAbHgAAAAAAAD8Ipwd//8AAPhFAAAAAAAA+EUAAP//AABseAAA//8AAGx4ZFL//wAAbHhkUiRJAAA1vFRb//8AADW8VFskSQAANby+nv//AAD//62n//8AADW8//8kSQAANbz//0iSAAA1vL6eSJIAAP//radIkgAA/////0iSAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_30g3h"]
+resource_name = "hanging_moss_Mesh hanging_moss"
+_surfaces = [{
+"aabb": AABB(-0.0799168, 0, 0.465, 0.1598336, 0.4784801, 0.034999996),
+"attribute_data": PackedByteArray("J/xMJ///TCf//8s1J/zLNdcD1TkAANU5AACeEdcDnhEn/J4R//+eEf//2ycn/NsnCfeeESf8nhEn/Fc1CfezeP//s3j//1c1dJTbJ92OVzXdjp4RdJSeEdcDC1jXAyFjAAAhYwAAC1j1CC+GAAAvhgAAq2BmBqtgZgaeEfUInhEJ93N0//9zdP//8oIJ9/KCZgaZXAAAmVwAAOc91wPnPdcDnhFmBp4RyX6rYMl+L4a5di+GIXGzeCFxVzWfiZlcn4nnPXSU1Tl0lJ4RimvbJ4prnhHdjrN4RYkvhjWBL4Y1gZ4R3Y6eETWBnhE1gatgX3aZXF92nhGKa///imtX/CFxV/x0lP//yX549yFxePfJfuf5n4lX/HSUV/yfief5ZgZmbmYGe3kAAHt5AABmbjWBePdFiXj3RYn//zWB//9fdp4RX3bnPYpr1TmKa54R"),
+"format": 34896613399,
+"index_count": 156,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADwAMAA4AEAAPAA4ADgARABAAEgATABQAFAAVABIAFgAXABgAGAAZABYAGgAbABwAHAAdABoAHQAeABoAHgAfABoAIAAhACIAIgAjACAAJAAlACYAJgAnACQAJwAoACQAKAApACQAKgArACwALAAtACoALQAuACoALgAvACoALgAwAC8ALgAxADAALgAyADEALgAzADIAMwA0ADIANQA2ADcANwA4ADUAOAA5ADUAOgA7ADwAPAA9ADoAPgA/AEAAQABBAD4AQgBAAEMAQABCAEQAQABEAEEARABFAEEARQBGAEEARABHAEUASABJAEoASgBLAEgATABNAE4ATgBPAEwAUABRAFIAUgBTAFAA"),
+"material": SubResource("StandardMaterial3D_feexx"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 41.37008, 0, 0),
+"vertex_count": 84,
+"vertex_data": PackedByteArray("AAAnz0iSa8EAACfP//9rwfwii7H//2vB/CKLsUiSa8H//62nSJL/v///raf///+//////////7//////SJL/vwAA//9Ikv+/AAD//////78AACfP////vwAAJ89Ikv+//CL//wAA/7/8Iv//SJL/v/wii7FIkv+//CKcHQAA/7/8Ipwd////v/wii7H///+/AAAnz0iS///8IouxSJL///wi//9Ikv//AAD//0iS/////62nSJIdzTW8vp5Ikh3NNby+nv//Hc3//62n//8dzWx4AAAAAP+/bHgAAP///79seGRS////v2x4ZFIkSf+/bHj//yRJ/79seP//AAD/v/winB0AAGvB/CKcHf//a8H4RQAA//9rwfhFAAAAAGvBNbxUWyRJ/781vFRb////vzW8vp7///+/Nby+nkiS/781vP//SJL/vzW8//8kSf+/bHhkUv//AIBseAAA//8AgPhFAAD//wCA/CKcHf//AID8Ioux//8AgDW8VFv//wCANby+nv//AID//62n//8AgP///////wCAAAAnz///AIAAAP////8AgPwinB0AAP//+EUAAAAA//9seAAAAAD//2x4//8AAP///CL//wAA//9seP//JEn//2x4ZFIkSf//NbxUWyRJ//81vP//JEn//wAA//////+/AAD//0iS/7/8Iv//SJL/v/////////+/bHj//wAA/7/8Iv//AAD/v2x4//8kSf+/Nbz//0iS/7//////SJL/vzW8//8kSf+/NbxUWyRJHc1seGRSJEkdzWx4ZFL//x3NNbxUW///Hc1seAAAAAD///hFAAAAAP//+EUAAP////9seAAA/////zW8//9Ikv//Nby+nkiS/////62nSJL///////9Ikv//uVxc7rlcXO65XFzuuVxc7v9/AAD/fwAA/38AAP9/AAD/f////3////9/////f////3////9/////f/7//3////9/////f////3/+//9//v//f////3///xtbx0kbW8dJG1vHSRtbx0n/fwAA/38AAP9/AAD/fwAA/38AAP9/AAC5XFzuuVxc7rlcXO65XFzu/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f/7//3/+//9///////9/////f////3////9/////f////3////9//v//f////3////9/G1vHSRtbx0kbW8dJG1vHSf9//z//f/8//3//P/9//z//f////3/+//9//v//f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pix1t")
 
 [node name="House6" type="MeshInstance3D" unique_id=1733043793]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
@@ -51,10 +91,6 @@ shape = SubResource("BoxShape3D_5yws8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63752717, 0.024284363, 0.24378602)
 shape = SubResource("BoxShape3D_pdjgs")
 
-[node name="BarricadeDoorway3" type="MeshInstance3D" parent="StaticBody3D" unique_id=1813273802]
-transform = Transform3D(-4.371139e-09, 0, 0.15, 0, 0.155, 0, -0.1, 0, -6.5567085e-09, 0.06248641, 0.11133647, 0.6636929)
-mesh = ExtResource("2_5yws8")
-
 [node name="BarricadeWindow2" type="MeshInstance3D" parent="." unique_id=1074033070]
 transform = Transform3D(-4.371139e-09, 0, -0.23, 0, 0.155, 0, 0.1, 0, -1.0053619e-08, 0.45452482, 0.11189748, -0.5744068)
 mesh = ExtResource("3_pdjgs")
@@ -62,3 +98,26 @@ mesh = ExtResource("3_pdjgs")
 [node name="BarricadeWindow1" type="MeshInstance3D" parent="." unique_id=1902417754]
 transform = Transform3D(-0.1, 0, -3.3974057e-08, 0, 0.15, 0, 1.509958e-08, 0, -0.22500001, 0.6763602, 0.12199439, 0.045824897)
 mesh = ExtResource("4_feexx")
+
+[node name="BarricadeDoorway3" type="MeshInstance3D" parent="." unique_id=1813273802]
+transform = Transform3D(-4.371139e-09, 0, 0.15, 0, 0.155, 0, -0.1, 0, -6.5567085e-09, 0.06248641, 0.11133647, 0.6636929)
+mesh = ExtResource("2_5yws8")
+
+[node name="HangingMoss" type="MeshInstance3D" parent="." unique_id=681540343]
+transform = Transform3D(-3.6061895e-08, 0, -0.825, 0, 0.825, 0, 0.825, 0, -3.6061895e-08, 1.0711592, 0.052115656, -0.40123436)
+mesh = SubResource("ArrayMesh_30g3h")
+
+[node name="GrassLarge" parent="." unique_id=583287862 instance=ExtResource("5_yxp34")]
+transform = Transform3D(0.25, 0, 0, 0, 1.08, 0, 0, 0, 0.25, -0.6165691, 0.023135578, -0.05135248)
+
+[node name="GrassLarge5" parent="." unique_id=1430669050 instance=ExtResource("5_yxp34")]
+transform = Transform3D(0.25, 0, 0, 0, 1.08, 0, 0, 0, 0.25, -0.6165691, 0.023135578, 0.54948044)
+
+[node name="GrassLarge3" parent="." unique_id=60706650 instance=ExtResource("5_yxp34")]
+transform = Transform3D(0.25, 0, 0, 0, 1.08, 0, 0, 0, 0.25, -0.6165691, 0.023135578, 0.24837516)
+
+[node name="GrassLarge4" parent="." unique_id=1774219941 instance=ExtResource("5_yxp34")]
+transform = Transform3D(0.25, 0, 0, 0, 1.08, 0, 0, 0, 0.25, -0.6165691, 0.0024962784, 0.3983889)
+
+[node name="GrassLarge2" parent="." unique_id=476936664 instance=ExtResource("5_yxp34")]
+transform = Transform3D(0.25, 0, 0, 0, 1.08, 0, 0, 0, 0.25, -0.6165691, -0.0021811367, 0.09702746)

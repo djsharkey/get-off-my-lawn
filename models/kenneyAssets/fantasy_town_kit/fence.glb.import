@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cfidrpe730c68"
-path="res://.godot/imported/hedge-large.glb-504eb75d1c12af60cbaf94fad9428b7c.scn"
+uid="uid://ce6rw3nqwl158"
+path="res://.godot/imported/fence.glb-06e051a3d1fc5bf8a95146e9e213292c.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/fantasy_hedge/hedge-large.glb"
-dest_files=["res://.godot/imported/hedge-large.glb-504eb75d1c12af60cbaf94fad9428b7c.scn"]
+source_file="res://models/kenneyAssets/fantasy_town_kit/fence.glb"
+dest_files=["res://.godot/imported/fence.glb-06e051a3d1fc5bf8a95146e9e213292c.scn"]
 
 [params]
 
@@ -39,7 +39,19 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"meshes": {
+"fence_fence": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/kenneyAssets/fantasy_town_kit/meshes/fence.res",
+"save_to_file/path": "uid://3a57dfvj0xdp"
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1

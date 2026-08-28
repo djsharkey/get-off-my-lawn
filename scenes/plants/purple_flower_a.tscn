@@ -6,7 +6,7 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_04vrx"]
 radius = 1.0
 
-[node name="purple_flower" type="Node3D" unique_id=271173687]
+[node name="purple_flower_a" type="Node3D" unique_id=271173687]
 script = ExtResource("1_82ldw")
 
 [node name="plant" type="MeshInstance3D" parent="." unique_id=1908428538]

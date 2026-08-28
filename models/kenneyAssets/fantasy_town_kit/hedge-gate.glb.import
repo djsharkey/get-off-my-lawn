@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dws10gpp0p5is"
-path="res://.godot/imported/hedge-gate.glb-cdce11799574216589ab12f261599050.scn"
+path="res://.godot/imported/hedge-gate.glb-8fa4eb203fb9a71e83bb61e52072cb34.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/fantasy_hedge/hedge-gate.glb"
-dest_files=["res://.godot/imported/hedge-gate.glb-cdce11799574216589ab12f261599050.scn"]
+source_file="res://models/kenneyAssets/fantasy_town_kit/hedge-gate.glb"
+dest_files=["res://.godot/imported/hedge-gate.glb-8fa4eb203fb9a71e83bb61e52072cb34.scn"]
 
 [params]
 

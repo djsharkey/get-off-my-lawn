@@ -4,8 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://0xg7405rywij" path="res://scenes/yard.tscn" id="1_paxxb"]
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="2_gldc4"]
 [ext_resource type="PackedScene" uid="uid://dfcg03u1y5mi8" path="res://scenes/house_6.tscn" id="4_2klcf"]
+[ext_resource type="PackedScene" uid="uid://bxbkim3dep6xq" path="res://scenes/compost_bin.tscn" id="4_nakos"]
 [ext_resource type="PackedScene" uid="uid://dopjyy4woqxo3" path="res://models/kenneyAssets/city_kit_suburban/fence-3x3.glb" id="6_nakos"]
 [ext_resource type="PackedScene" uid="uid://1m47qsitac3c" path="res://scenes/props/fence_single.tscn" id="7_nakos"]
+[ext_resource type="PackedScene" uid="uid://dtpodsc38vtth" path="res://scenes/props/fence_bars.tscn" id="8_jh32y"]
+[ext_resource type="PackedScene" uid="uid://7xshc6ukpti" path="res://scenes/props/fence_bars_broken.tscn" id="9_be0no"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tjwjv"]
 material = ExtResource("1_2klcf")
@@ -25,11 +28,7 @@ material = SubResource("StandardMaterial3D_fj7yv")
 size = Vector3(2, 3, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
-size = Vector3(2, 3, 2)
-
-[sub_resource type="BoxMesh" id="BoxMesh_aqk2v"]
-material = SubResource("StandardMaterial3D_fj7yv")
-size = Vector3(0.44056702, 0.83825684, 0.47808838)
+size = Vector3(0.45092773, 1.0886841, 0.517334)
 
 [node name="Map" type="Node3D" unique_id=2135401696]
 
@@ -72,14 +71,8 @@ mesh = SubResource("BoxMesh_fj7yv")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shed2/StaticBody3D" unique_id=1748789698]
 shape = SubResource("BoxShape3D_036b0")
 
-[node name="compost_bin2" type="MeshInstance3D" parent="." unique_id=1720013409]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.511292, 0.41912842, -28.400515)
-mesh = SubResource("BoxMesh_aqk2v")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="compost_bin2" unique_id=1628002750]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="compost_bin2/StaticBody3D" unique_id=346754708]
-shape = SubResource("BoxShape3D_036b0")
+[node name="compost_bin" parent="." unique_id=1088562048 instance=ExtResource("4_nakos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.511292, 0.41912842, -29.733019)
 
 [node name="House6" parent="." unique_id=1733043793 instance=ExtResource("4_2klcf")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.01, -4.153)
@@ -143,3 +136,62 @@ transform = Transform3D(1, 0, -7.1054274e-15, 0, 1, 0, 7.1054274e-15, 0, 1, -0.3
 
 [node name="FenceSingle7" parent="CornerFence/FenceSingle4/FenceSingle5" unique_id=36643687 instance=ExtResource("7_nakos")]
 transform = Transform3D(-4.3711395e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711395e-08, -0.5997292, 0, -0.19980228)
+
+[node name="BarFence" type="Node3D" parent="." unique_id=819860335]
+
+[node name="fence_bars" parent="BarFence" unique_id=838264872 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -32.334415, 0, -27.0321)
+
+[node name="FenceBroken" parent="BarFence" unique_id=748792449 instance=ExtResource("9_be0no")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -29.546314, 0, -27.030586)
+
+[node name="FenceBroken2" parent="BarFence" unique_id=284937735 instance=ExtResource("9_be0no")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -12.859466, 0, -27.030586)
+
+[node name="fence_bars3" parent="BarFence" unique_id=1836862636 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -26.771204, 0, -27.0321)
+
+[node name="fence_bars4" parent="BarFence" unique_id=1156432542 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -23.985708, 0, -27.0321)
+
+[node name="fence_bars5" parent="BarFence" unique_id=1485787537 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -21.209373, 0, -27.0321)
+
+[node name="fence_bars6" parent="BarFence" unique_id=1389450277 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.423878, 0, -27.0321)
+
+[node name="fence_bars7" parent="BarFence" unique_id=1403068919 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -15.646161, 0, -27.0321)
+
+[node name="fence_bars15" parent="BarFence" unique_id=142008565 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -10.079911, 0, -27.0321)
+
+[node name="fence_bars2" parent="BarFence" unique_id=1452397562 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.823326, 0, -27.0321)
+
+[node name="FenceBroken3" parent="BarFence" unique_id=670955572 instance=ExtResource("9_be0no")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 15.611427, 0, -27.030586)
+
+[node name="FenceBroken4" parent="BarFence" unique_id=1622109666 instance=ExtResource("9_be0no")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 32.29828, 0, -27.030586)
+
+[node name="fence_bars8" parent="BarFence" unique_id=1422675318 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 18.386538, 0, -27.0321)
+
+[node name="fence_bars9" parent="BarFence" unique_id=489585190 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 21.172033, 0, -27.0321)
+
+[node name="fence_bars13" parent="BarFence" unique_id=2084123084 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 7.2619944, 0, -27.0321)
+
+[node name="fence_bars14" parent="BarFence" unique_id=1544321664 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 10.04749, 0, -27.0321)
+
+[node name="fence_bars10" parent="BarFence" unique_id=2023135048 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 23.948368, 0, -27.0321)
+
+[node name="fence_bars11" parent="BarFence" unique_id=2058752548 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 26.733864, 0, -27.0321)
+
+[node name="fence_bars12" parent="BarFence" unique_id=337383603 instance=ExtResource("8_jh32y")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 29.511581, 0, -27.0321)

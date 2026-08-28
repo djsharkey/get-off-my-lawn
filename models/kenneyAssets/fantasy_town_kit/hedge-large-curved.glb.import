@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cdg5pyn4mfxj3"
-path="res://.godot/imported/hedge-large-curved.glb-0e101d00a4e56d6fb66b47ffa4f25b6a.scn"
+path="res://.godot/imported/hedge-large-curved.glb-f95b524791d4c3cfa2062283da48f54a.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/fantasy_hedge/hedge-large-curved.glb"
-dest_files=["res://.godot/imported/hedge-large-curved.glb-0e101d00a4e56d6fb66b47ffa4f25b6a.scn"]
+source_file="res://models/kenneyAssets/fantasy_town_kit/hedge-large-curved.glb"
+dest_files=["res://.godot/imported/hedge-large-curved.glb-f95b524791d4c3cfa2062283da48f54a.scn"]
 
 [params]
 

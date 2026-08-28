@@ -48,10 +48,6 @@ size = Vector3(2, 3, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
 size = Vector3(2, 3, 2)
 
-[sub_resource type="BoxMesh" id="BoxMesh_aqk2v"]
-material = SubResource("StandardMaterial3D_fj7yv")
-size = Vector3(0.44056702, 0.83825684, 0.47808838)
-
 [node name="World" type="Node3D" unique_id=198200431]
 script = ExtResource("1_036b0")
 
@@ -159,21 +155,6 @@ text = "TOGGLE THAT ONE DISTRACTION"
 
 [node name="TractorBeam" parent="." unique_id=1667081487 instance=ExtResource("6_dwbse")]
 visible = false
-
-[node name="compost_bin" type="MeshInstance3D" parent="." unique_id=914098660]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.511292, 0.41912842, -28.400515)
-visible = false
-mesh = SubResource("BoxMesh_aqk2v")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="compost_bin" unique_id=799026919]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="compost_bin/StaticBody3D" unique_id=1617049801]
-shape = SubResource("BoxShape3D_036b0")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="compost_bin/StaticBody3D" unique_id=1390258199]
-shape = SubResource("BoxShape3D_036b0")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="compost_bin" unique_id=1121406137]
 
 [node name="Map" parent="." unique_id=2135401696 instance=ExtResource("10_wse8f")]
 

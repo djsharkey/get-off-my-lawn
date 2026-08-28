@@ -4,8 +4,8 @@ extends Node3D
 @export_category("Highlight Properties")
 @export var _scale_factor: float = 1.0
 @export var _glow_color: Color = Color(1.0, 0.95, 0.3)
-@export var _glow_intensity: float = 2.0
-@export var _glow_sharpness: float = 2.0
+@export var _glow_intensity: float = 5.0
+@export var _glow_sharpness: float = 1.5
 
 @onready var mesh: MeshInstance3D = $plant
 
