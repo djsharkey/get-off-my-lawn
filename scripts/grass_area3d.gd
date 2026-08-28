@@ -7,7 +7,7 @@ func _ready() -> void:
 
 
 func _on_grass_entered(body: Node3D) -> void:
-	print("someone's entered me lair!")
+	#print("someone's entered me lair!")
 	if body.name != "Player":
 		return
 	EventBus.emit_signal("grass_cut", self)
