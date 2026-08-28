@@ -17,4 +17,4 @@ func exit() -> void:
 		transition_timer.timeout.disconnect(_on_timer_timeout)
 
 func _on_timer_timeout() -> void:	
-	transitioned.emit("ReturnHomeState")
+	transitioned.emit("ReturnHomeState", {})
