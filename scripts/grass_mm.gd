@@ -39,18 +39,17 @@ func setup_triggers():
 		var grass_col_shape: CollisionShape3D = CollisionShape3D.new()
 		grass_col_shape.shape = g_shape
 		grass_area.add_child(grass_col_shape)
-		grass_area.set_script("res://scripts/grass_area3d.gd")
+		grass_area.set_script("res://scripts/grass_area3d.gd") # does not work this way
 		add_child(grass_area)
 		if !EventBus.grass_cut.is_connected(_on_cut_grass):
 			EventBus.grass_cut.connect(_on_cut_grass)
 		grass_area.global_transform = global_transform * multimesh.get_instance_transform(i)
 		
 		grass_dictionary.set(grass_area.get_instance_id(), i)
-		print(grass_area.get_script())
 
 
 func _on_cut_grass(grass_collider: Area3D):
-	var grass_idx: int = grass_dictionary[grass_collider.get_instance_id()]
+	var grass_idx: int = grass_dictionary.get(grass_collider.get_instance_id())
 	if grass_collider == null || grass_dictionary.size() < 1 || cut_set.has(grass_idx):
 		return
 	var grass_transform: Transform3D = multimesh.get_instance_transform(grass_idx)
