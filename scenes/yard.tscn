@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://0xg7405rywij"]
 
-[ext_resource type="Script" uid="uid://bd05kcipylukw" path="res://scripts/grass_colliders.gd" id="1_e3kx7"]
 [ext_resource type="ArrayMesh" uid="uid://cka5gjjonk42j" path="res://models/kenneyAssets/nature/meshes/grass_leafs_large.res" id="1_e7vks"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ot21c"]
@@ -25,7 +24,6 @@ mesh = SubResource("PlaneMesh_ot21c")
 [node name="TallGrass" type="MultiMeshInstance3D" parent="." unique_id=1475808762]
 transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, 0, 0)
 multimesh = SubResource("MultiMesh_e7vks")
-script = ExtResource("1_e3kx7")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=168814080]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.829495, 0.7207196, 4.096613)
