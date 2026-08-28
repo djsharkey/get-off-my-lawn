@@ -40,7 +40,8 @@ func _init(
 	
 	outline_object = MeshInstance3D.new()
 	outline_object.mesh = mesh_object.mesh
-	outline_object.set_surface_override_material(0, outline_material)
+	for i in range(outline_object.get_surface_override_material_count()):
+		outline_object.set_surface_override_material(i, outline_material)
 	outline_object.scale = Vector3.ONE * _scale_factor
 
 
