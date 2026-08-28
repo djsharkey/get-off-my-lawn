@@ -193,6 +193,11 @@ mesh = SubResource("BoxMesh_aqk2v")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="compost_bin/StaticBody3D" unique_id=1617049801]
 shape = SubResource("BoxShape3D_036b0")
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="compost_bin/StaticBody3D" unique_id=1390258199]
+shape = SubResource("BoxShape3D_036b0")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="compost_bin" unique_id=1121406137]
+
 [node name="Map" parent="." unique_id=2135401696 instance=ExtResource("10_wse8f")]
 
 [connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]
