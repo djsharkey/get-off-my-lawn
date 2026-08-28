@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="2_gldc4"]
 [ext_resource type="PackedScene" uid="uid://dfcg03u1y5mi8" path="res://scenes/house_6.tscn" id="4_2klcf"]
 [ext_resource type="ArrayMesh" uid="uid://cka5gjjonk42j" path="res://models/kenneyAssets/nature/meshes/grass_leafs_large.res" id="5_2lpho"]
+[ext_resource type="Script" uid="uid://bd05kcipylukw" path="res://scripts/grass_colliders.gd" id="6_jh32y"]
 [ext_resource type="PackedScene" uid="uid://dopjyy4woqxo3" path="res://models/kenneyAssets/city_kit_suburban/fence-3x3.glb" id="6_nakos"]
 [ext_resource type="PackedScene" uid="uid://1m47qsitac3c" path="res://scenes/props/fence_single.tscn" id="7_nakos"]
 
@@ -12,8 +13,7 @@
 material = ExtResource("1_2klcf")
 size = Vector2(67.645, 64)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_tlwt5"]
-size = Vector3(64, 0.1, 64)
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_nwts5"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ti2nx"]
 
@@ -47,14 +47,14 @@ mesh = SubResource("PlaneMesh_tjwjv")
 [node name="StaticBody3D" type="StaticBody3D" parent="Ground2" unique_id=1065622656]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=1461594152]
-shape = SubResource("BoxShape3D_tlwt5")
+shape = SubResource("WorldBoundaryShape3D_nwts5")
 
 [node name="BoundryX+" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=825878033]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 32, 0, 0)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 33.8, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
 [node name="BoundryX-" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=6687881]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -32, 0, 0)
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -33.866177, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
 [node name="BoundryZ+" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=1529235941]
@@ -90,11 +90,12 @@ mesh = SubResource("BoxMesh_aqk2v")
 shape = SubResource("BoxShape3D_036b0")
 
 [node name="House6" parent="." unique_id=1733043793 instance=ExtResource("4_2klcf")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -4.152889)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.01, -4.153)
 
 [node name="RandomGrass" type="MultiMeshInstance3D" parent="." unique_id=739302803]
-transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 1, 0, 0, 0)
 multimesh = SubResource("MultiMesh_nakos")
+script = ExtResource("6_jh32y")
 
 [node name="fence-3x32" parent="." unique_id=32276371 instance=ExtResource("6_nakos")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.5187123, -0.034824133, 8.392857)
