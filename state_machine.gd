@@ -4,8 +4,8 @@ extends Node
 ## The state node that will run automatically when the game starts.
 @export var initial_state: State
 
-## Tracks the state that is currently running.
 var current_state: State
+var previous_state: State
 ## Dictionary to dynamically store reference paths to child state nodes.
 var states: Dictionary = {}
 
@@ -38,15 +38,20 @@ func _unhandled_input(event: InputEvent) -> void:
 	if current_state:
 		current_state.handle_input(event)
 
-func transition_to_state(new_state: String):
-	on_child_transition(new_state)
+func transition_to_state(new_state_name: String, data: Dictionary):
+	on_child_transition(new_state_name, data)
+	
+func transition_to_previous_state():
+	if previous_state:
+		on_child_transition(previous_state.name, previous_state.data)
 
 ## Changes execution flow from the current state to a target state.
-func on_child_transition(new_state_name: String) -> void:
+func on_child_transition(new_state_name: String, data: Dictionary) -> void:
 	var target_state = states.get(new_state_name.to_lower())
 	if not target_state or target_state == current_state:
 		return
 		
 	current_state.exit()
-	target_state.enter()
+	target_state.enter(data)
+	previous_state = current_state
 	current_state = target_state
