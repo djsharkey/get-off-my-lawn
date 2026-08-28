@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbpx1us75f4uo"
-path="res://.godot/imported/grass_large.glb-3db2689dc4d4caa866395e63cf0fb2c5.scn"
+uid="uid://isdqsbn6266h"
+path="res://.godot/imported/flower_yellowB.glb-a3b83e69121096dd2c7ce17bfa92fc85.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/nature/grass_large.glb"
-dest_files=["res://.godot/imported/grass_large.glb-3db2689dc4d4caa866395e63cf0fb2c5.scn"]
+source_file="res://models/kenneyAssets/nature/flower_yellowB.glb"
+dest_files=["res://.godot/imported/flower_yellowB.glb-a3b83e69121096dd2c7ce17bfa92fc85.scn"]
 
 [params]
 
@@ -39,19 +39,7 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"meshes": {
-"grass_large_Mesh grass_large": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://models/kenneyAssets/nature/meshes/grass_large.res",
-"save_to_file/path": "uid://cfisoy2i5each"
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1

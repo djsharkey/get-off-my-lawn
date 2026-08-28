@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://l6mbtpyxvlkv"
-path="res://.godot/imported/hedge.glb-c40dd3f351619eaa2543e7d50214925e.scn"
+uid="uid://cmhn5yk4ibokm"
+path="res://.godot/imported/plant_bushLarge.glb-dd7b1e14f3b4f5a41ac49c2bbaff19b3.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/fantasy_hedge/hedge.glb"
-dest_files=["res://.godot/imported/hedge.glb-c40dd3f351619eaa2543e7d50214925e.scn"]
+source_file="res://models/kenneyAssets/nature/plant_bushLarge.glb"
+dest_files=["res://.godot/imported/plant_bushLarge.glb-dd7b1e14f3b4f5a41ac49c2bbaff19b3.scn"]
 
 [params]
 

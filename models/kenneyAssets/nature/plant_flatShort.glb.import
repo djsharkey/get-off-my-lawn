@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cdg5pyn4mfxj3"
-path="res://.godot/imported/hedge-large-curved.glb-0e101d00a4e56d6fb66b47ffa4f25b6a.scn"
+uid="uid://cp1tdcm2t6rvb"
+path="res://.godot/imported/plant_flatShort.glb-d8d923651edd3d5d7d2dfdb702cdad61.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/fantasy_hedge/hedge-large-curved.glb"
-dest_files=["res://.godot/imported/hedge-large-curved.glb-0e101d00a4e56d6fb66b47ffa4f25b6a.scn"]
+source_file="res://models/kenneyAssets/nature/plant_flatShort.glb"
+dest_files=["res://.godot/imported/plant_flatShort.glb-d8d923651edd3d5d7d2dfdb702cdad61.scn"]
 
 [params]
 
@@ -39,7 +39,19 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"meshes": {
+"plant_flatShort_Mesh plant_flatShort": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://models/kenneyAssets/nature/meshes/plant_flatshort.res",
+"save_to_file/path": "uid://qfqlfnkcv0uj"
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1

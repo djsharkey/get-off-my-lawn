@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dpdq31lu753nj"]
+
+[ext_resource type="Script" uid="uid://cucvcafnoknbr" path="res://scripts/weed.gd" id="1_nfx6u"]
+[ext_resource type="ArrayMesh" uid="uid://qfqlfnkcv0uj" path="res://models/kenneyAssets/nature/meshes/plant_flatshort.res" id="2_y85bc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_04vrx"]
+radius = 1.0
+
+[node name="SpikeWeed" type="Node3D" unique_id=271173687]
+script = ExtResource("1_nfx6u")
+
+[node name="plant" type="MeshInstance3D" parent="." unique_id=1908428538]
+mesh = ExtResource("2_y85bc")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1428036240]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1082078124]
+shape = SubResource("SphereShape3D_04vrx")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

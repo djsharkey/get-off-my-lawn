@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbpx1us75f4uo"
-path="res://.godot/imported/grass_large.glb-3db2689dc4d4caa866395e63cf0fb2c5.scn"
+uid="uid://bts8l5a0ddl0w"
+path="res://.godot/imported/plant_bush.glb-82a00a494d06259c7ed1aaf17db997f8.scn"
 
 [deps]
 
-source_file="res://models/kenneyAssets/nature/grass_large.glb"
-dest_files=["res://.godot/imported/grass_large.glb-3db2689dc4d4caa866395e63cf0fb2c5.scn"]
+source_file="res://models/kenneyAssets/nature/plant_bush.glb"
+dest_files=["res://.godot/imported/plant_bush.glb-82a00a494d06259c7ed1aaf17db997f8.scn"]
 
 [params]
 
@@ -41,14 +41,14 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "meshes": {
-"grass_large_Mesh grass_large": {
+"plant_bush_Mesh plant_bush": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://models/kenneyAssets/nature/meshes/grass_large.res",
-"save_to_file/path": "uid://cfisoy2i5each"
+"save_to_file/fallback_path": "res://models/kenneyAssets/nature/meshes/plant_bush_mesh.res",
+"save_to_file/path": "uid://yufnot3uvwbw"
 }
 }
 }
