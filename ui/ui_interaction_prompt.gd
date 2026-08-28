@@ -9,21 +9,28 @@ func _ready() -> void:
 	if active_texture == null:
 		if !prompt_input_textures.is_empty():
 			_update_prompt_texture(prompt_input_textures[0])
-			return
 		else:
 			print("Missing textures for input prompts!")
 
-	EventBus.player_detected.connect(_on_player_detected)
+	EventBus.interactable_selected.connect(_on_interactable_selected)
+	EventBus.item_grabbed.connect(_on_item_grabbed)
 
-func _on_player_detected() -> void:
-	show_prompt("USE")
+func _on_interactable_selected(interactable: Interactable) -> void:
+	if interactable == null:
+		_hide_prompt()
+		return
+
+	show_prompt(interactable.get_prompt_text())
 
 func show_prompt(text: String) -> void:
 	visible =true
-	print("show prompt")
+	print("Show prompt text: %s" % text)
 
 
-func hide_prompt() -> void:
+func _on_item_grabbed(item: Item, owner: Node3D):
+	_hide_prompt()
+
+func _hide_prompt() -> void:
 	visible = false
 
 

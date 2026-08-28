@@ -68,6 +68,13 @@ grab_item={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="Player"
+3d_physics/layer_2="Environment"
+3d_physics/layer_3="Items"
+3d_physics/layer_4="Senior Citizens"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
