@@ -7,13 +7,19 @@
 lightmap_size_hint = Vector2i(102, 42)
 size = Vector2(20, 8)
 
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_cvr5o"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g7wxf"]
 render_priority = 0
 shader = ExtResource("1_cvr5o")
 shader_parameter/bend = 0.5
 shader_parameter/color = Vector3(0.3, 0.6, 0.1)
+shader_parameter/object_radius = 1.0
+shader_parameter/object_position = Vector3(0, 0, 0)
+shader_parameter/wind_noise = SubResource("NoiseTexture2D_cvr5o")
 shader_parameter/wind_strength = 0.1
-shader_parameter/wind_direction = Vector2(1, 0)
+shader_parameter/wind_direction = Vector2(0.3, 0)
+shader_parameter/wind_ao_affect = 1.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oy17n"]
 resource_name = "grass"
@@ -68,7 +74,6 @@ buffer = PackedFloat32Array(0.6468503, 0, -0.7639279, 1.8783646, 0, 1.001, 0, 0,
 mesh = SubResource("PlaneMesh_ot21c")
 
 [node name="TallGrass" type="MultiMeshInstance3D" parent="." unique_id=1475808762]
-transform = Transform3D(1, 0, 0, 0, 12, 0, 0, 0, 1, 0, 0, 0)
 material_override = SubResource("ShaderMaterial_g7wxf")
 multimesh = SubResource("MultiMesh_e7vks")
 script = ExtResource("1_e3kx7")

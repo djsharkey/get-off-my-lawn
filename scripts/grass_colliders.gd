@@ -9,6 +9,10 @@ var cut_set: Dictionary = {} # can remove when releasing if cut_set.set(grass_id
 	#setup_triggers()
 
 
+#func _process(delta: float) -> void:
+	#material_override.set_shader_parameter("object_position", )
+
+
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("debug_cut_all_grass"):
 		cut_all_grass(0.1)
