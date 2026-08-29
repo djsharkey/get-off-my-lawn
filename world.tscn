@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://chb2ciuxx1da5" path="res://camera_rig.gd" id="3_036b0"]
 [ext_resource type="Script" uid="uid://di35m5mqby708" path="res://distraction.gd" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://0w7lu2waantm" path="res://scenes/tractor_beam/tractor_beam.tscn" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://yod7nn4rpvu8" path="res://ui/ui_manager.tscn" id="9_ioo17"]
 [ext_resource type="PackedScene" uid="uid://qr3j2v1dsg5b" path="res://scenes/map.tscn" id="10_wse8f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
@@ -69,7 +70,6 @@ current = true
 [node name="Player" parent="." unique_id=198881104 instance=ExtResource("1_f3sb7")]
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
-rotation_speed = null
 
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
 unique_name_in_owner = true
@@ -98,5 +98,7 @@ text = "TOGGLE THAT ONE DISTRACTION"
 visible = false
 
 [node name="Map" parent="." unique_id=2135401696 instance=ExtResource("10_wse8f")]
+
+[node name="UiManager" parent="." unique_id=1394922983 instance=ExtResource("9_ioo17")]
 
 [connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]

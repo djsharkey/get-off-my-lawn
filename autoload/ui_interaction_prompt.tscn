@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dabmpyttylbcv"]
+
+[ext_resource type="Script" uid="uid://curnu5psuldey" path="res://ui/ui_interaction_prompt.gd" id="1_xn4e3"]
+[ext_resource type="Texture2D" uid="uid://3kyd7j7rnbq4" path="res://assets/ui/generic_button_trigger_c_fill.png" id="2_00jmd"]
+[ext_resource type="Texture2D" uid="uid://bbgkckppg5a0t" path="res://assets/ui/keyboard_e.png" id="2_8rfk7"]
+[ext_resource type="Texture2D" uid="uid://byxt1hib35l5j" path="res://assets/ui/keyboard_e_outline.png" id="3_8s4vo"]
+[ext_resource type="Texture2D" uid="uid://ec7f13lfrdbg" path="res://assets/ui/keyboard_q.png" id="4_fwavk"]
+[ext_resource type="Texture2D" uid="uid://chxlqylkeg3rj" path="res://assets/ui/keyboard_q_outline.png" id="5_871b5"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ynloy"]
+
+[node name="InteractionPrompt" type="CanvasLayer" unique_id=292273841]
+script = ExtResource("1_xn4e3")
+prompt_input_textures = Array[Texture2D]([ExtResource("2_8rfk7"), ExtResource("3_8s4vo"), ExtResource("4_fwavk"), ExtResource("5_871b5")])
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1644350573]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+grow_horizontal = 2
+grow_vertical = 0
+offset_transform_position = Vector2(0, -100)
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer" unique_id=697979599]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -40)
+offset_transform_scale = Vector2(0.6, 0.6)
+
+[node name="PromptBackground" type="TextureRect" parent="MarginContainer/CenterContainer" unique_id=1006820548]
+layout_mode = 2
+texture = ExtResource("2_00jmd")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer" unique_id=365784886]
+modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_ynloy")
+layout_mode = 2
+texture = ExtResource("3_8s4vo")
+stretch_mode = 3

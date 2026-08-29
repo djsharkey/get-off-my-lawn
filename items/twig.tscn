@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://brnrvdn5s8nv"]
 
 [ext_resource type="Script" uid="uid://tty2m17ihwap" path="res://items/twig.gd" id="1_qvseg"]
+[ext_resource type="PackedScene" uid="uid://bttbikbhg2veb" path="res://models/interactable.tscn" id="2_5pn8d"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
 size = Vector3(1.7355957, 1.0852051, 2.3435059)
@@ -14,7 +15,9 @@ size = Vector3(0.19, 0.1, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57qmd"]
 albedo_color = Color(0.4143119, 0.30949378, 0.124427624, 1)
 
-[node name="Twig" type="Area3D" unique_id=1521533807]
+[node name="Twig" type="RigidBody3D" unique_id=91392894]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_qvseg")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1995467253]
@@ -24,3 +27,5 @@ shape = SubResource("BoxShape3D_g4v7s")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1260252688]
 mesh = SubResource("BoxMesh_yf5fn")
 surface_material_override/0 = SubResource("StandardMaterial3D_57qmd")
+
+[node name="Interactable" parent="." unique_id=2043117790 instance=ExtResource("2_5pn8d")]
