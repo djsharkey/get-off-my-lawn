@@ -23,7 +23,7 @@ func _use_item() -> void:
 
 
 func grab_item(body: Node3D):
-	var player = body as Player
+	var player: Player = body
 	if player.equipped_item != null:
 		print("You cannot grab me!! You're hands are full!")
 		return
