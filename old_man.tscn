@@ -68,6 +68,8 @@ points = PackedVector3Array(14.960344, 14.284815, 12.565729, -3.4851363, 13.2763
 [sub_resource type="QuadMesh" id="QuadMesh_yqqs5"]
 size = Vector2(0.25, 0.25)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_yqqs5"]
+
 [node name="OldMan" type="CharacterBody3D" unique_id=1386305525]
 collision_layer = 9
 collision_mask = 3
@@ -87,9 +89,15 @@ mesh = SubResource("CapsuleMesh_dunvj")
 transform = Transform3D(1, 0, 0, 0, 0.95059407, -0.31043696, 0, 0.31043696, 0.95059407, 0, 0.1, -0.72)
 mesh = SubResource("CylinderMesh_dunvj")
 
-[node name="RightArmMesh" type="MeshInstance3D" parent="Node3D" unique_id=254067376]
-transform = Transform3D(-1, -2.7160196e-08, -8.309672e-08, 0, 0.95051575, -0.31067643, 8.742278e-08, -0.31067643, -0.95051575, 0, 0.1, 0.72)
+[node name="RightArmPivot" type="Node3D" parent="Node3D" unique_id=13780065]
+transform = Transform3D(1, 4.225361e-08, -3.2516848e-08, -4.225361e-08, 0.25610125, -0.96664995, -3.2516848e-08, 0.96664995, 0.25610125, 0, 0.56, 0.56)
+
+[node name="RightArmMesh" type="MeshInstance3D" parent="Node3D/RightArmPivot" unique_id=254067376]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1.2076317e-08, -0.031520605, 0.43627387)
 mesh = SubResource("CylinderMesh_dunvj")
+
+[node name="LeftArmPivot" type="Node3D" parent="Node3D" unique_id=960186543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56, -0.56)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1661647091]
 shape = SubResource("ConvexPolygonShape3D_fs47u")
@@ -133,6 +141,12 @@ shape = SubResource("ConvexPolygonShape3D_o7sqg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, -0.3)
 visible = false
 mesh = SubResource("QuadMesh_yqqs5")
+
+[node name="ChildGrabbinRangeArea" type="Area3D" parent="." unique_id=765516472]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChildGrabbinRangeArea" unique_id=438163780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2612242)
+shape = SubResource("BoxShape3D_yqqs5")
 
 [connection signal="body_entered" from="DectectionArea" to="." method="_on_dectection_area_body_entered"]
 [connection signal="body_exited" from="DectectionArea" to="." method="_on_dectection_area_body_exited"]
