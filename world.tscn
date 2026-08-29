@@ -55,7 +55,7 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, -9.536743e-07, -9.912499)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, 1.4709044, -9.912499)
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=1682353331]
 unique_name_in_owner = true
