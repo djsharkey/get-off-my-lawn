@@ -24,9 +24,7 @@ func _physics_process(delta):
 	else:
 		item_weight = 0
 
-
 	var total_weight = baseline_weight + item_weight
-	print("item_weight: %s" % item_weight)
 
 	# Add the gravity.
 	if not is_on_floor():
