@@ -4,6 +4,7 @@ var transition_timer: SceneTreeTimer
 
 func enter(_data: Dictionary = {}) -> void:
 	if !actor.homeSpawnLocation:
+		print("sadness?")
 		return
 	# If away from home, look to return after some time
 	if actor.global_position.distance_to(actor.homeSpawnLocation.global_position) > 1.0:

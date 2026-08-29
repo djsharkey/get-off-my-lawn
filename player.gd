@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody3D
 
 const SPEED = 5.0
@@ -126,3 +127,6 @@ func get_current_interactable() -> Interactable:
 		return current_interactable
 	else:
 		return
+		
+func get_raycast_visibility_mesh() -> MeshInstance3D:
+	return $RaycastVisibilityMesh
