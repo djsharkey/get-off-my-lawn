@@ -8,6 +8,7 @@ extends Item
 @export var _glow_color: Color = Color(1.0, 0.95, 0.3)
 @export var _glow_intensity: float = 5.0
 @export var _glow_sharpness: float = 1.5
+@export_category("Mesh Properties")
 @export var meshes: Array[MeshInstance3D] = []
 @export var mesh: MeshInstance3D
 
@@ -17,6 +18,7 @@ func _init() -> void:
 	item_name = "Flower"
 	item_weight = 0.1
 	icon = preload("res://assets/items/twig/twig_icon.png")
+	interactable.iteractable_object = self
 
 func _ready() -> void:
 	if mesh == null:
