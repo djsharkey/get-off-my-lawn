@@ -68,7 +68,7 @@ current = true
 
 [node name="Player" parent="." unique_id=198881104 instance=ExtResource("1_f3sb7")]
 unique_name_in_owner = true
-transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -30.700212)
 rotation_speed = null
 
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
