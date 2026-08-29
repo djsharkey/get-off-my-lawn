@@ -11,7 +11,7 @@ extends MeshInstance3D
 
 var highlighter: Highlighter
 var task: Constants.Tasks = Constants.Tasks.DEBRIS
-var points: float = 0.5
+var points: float = 0.1
 
 func _ready() -> void:
 	#connect to discard signal
