@@ -1,5 +1,4 @@
 class_name Interactable
-
 extends Area3D
 
 @export var prompt_text: String = "Grab"

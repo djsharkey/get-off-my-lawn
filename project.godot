@@ -97,10 +97,10 @@ debug_grow_all_grass={
 
 [layer_names]
 
-3d_physics/layer_1="Player"
-3d_physics/layer_2="Environment"
-3d_physics/layer_3="Items"
-3d_physics/layer_4="Senior Citizens"
+3d_physics/layer_1="PlayerKinematics"
+3d_physics/layer_2="ItemKinematics"
+3d_physics/layer_3="Interactions"
+3d_physics/layer_4="LineOfSight"
 
 [physics]
 

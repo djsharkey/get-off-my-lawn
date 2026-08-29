@@ -14,6 +14,7 @@ var losSourceVertices: Array[Vector3] = []
 var losTargetVertices: Array[Vector3] = []
 var frameCount = 0
 var losFrameDelay = 5
+var losCollisionMask = 0 << 4
 
 var homeSpawnLocation
 var distractions = []
@@ -35,7 +36,7 @@ func _physics_process(delta):
 	match stateMachine.current_state.name:
 		"ChaseState":
 			if !canSeePlayer:
-				# TODO: should maybe transition to a "searching" state instead
+				# TODO: transition to a "searching" state instead
 				stateMachine.transition_to_previous_state()
 		"ExhaustState":
 			# Don't process into another state from Exhaust
@@ -70,7 +71,9 @@ func getLOSVisibilityPercentage() -> float:
 			var targetVertGlobalTransform = targetTransform * targetVert
 			
 			# Configure Raycast
-			var rayQuery = PhysicsRayQueryParameters3D.create(sourceVertGlobalTransform, targetVertGlobalTransform)
+
+			var rayQuery = PhysicsRayQueryParameters3D.create(sourceVertGlobalTransform, targetVertGlobalTransform, losCollisionMask)
+			rayQuery.collide_with_areas = true
 			rayQuery.exclude = excludeList
 			var result = worldSpaceState.intersect_ray(rayQuery)
 			if result.is_empty():

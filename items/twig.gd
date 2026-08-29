@@ -1,5 +1,4 @@
 class_name Twig
-
 extends Item
 
 func _init() -> void:
