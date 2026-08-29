@@ -1,15 +1,25 @@
 extends State
 
-var transition_timer: SceneTreeTimer
+var elapsedTime: float = 0.0
+var transitionTimerActive: bool = false
 @export var exhaust_time = 2.0
 
 ## Called when entering this state. Use for initializations or playing animations.
 func enter(_data: Dictionary = {}) -> void:
 	actor.toggle_detection(false)
 	actor.velocity = Vector3.ZERO
-	transition_timer = get_tree().create_timer(exhaust_time)
-	transition_timer.timeout.connect(_on_timer_timeout)
+	elapsedTime = 0.0
+	transitionTimerActive = true
 	
-func _on_timer_timeout() -> void:
+func exit() -> void:
 	actor.toggle_detection(true)
-	transitioned.emit("IdleState", {})
+	
+## Replaces the main _physics_process() loop for this active state.
+func physics_update(_delta: float) -> void:
+	elapsedTime += _delta
+	if transitionTimerActive && elapsedTime >= exhaust_time:
+		transition_to_alternative_state("IdleState", {})
+
+func transition_to_alternative_state(stateName: String, data: Dictionary):
+	transitionTimerActive = false
+	transitioned.emit(stateName, data)

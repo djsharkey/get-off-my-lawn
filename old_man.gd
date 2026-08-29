@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@export var speed = 5.0
+@export var speed = 3.0
 
 @onready var animationPlayer = $AnimationPlayer
 @onready var stateMachine = $StateMachine
@@ -37,6 +37,9 @@ func _physics_process(delta):
 			if !canSeePlayer:
 				# TODO: should maybe transition to a "searching" state instead
 				stateMachine.transition_to_previous_state()
+		"ExhaustState":
+			# Don't process into another state from Exhaust
+			pass
 		_:
 			if canSeePlayer:
 				stateMachine.transition_to_state("ChaseState", {"target": playerRef})
@@ -110,8 +113,8 @@ func _on_dectection_area_body_exited(body):
 
 func toggle_detection(val):
 	if val != null:
-		$DectectionArea.monitoring = val
+		$DectectionArea.set_deferred("monitoring", val)
 		return
-	$DectectionArea.monitoring = !$DectectionArea.monitoring
+	$DectectionArea.set_deferred("monitoring", !$DectectionArea.monitoring)
 	
 		

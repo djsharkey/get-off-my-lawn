@@ -1,21 +1,25 @@
 extends State
 
-var transition_timer: SceneTreeTimer
+var elapsedTime: float = 0.0
+var transitionTimerActive: bool = false
+var waitTime: float = 0.0
 
-func enter(_data: Dictionary = {}) -> void:
+func enter(newData: Dictionary = {}) -> void:
 	if !actor.homeSpawnLocation:
-		print("sadness?")
 		return
 	# If away from home, look to return after some time
+	# TODO: Rework how/when return to home happens from since this is kinda jank
 	if actor.global_position.distance_to(actor.homeSpawnLocation.global_position) > 1.0:
-		var random_wait_time = randf_range(2.0, 6.0)
-		transition_timer = get_tree().create_timer(random_wait_time)
-		transition_timer.timeout.connect(_on_timer_timeout)
-	actor.animationPlayer.play("idle")
-	
-func exit() -> void:
-	if transition_timer and transition_timer.timeout.is_connected(_on_timer_timeout):
-		transition_timer.timeout.disconnect(_on_timer_timeout)
+		waitTime = randf_range(2.0, 6.0)
+	elapsedTime = 0.0
+	transitionTimerActive = true
 
-func _on_timer_timeout() -> void:	
-	transitioned.emit("ReturnHomeState", {})
+func physics_update(delta: float) -> void:
+	elapsedTime += delta
+	if transitionTimerActive && elapsedTime >= waitTime:
+		transition_to_alternative_state("ReturnHomeState", {})
+		return
+
+func transition_to_alternative_state(stateName: String, data: Dictionary):
+	transitionTimerActive = false
+	transitioned.emit(stateName, data)

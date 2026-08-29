@@ -24,8 +24,6 @@ func _on_interactable_selected(interactable: Interactable) -> void:
 
 func show_prompt(text: String) -> void:
 	visible =true
-	print("Show prompt text: %s" % text)
-
 
 func _on_item_grabbed(item: Item, owner: Node3D):
 	_hide_prompt()
