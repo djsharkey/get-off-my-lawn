@@ -62,8 +62,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("debug_focus_player"):
 		%CameraRig.focus_on(%Player)
 
-	if Input.is_action_just_pressed("complete_task"):
-		%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1)
+	# if Input.is_action_just_pressed("complete_task"):
+	# 	%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
