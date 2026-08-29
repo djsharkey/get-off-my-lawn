@@ -10,6 +10,9 @@ var baseline_weight: float = 1.0
 var item_weight = 0
 
 @onready var player_model: Node3D = $Model
+#@onready var audio_streams: Array[AudioStreamPlayer3D]
+@onready var audio_stream: AudioStreamPlayer3D = $TossAudioStream
+
 
 func _ready() -> void:
 	EventBus.item_grabbed.connect(_on_item_grabbed)
@@ -49,6 +52,9 @@ func _physics_process(delta):
 				equipped_item.drop_item(modified_dir * 10)
 			else:
 				equipped_item.drop_item(Vector3.UP * 8)
+		
+		if audio_stream != null:
+			audio_stream.play()
 
 	if Input.is_action_just_pressed("grab_item"):
 		var interactable: Interactable = get_current_interactable()
