@@ -15,4 +15,5 @@ func physics_update(_delta: float) -> void:
 
 	if actor.global_position.distance_to(homeSpawnLocation.global_position) < 1.0:
 		actor.velocity = Vector3.ZERO
+		# TODO: Need to go into "enter home" state instead
 		transitioned.emit("IdleState", {})
