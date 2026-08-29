@@ -8,6 +8,8 @@ extends MeshInstance3D
 @export var _glow_sharpness: float = 1.5
 
 var highlighter: Highlighter
+var task: Constants.Tasks = Constants.Tasks.DEBRIS
+var points: float = 0.5
 
 func _ready() -> void:
 	#connect to discard signal
@@ -25,8 +27,7 @@ func _ready() -> void:
 func _on_discard_plant(obj: Node3D):
 	print(obj.name + " has been discarded")
 	obj.queue_free()
-	# emit progress increase signal/point scoring
-	# emit_signal("progress", "compost", 5)
+	EventBus.progress_increased.emit(task, points)
 	return
 
 
