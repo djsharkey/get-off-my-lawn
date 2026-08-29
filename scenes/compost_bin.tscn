@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bxbkim3dep6xq"]
 
 [ext_resource type="Script" uid="uid://c45hsk0n7xg68" path="res://scripts/compost_bin.gd" id="1_kk1od"]
+[ext_resource type="PackedScene" uid="uid://bttbikbhg2veb" path="res://models/interactable.tscn" id="2_fv24d"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
 albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
@@ -32,6 +33,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009643555, 0.1210022, -0.01
 shape = SubResource("BoxShape3D_036b0")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=735547661]
+visible = false
 collision_layer = 4
 collision_mask = 4
 input_ray_pickable = false
@@ -39,6 +41,10 @@ input_ray_pickable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1487696405]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10437012, 0)
 shape = SubResource("CylinderShape3D_ot21c")
+disabled = true
+
+[node name="Interactable" parent="." unique_id=2043117790 instance=ExtResource("2_fv24d")]
+prompt_text = "Discard"
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

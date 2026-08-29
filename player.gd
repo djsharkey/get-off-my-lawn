@@ -107,7 +107,8 @@ func _on_interactable_entered(interactable: Interactable) -> void:
 	if nearby_interactables.has(interactable):
 		print("Interactable already tracked")
 		return
-
+	
+	# how do you check if the interactable is an item and your hands are already full to prevent the text from popping up?
 	nearby_interactables.append(interactable)
 	EventBus.interactable_selected.emit(get_current_interactable())
 

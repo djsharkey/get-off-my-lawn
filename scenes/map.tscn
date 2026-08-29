@@ -33,51 +33,51 @@ size = Vector3(1.9877167, 2.9937515, 1.9414673)
 
 [node name="Map" type="Node3D" unique_id=2135401696]
 
-[node name="Ground2" type="MeshInstance3D" parent="." unique_id=546241708]
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=546241708]
 mesh = SubResource("PlaneMesh_tjwjv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Ground2" unique_id=1065622656]
+[node name="StaticBody3D" type="StaticBody3D" parent="Ground" unique_id=1065622656]
 collision_layer = 11
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=1461594152]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1461594152]
 shape = SubResource("WorldBoundaryShape3D_nwts5")
 
-[node name="BoundryX+" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=825878033]
+[node name="BoundryX+" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=825878033]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 33.8, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="BoundryX-" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=6687881]
+[node name="BoundryX-" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=6687881]
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -33.866177, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="BoundryZ+" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=1529235941]
+[node name="BoundryZ+" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1529235941]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 32)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="BoundryZ-" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=2005391232]
+[node name="BoundryZ-" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=2005391232]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -32)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="Twig" parent="Ground2" unique_id=91392894 instance=ExtResource("2_blm8a")]
+[node name="Twig" parent="Ground" unique_id=91392894 instance=ExtResource("2_blm8a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.487153, 0.05, -11.290577)
 collision_layer = 4
 
 [node name="Yard" parent="." unique_id=905096459 instance=ExtResource("1_paxxb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16780949, -0.04364729, -20.039736)
 
-[node name="FlowerBed2" parent="." unique_id=1063830560 instance=ExtResource("2_gldc4")]
+[node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("2_gldc4")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.282305, 0.033356495, -3.6891434)
 
-[node name="Shed2" type="MeshInstance3D" parent="." unique_id=1972437985]
+[node name="Shed" type="MeshInstance3D" parent="." unique_id=1972437985]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -8.674216)
 mesh = SubResource("BoxMesh_fj7yv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Shed2" unique_id=815638200]
+[node name="StaticBody3D" type="StaticBody3D" parent="Shed" unique_id=815638200]
 collision_layer = 11
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Shed2/StaticBody3D" unique_id=1748789698]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Shed/StaticBody3D" unique_id=1748789698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011672974, 3.8146973e-06, 0.0010070801)
 shape = SubResource("BoxShape3D_036b0")
 

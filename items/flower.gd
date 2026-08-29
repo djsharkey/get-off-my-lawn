@@ -11,7 +11,6 @@ extends Item
 @export var meshes: Array[MeshInstance3D] = []
 @export var mesh: MeshInstance3D
 
-#example highlighter use
 var highlighter: Highlighter
 
 func _init() -> void:
@@ -25,6 +24,8 @@ func _ready() -> void:
 			mesh = meshes.pick_random()
 		else:
 			return
+	EventBus.interactable_selected.connect(_on_area_3d_body_entered)
+	EventBus.interactable_exited.connect(_on_area_3d_body_exited)
 
 	if !mesh.visible:
 		mesh.show()
@@ -38,14 +39,10 @@ func _ready() -> void:
 	)
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.name != "Player":
-		return
 	highlighter.highlight_object()
 
 
 func _on_area_3d_body_exited(body: Node3D) -> void:
-	if body.name != "Player":
-		return
 	highlighter.unhighlight_object()
 
 func use() -> void:
