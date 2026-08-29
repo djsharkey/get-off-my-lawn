@@ -3,7 +3,7 @@ extends Area3D
 
 @export var prompt_text: String = "Grab"
 
-var iteractable_object = null
+#var iteractable_object = null
 
 signal interacted(interactee: Node3D)
 

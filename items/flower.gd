@@ -18,7 +18,7 @@ func _init() -> void:
 	item_name = "Flower"
 	item_weight = 0.1
 	icon = preload("res://assets/items/twig/twig_icon.png")
-	interactable.iteractable_object = self
+	#interactable.iteractable_object = self
 
 func _ready() -> void:
 	if mesh == null:
