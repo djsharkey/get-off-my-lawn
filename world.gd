@@ -30,20 +30,28 @@ func _on_button_pressed():
 
 
 func display_task_progress(task: Constants.Tasks):
-	# TODO: here we should update the bar label too
+	var sb = %ProgressBar.get_theme_stylebox("fill") as StyleBoxFlat
 	match task:
 		Constants.Tasks.TOTAL:
 			%ProgressBar/Label.text = "Overall"
 			%ProgressBar.value = task_points[Constants.Tasks.TOTAL]
+			if sb:
+				sb.bg_color = Color(0.929, 0.592, 0.075, 1.0)
 		Constants.Tasks.CUT_GRASS:
 			%ProgressBar/Label.text = "Grass Cut"
 			%ProgressBar.value = task_points[task]
+			if sb:
+				sb.bg_color = Color(0.0, 0.765, 0.286, 1.0)
 		Constants.Tasks.DEBRIS:
 			%ProgressBar/Label.text = "Debris Cleared and Composted"
 			%ProgressBar.value = task_points[task]
+			if sb:
+				sb.bg_color = Color(0.764, 0.556, 0.736, 1.0)
 		Constants.Tasks.WEEDS:
 			%ProgressBar/Label.text = "Weeds Picked and Composted"
 			%ProgressBar.value = task_points[task]
+			if sb:
+				sb.bg_color = Color(0.481, 0.687, 0.611, 1.0)
 	if task != Constants.Tasks.TOTAL:
 		%ProgressBar/ResetTimer.start()
 
