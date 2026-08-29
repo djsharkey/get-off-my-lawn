@@ -69,6 +69,7 @@ points = PackedVector3Array(14.960344, 14.284815, 12.565729, -3.4851363, 13.2763
 size = Vector2(0.25, 0.25)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_yqqs5"]
+size = Vector3(2, 2, 1)
 
 [node name="OldMan" type="CharacterBody3D" unique_id=1386305525]
 collision_layer = 7
@@ -85,19 +86,19 @@ mesh = SubResource("SphereMesh_yqqs5")
 [node name="BodyMesh" type="MeshInstance3D" parent="Node3D" unique_id=1682999848]
 mesh = SubResource("CapsuleMesh_dunvj")
 
-[node name="LeftArmMesh" type="MeshInstance3D" parent="Node3D" unique_id=812554613]
-transform = Transform3D(1, 0, 0, 0, 0.95059407, -0.31043696, 0, 0.31043696, 0.95059407, 0, 0.1, -0.72)
-mesh = SubResource("CylinderMesh_dunvj")
-
 [node name="RightArmPivot" type="Node3D" parent="Node3D" unique_id=13780065]
-transform = Transform3D(1, 4.225361e-08, -3.2516848e-08, -4.225361e-08, 0.25610125, -0.96664995, -3.2516848e-08, 0.96664995, 0.25610125, 0, 0.56, 0.56)
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0.56, 0.56)
 
 [node name="RightArmMesh" type="MeshInstance3D" parent="Node3D/RightArmPivot" unique_id=254067376]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1.2076317e-08, -0.031520605, 0.43627387)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0.46)
 mesh = SubResource("CylinderMesh_dunvj")
 
 [node name="LeftArmPivot" type="Node3D" parent="Node3D" unique_id=960186543]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56, -0.56)
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0.56, -0.56)
+
+[node name="LeftArmMesh" type="MeshInstance3D" parent="Node3D/LeftArmPivot" unique_id=812554613]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -0.46)
+mesh = SubResource("CylinderMesh_dunvj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1661647091]
 shape = SubResource("ConvexPolygonShape3D_fs47u")
@@ -132,6 +133,7 @@ libraries/ = SubResource("AnimationLibrary_odgka")
 
 [node name="DectectionArea" type="Area3D" parent="." unique_id=1771444421]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0.166, 0)
+visible = false
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DectectionArea" unique_id=490169507]
@@ -147,8 +149,9 @@ mesh = SubResource("QuadMesh_yqqs5")
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChildGrabbinRangeArea" unique_id=438163780]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2612242)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.3712331)
 shape = SubResource("BoxShape3D_yqqs5")
 
 [connection signal="body_entered" from="DectectionArea" to="." method="_on_dectection_area_body_entered"]
 [connection signal="body_exited" from="DectectionArea" to="." method="_on_dectection_area_body_exited"]
+[connection signal="body_entered" from="ChildGrabbinRangeArea" to="." method="_on_child_grabbin_range_area_body_entered"]
