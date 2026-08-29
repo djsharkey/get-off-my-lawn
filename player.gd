@@ -107,15 +107,16 @@ func _on_interactable_entered(interactable: Interactable) -> void:
 	if nearby_interactables.has(interactable):
 		print("Interactable already tracked")
 		return
-	
+
 	# how do you check if the interactable is an item and your hands are already full to prevent the text from popping up?
+	print("Interactable is ItemType: %s" % interactable.item_type)
 	nearby_interactables.append(interactable)
 	EventBus.interactable_selected.emit(get_current_interactable())
 
 
 func _on_interactable_exited(interactable: Interactable) -> void:
 	nearby_interactables.erase(interactable)
-	EventBus.interactable_selected.emit(get_current_interactable())
+	EventBus.interactable_unselected.emit(get_current_interactable())
 
 
 func get_current_interactable() -> Interactable:
@@ -128,6 +129,6 @@ func get_current_interactable() -> Interactable:
 		return current_interactable
 	else:
 		return
-		
+
 func get_raycast_visibility_mesh() -> MeshInstance3D:
 	return $RaycastVisibilityMesh
