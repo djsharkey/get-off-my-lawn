@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://bk0mxc0k4b1nx"]
 
+[ext_resource type="Script" uid="uid://b3xkm4gs5jinw" path="res://world.gd" id="1_036b0"]
 [ext_resource type="PackedScene" uid="uid://yj0kxcgigs0s" path="res://player.tscn" id="1_f3sb7"]
-[ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="1_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://b5gcgdsohlixh" path="res://old_man.tscn" id="2_fj7yv"]
-[ext_resource type="PackedScene" uid="uid://dabmpyttylbcv" path="res://autoload/ui_interaction_prompt.tscn" id="4_aqk2v"]
-[ext_resource type="PackedScene" uid="uid://brnrvdn5s8nv" path="res://items/twig.tscn" id="5_036b0"]
+[ext_resource type="Theme" uid="uid://cpueiw8ldx8hv" path="res://themes/progress_bar.tres" id="2_gbfbk"]
+[ext_resource type="Script" uid="uid://chb2ciuxx1da5" path="res://camera_rig.gd" id="3_036b0"]
+[ext_resource type="Script" uid="uid://di35m5mqby708" path="res://distraction.gd" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://0w7lu2waantm" path="res://scenes/tractor_beam/tractor_beam.tscn" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://yod7nn4rpvu8" path="res://ui/ui_manager.tscn" id="9_ioo17"]
+[ext_resource type="PackedScene" uid="uid://qr3j2v1dsg5b" path="res://scenes/map.tscn" id="10_wse8f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -18,38 +22,30 @@ background_mode = 2
 sky = SubResource("Sky_f3sb7")
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3sb7"]
-albedo_color = Color(0.34509805, 1, 0.49411765, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_yqqs5"]
-material = SubResource("StandardMaterial3D_f3sb7")
-size = Vector3(64, 0.1, 64)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_tlwt5"]
-size = Vector3(64, 0.1, 64)
-
-[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ti2nx"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
-albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
-metallic = 0.25
-roughness = 0.75
-
-[sub_resource type="BoxMesh" id="BoxMesh_dunvj"]
-material = SubResource("StandardMaterial3D_fj7yv")
-size = Vector3(10, 5, 10)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_aqk2v"]
-size = Vector3(10, 5, 10)
-
-[sub_resource type="BoxMesh" id="BoxMesh_fj7yv"]
-material = SubResource("StandardMaterial3D_fj7yv")
-size = Vector3(2, 3, 2)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
-size = Vector3(2, 3, 2)
-
 [node name="World" type="Node3D" unique_id=198200431]
+script = ExtResource("1_036b0")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1738439953]
+
+[node name="ProgressBar" type="ProgressBar" parent="UI" unique_id=1128535488]
+unique_name_in_owner = true
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -42.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme = ExtResource("2_gbfbk")
+max_value = 7.0
+step = 1.0
+value = 3.0
+rounded = true
+show_percentage = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1300189680]
 environment = SubResource("Environment_fj7yv")
@@ -58,61 +54,51 @@ environment = SubResource("Environment_fj7yv")
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Ground" type="MeshInstance3D" parent="." unique_id=154319166]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004629135, -0.100003816, 0.052915573)
-mesh = SubResource("BoxMesh_yqqs5")
+[node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, -9.536743e-07, -9.912499)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Ground" unique_id=1446532868]
-collision_layer = 2
-collision_mask = 0
+[node name="CameraRig" type="Node3D" parent="." unique_id=1682353331]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
+top_level = true
+script = ExtResource("3_036b0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=695270872]
-shape = SubResource("BoxShape3D_tlwt5")
-
-[node name="BoundryX+" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1731539391]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 32, 0, 0)
-shape = SubResource("WorldBoundaryShape3D_ti2nx")
-
-[node name="BoundryX-" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1485169072]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -32, 0, 0)
-shape = SubResource("WorldBoundaryShape3D_ti2nx")
-
-[node name="BoundryZ+" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=710925181]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 32)
-shape = SubResource("WorldBoundaryShape3D_ti2nx")
-
-[node name="BoundryZ-" type="CollisionShape3D" parent="Ground/StaticBody3D" unique_id=1210913361]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -32)
-shape = SubResource("WorldBoundaryShape3D_ti2nx")
-
-[node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("1_tlwt5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -16.4)
-
-[node name="House" type="MeshInstance3D" parent="." unique_id=811425483]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -10.9732)
-mesh = SubResource("BoxMesh_dunvj")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="House" unique_id=1943265210]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="House/StaticBody3D" unique_id=1230901388]
-shape = SubResource("BoxShape3D_aqk2v")
-
-[node name="Shed" type="MeshInstance3D" parent="." unique_id=1934414410]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -14.939)
-layers = 3
-mesh = SubResource("BoxMesh_fj7yv")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Shed" unique_id=988612512]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Shed/StaticBody3D" unique_id=753760366]
-shape = SubResource("BoxShape3D_036b0")
+[node name="Camera" type="Camera3D" parent="CameraRig" unique_id=509787415]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 3.5, 3.5)
+current = true
 
 [node name="Player" parent="." unique_id=198881104 instance=ExtResource("1_f3sb7")]
+unique_name_in_owner = true
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -25.436237)
 
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.625526, 1.1, -17.181734)
 
-[node name="CanvasLayer" parent="." unique_id=292273841 instance=ExtResource("4_aqk2v")]
+[node name="Distraction_Parent" type="Node3D" parent="." unique_id=1764872477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.742409, 0, -25.132105)
 
-[node name="Twig" parent="." unique_id=1521533807 instance=ExtResource("5_036b0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.560443, -4.9583614e-06, -24.439503)
+[node name="Distraction" type="Node3D" parent="Distraction_Parent" unique_id=200227559]
+script = ExtResource("4_aqk2v")
+
+[node name="ToggleMockDistraction" type="Control" parent="." unique_id=1691881615]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ToggleMockDistraction" unique_id=1192996948]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "TOGGLE THAT ONE DISTRACTION"
+
+[node name="TractorBeam" parent="." unique_id=1667081487 instance=ExtResource("6_dwbse")]
+visible = false
+
+[node name="Map" parent="." unique_id=2135401696 instance=ExtResource("10_wse8f")]
+
+[node name="UiManager" parent="." unique_id=1394922983 instance=ExtResource("9_ioo17")]
+
+[connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]

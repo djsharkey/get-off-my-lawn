@@ -2,13 +2,14 @@ class_name State
 extends Node
 
 ## Emitted when the state wants to transition to another state.
-signal transitioned(state_name: String)
+signal transitioned(state_name: String, data: Dictionary)
 
 ## Reference to the main actor (e.g., Player or Enemy) using this state machine.
 var actor: CharacterBody3D
+var data: Dictionary
 
 ## Called when entering this state. Use for initializations or playing animations.
-func enter() -> void:
+func enter(_data: Dictionary = {}) -> void:
 	pass
 
 ## Called when exiting this state. Use for cleanup or clearing values.

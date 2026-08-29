@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://7xshc6ukpti"]
+
+[ext_resource type="ArrayMesh" uid="uid://c2fheg4kp7mq5" path="res://models/kenneyAssets/fantasy_town_kit/meshes/fence_broken.res" id="1_c8266"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
+size = Vector3(0.07495117, 0.40722656, 0.26293945)
+
+[node name="FenceBroken" type="MeshInstance3D" unique_id=748792449]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = ExtResource("1_c8266")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1955087526]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1851523007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46447754, 0.20361328, 0.36853027)
+shape = SubResource("BoxShape3D_ot21c")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=279947669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46447754, 0.20361328, -0.36773688)
+shape = SubResource("BoxShape3D_ot21c")

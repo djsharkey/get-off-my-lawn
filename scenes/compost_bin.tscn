@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bxbkim3dep6xq"]
+
+[ext_resource type="Script" uid="uid://c45hsk0n7xg68" path="res://scripts/compost_bin.gd" id="1_kk1od"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
+albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
+metallic = 0.25
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="BoxMesh_aqk2v"]
+material = SubResource("StandardMaterial3D_fj7yv")
+size = Vector3(0.44056702, 0.83825684, 0.47808838)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
+size = Vector3(0.45092773, 1.0886841, 0.517334)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ot21c"]
+height = 1.0339355
+radius = 1.1494141
+
+[node name="compost_bin" type="MeshInstance3D" unique_id=1088562048]
+mesh = SubResource("BoxMesh_aqk2v")
+script = ExtResource("1_kk1od")
+_glow_color = Color(0.9999998, 0.08017988, 0.16135159, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1318123913]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=701027399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009643555, 0.1210022, -0.010375977)
+shape = SubResource("BoxShape3D_036b0")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=735547661]
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1487696405]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10437012, 0)
+shape = SubResource("CylinderShape3D_ot21c")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

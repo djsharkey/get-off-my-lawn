@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://1m47qsitac3c"]
+
+[ext_resource type="ArrayMesh" uid="uid://bwkh32xa2vja4" path="res://models/kenneyAssets/city_kit_suburban/meshes/fence_single.res" id="1_u3bs2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
+size = Vector3(0.472229, 0.26950073, 0.074920654)
+
+[node name="FenceSingle" type="MeshInstance3D" unique_id=50827316]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = ExtResource("1_u3bs2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1241877220]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1120517393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013122559, 0.13438416, 7.6293945e-05)
+shape = SubResource("BoxShape3D_ot21c")
