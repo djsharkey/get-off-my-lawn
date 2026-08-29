@@ -14,7 +14,7 @@ var losSourceVertices: Array[Vector3] = []
 var losTargetVertices: Array[Vector3] = []
 var frameCount = 0
 var losFrameDelay = 5
-var losCollisionMask = 0 << 4
+var losCollisionMask = 1 << 3
 
 var homeSpawnLocation
 var distractions = []
