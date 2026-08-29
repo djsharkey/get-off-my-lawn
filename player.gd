@@ -10,6 +10,9 @@ var baseline_weight: float = 1.0
 var item_weight = 0
 
 @onready var player_model: Node3D = $Model
+#@onready var audio_streams: Array[AudioStreamPlayer3D]
+@onready var audio_stream: AudioStreamPlayer3D = $TossAudioStream
+
 
 func _ready() -> void:
 	EventBus.item_grabbed.connect(_on_item_grabbed)
@@ -49,6 +52,9 @@ func _physics_process(delta):
 				equipped_item.drop_item(modified_dir * 10)
 			else:
 				equipped_item.drop_item(Vector3.UP * 8)
+		
+		if audio_stream != null:
+			audio_stream.play()
 
 	if Input.is_action_just_pressed("grab_item"):
 		var interactable: Interactable = get_current_interactable()
@@ -62,8 +68,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("debug_focus_player"):
 		%CameraRig.focus_on(%Player)
 
-	if Input.is_action_just_pressed("complete_task"):
-		%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1)
+	# if Input.is_action_just_pressed("complete_task"):
+	# 	%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -107,15 +113,16 @@ func _on_interactable_entered(interactable: Interactable) -> void:
 	if nearby_interactables.has(interactable):
 		print("Interactable already tracked")
 		return
-	
+
 	# how do you check if the interactable is an item and your hands are already full to prevent the text from popping up?
+	print("Interactable is ItemType: %s" % interactable.item_type)
 	nearby_interactables.append(interactable)
 	EventBus.interactable_selected.emit(get_current_interactable())
 
 
 func _on_interactable_exited(interactable: Interactable) -> void:
 	nearby_interactables.erase(interactable)
-	EventBus.interactable_selected.emit(get_current_interactable())
+	EventBus.interactable_unselected.emit(get_current_interactable())
 
 
 func get_current_interactable() -> Interactable:
@@ -128,6 +135,6 @@ func get_current_interactable() -> Interactable:
 		return current_interactable
 	else:
 		return
-		
+
 func get_raycast_visibility_mesh() -> MeshInstance3D:
 	return $RaycastVisibilityMesh

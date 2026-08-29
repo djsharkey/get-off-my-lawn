@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://yj0kxcgigs0s"]
 
 [ext_resource type="Script" uid="uid://ioghmlqtd3ym" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="AudioStream" uid="uid://5rk7k8fsva6y" path="res://assets/audio/woosh1.ogg" id="2_onrkg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yqqs5"]
 radius = 0.4
@@ -44,3 +45,7 @@ shape = SubResource("ConvexPolygonShape3D_036b0")
 [node name="RaycastVisibilityMesh" type="MeshInstance3D" parent="." unique_id=1303224201]
 visible = false
 mesh = SubResource("BoxMesh_yqqs5")
+
+[node name="TossAudioStream" type="AudioStreamPlayer3D" parent="." unique_id=1045387271]
+stream = ExtResource("2_onrkg")
+volume_db = 1.235

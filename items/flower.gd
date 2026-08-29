@@ -18,20 +18,19 @@ func _init() -> void:
 	item_name = "Flower"
 	item_weight = 0.1
 	icon = preload("res://assets/items/twig/twig_icon.png")
-	#interactable.iteractable_object = self
+	item_type = Constants.ItemTypes.FLOWER
+
 
 func _ready() -> void:
+	super._ready()
+
 	if mesh == null:
 		if !meshes.is_empty():
 			mesh = meshes.pick_random()
 		else:
 			return
-	EventBus.interactable_selected.connect(_on_area_3d_body_entered)
-	EventBus.interactable_exited.connect(_on_area_3d_body_exited)
 
-	if !mesh.visible:
-		mesh.show()
-
+	item_type = Constants.ItemTypes.FLOWER
 	highlighter = Highlighter.new(
 		mesh,
 		_scale_factor,
@@ -40,12 +39,20 @@ func _ready() -> void:
 		_glow_sharpness
 	)
 
-func _on_area_3d_body_entered(body: Node3D) -> void:
+	if !mesh.visible:
+		mesh.show()
+
+	EventBus.interactable_selected.connect(_on_flower_selected)
+	EventBus.interactable_unselected.connect(_on_flower_unselected)
+
+
+func _on_flower_selected(interactable: Interactable) -> void:
 	highlighter.highlight_object()
 
 
-func _on_area_3d_body_exited(body: Node3D) -> void:
+func _on_flower_unselected(interactable: Interactable) -> void:
 	highlighter.unhighlight_object()
+
 
 func use() -> void:
 	super._use_item()

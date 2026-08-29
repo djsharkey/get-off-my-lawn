@@ -20,12 +20,13 @@ func physics_update(delta: float) -> void:
 	
 	if !data && !data["target"]:
 		transitioned.emit("IdleState", {})
-	var direction = actor.global_position.direction_to(data["target"].global_position)
+		return
+	var target = data["target"]
+	var direction = actor.global_position.direction_to(target.global_position)
 	actor.velocity = direction * actor.speed
-	actor.look_at(actor.global_position + actor.velocity.normalized())
+	actor.look_at(target.global_position + actor.velocity.normalized())
 		
-	if actor.global_position.distance_to(data["target"].global_position) < 1.0:
-		actor.velocity = Vector3.ZERO
+	if actor.global_position.distance_to(target.global_position) < 1.0:
 		transitioned.emit("IdleState", {})
 	
 

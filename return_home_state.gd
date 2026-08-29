@@ -11,7 +11,7 @@ func physics_update(_delta: float) -> void:
 		transitioned.emit("IdleState", {})
 	var direction = actor.global_position.direction_to(homeSpawnLocation.global_position)
 	actor.velocity = direction * actor.speed
-	actor.look_at(actor.global_position + actor.velocity.normalized())
+	actor.look_at(homeSpawnLocation.global_position + actor.velocity.normalized())
 
 	if actor.global_position.distance_to(homeSpawnLocation.global_position) < 1.0:
 		actor.velocity = Vector3.ZERO
