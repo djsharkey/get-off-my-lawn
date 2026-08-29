@@ -4,6 +4,7 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 @export var rotation_speed: float = TAU * 2
 var equipped_item: Item
+var nearby_interactables: Array[Interactable] = []
 
 @onready var player_model: Node3D = $Model
 
@@ -11,12 +12,21 @@ func _ready() -> void:
 	EventBus.item_grabbed.connect(_on_item_grabbed)
 	EventBus.item_used.connect(_on_item_used)
 	EventBus.item_dropped.connect(_on_item_dropped)
+	EventBus.interactable_entered.connect(_on_interactable_entered)
+	EventBus.interactable_exited.connect(_on_interactable_exited)
 
 
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var input_dir = Input.get_vector("left", "right", "up", "down")
+	# shift input by current camera angle for "smoothness"
+
+	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y))#.normalized()
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -27,13 +37,19 @@ func _physics_process(delta):
 		if equipped_item == null:
 			return
 
-		equipped_item.drop_item()
+		if direction:
+			var modified_dir: Vector3 = (direction + Vector3.UP * 0.5).normalized()
+			equipped_item.drop_item(modified_dir * 10)
+		else:
+			equipped_item.drop_item(Vector3.UP * 8)
 
 	if Input.is_action_just_pressed("grab_item"):
-		if equipped_item != null:
+		var interactable: Interactable = get_current_interactable()
+
+		if interactable == null:
 			return
 
-		equipped_item.grab_item(self)
+		interactable.interact(self)
 
 	if Input.is_action_just_pressed("debug_focus_oldman"):
 		%CameraRig.focus_on(%OldMan)
@@ -46,9 +62,6 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_vector("left", "right", "up", "down")
-
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y))#.normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
@@ -70,7 +83,6 @@ func _on_item_grabbed(item: Item, owner: Node3D):
 		# TODO: Drop it first or put into inventory
 		return
 
-	item.grab_item(self)
 	equipped_item = item
 
 
@@ -83,5 +95,30 @@ func _on_item_dropped(item: Item):
 		# Nothing to drop
 		return
 
-	# TODO: Apply an impulse and "toss" the item away from the player
 	equipped_item = null
+
+
+func _on_interactable_entered(interactable: Interactable) -> void:
+	if nearby_interactables.has(interactable):
+		print("Interactable already tracked")
+		return
+
+	nearby_interactables.append(interactable)
+	EventBus.interactable_selected.emit(get_current_interactable())
+
+
+func _on_interactable_exited(interactable: Interactable) -> void:
+	nearby_interactables.erase(interactable)
+	EventBus.interactable_selected.emit(get_current_interactable())
+
+
+func get_current_interactable() -> Interactable:
+	if nearby_interactables.is_empty():
+		return
+
+	var current_interactable: Interactable = nearby_interactables.back()
+
+	if  current_interactable != null:
+		return current_interactable
+	else:
+		return
