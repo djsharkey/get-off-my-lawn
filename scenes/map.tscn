@@ -29,7 +29,7 @@ material = SubResource("StandardMaterial3D_fj7yv")
 size = Vector3(2, 3, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
-size = Vector3(0.45092773, 1.0886841, 0.517334)
+size = Vector3(1.9877167, 2.9937515, 1.9414673)
 
 [node name="Map" type="Node3D" unique_id=2135401696]
 
@@ -61,6 +61,7 @@ shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
 [node name="Twig" parent="Ground2" unique_id=91392894 instance=ExtResource("2_blm8a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.487153, 0.05, -11.290577)
+collision_layer = 4
 
 [node name="Yard" parent="." unique_id=905096459 instance=ExtResource("1_paxxb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16780949, -0.04364729, -20.039736)
@@ -77,6 +78,7 @@ collision_layer = 11
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shed2/StaticBody3D" unique_id=1748789698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011672974, 3.8146973e-06, 0.0010070801)
 shape = SubResource("BoxShape3D_036b0")
 
 [node name="compost_bin" parent="." unique_id=1088562048 instance=ExtResource("4_nakos")]
