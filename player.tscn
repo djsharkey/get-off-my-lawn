@@ -25,7 +25,8 @@ subdivide_depth = 4
 
 [node name="Player" type="CharacterBody3D" unique_id=198881104]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
-collision_mask = 2
+collision_layer = 7
+collision_mask = 7
 script = ExtResource("1_4flbx")
 
 [node name="Model" type="Node3D" parent="." unique_id=1506013560]

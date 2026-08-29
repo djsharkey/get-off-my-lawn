@@ -24,6 +24,8 @@ func _use_item() -> void:
 
 func grab_item(body: Node3D):
 	interactable.set_deferred("monitoring", false)
+	if $CollisionShape3D:
+		$CollisionShape3D.set_deferred("disabled", true)
 	self.global_transform = body.global_transform
 	self.reparent.call_deferred(body, true)
 	self.freeze = true
@@ -38,4 +40,6 @@ func drop_item(direction: Vector3):
 	self.freeze = false
 	self.apply_central_impulse(direction)
 	interactable.set_deferred("monitoring", true)
+	if $CollisionShape3D:
+		$CollisionShape3D.set_deferred("disabled", false)
 	EventBus.item_dropped.emit.call_deferred(self)

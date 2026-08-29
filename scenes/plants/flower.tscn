@@ -11,8 +11,8 @@
 size = Vector3(0.37597656, 0.52547365, 0.409729)
 
 [node name="Flower" type="RigidBody3D" unique_id=1189765529 node_paths=PackedStringArray("meshes")]
-collision_layer = 4
-collision_mask = 2
+collision_layer = 14
+collision_mask = 6
 script = ExtResource("1_f7ulm")
 meshes = [NodePath("FlowerPurple"), NodePath("FlowerPurpleTall"), NodePath("FlowerRed"), NodePath("FlowerRedTall")]
 metadata/_custom_type_script = "uid://cjcbuofcv1kxy"

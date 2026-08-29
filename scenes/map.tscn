@@ -37,7 +37,7 @@ size = Vector3(0.45092773, 1.0886841, 0.517334)
 mesh = SubResource("PlaneMesh_tjwjv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Ground2" unique_id=1065622656]
-collision_layer = 2
+collision_layer = 11
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground2/StaticBody3D" unique_id=1461594152]
@@ -73,7 +73,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -8.674216)
 mesh = SubResource("BoxMesh_fj7yv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shed2" unique_id=815638200]
-collision_layer = 2
+collision_layer = 11
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shed2/StaticBody3D" unique_id=1748789698]
 shape = SubResource("BoxShape3D_036b0")

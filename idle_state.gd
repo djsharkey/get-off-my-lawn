@@ -5,6 +5,7 @@ var transitionTimerActive: bool = false
 var waitTime: float = 0.0
 
 func enter(newData: Dictionary = {}) -> void:
+	actor.velocity = Vector3.ZERO
 	if !actor.homeSpawnLocation:
 		return
 	# If away from home, look to return after some time
