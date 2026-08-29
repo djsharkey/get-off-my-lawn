@@ -5,6 +5,8 @@ const JUMP_VELOCITY = 4.5
 @export var rotation_speed: float = TAU * 2
 var equipped_item: Item
 var nearby_interactables: Array[Interactable] = []
+var baseline_weight: float = 1.0
+var item_weight = 0
 
 @onready var player_model: Node3D = $Model
 
@@ -17,6 +19,15 @@ func _ready() -> void:
 
 
 func _physics_process(delta):
+	if equipped_item != null:
+		item_weight = equipped_item.item_weight
+	else:
+		item_weight = 0
+
+
+	var total_weight = baseline_weight + item_weight
+	print("item_weight: %s" % item_weight)
+
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -25,8 +36,7 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "up", "down")
 	# shift input by current camera angle for "smoothness"
-
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y))#.normalized()
+	var direction = (transform.basis * Vector3((input_dir.x / total_weight), 0, (input_dir.y / total_weight)))#.normalized()
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -54,7 +64,7 @@ func _physics_process(delta):
 		%CameraRig.focus_on(%Player)
 
 	if Input.is_action_just_pressed("complete_task"):
-		%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1) 
+		%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
