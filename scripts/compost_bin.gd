@@ -43,6 +43,7 @@ func _on_discarded(obj: Node3D):
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	# currently no way to tell if player is holding something that can be discarded, so it will always highlight when in range
 	highlighter.highlight_object()
+	EventBus.task_progress_requested.emit(task) # show progress of debris task for 5 sec
 
 
 
