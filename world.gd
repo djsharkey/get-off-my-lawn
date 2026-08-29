@@ -39,7 +39,8 @@ func display_task_progress(task: Constants.Tasks):
 
 func _check_point_total(points: float):
 	if  points >= points_to_win:
-		print("you win!")
+		# TODO: Switch to "Victor" screen instead
+		SceneSwitcher.change_scene("res://main_menu.tscn")
 
 
 func _progress_increased(task: Constants.Tasks, points: float):

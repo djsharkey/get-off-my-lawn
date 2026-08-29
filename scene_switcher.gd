@@ -9,6 +9,7 @@ const SCENE_CHANGE_DELAY = 0.5
 
 func change_scene(path: String):
 	self.layer = 1
+	get_tree().paused = true
 	await get_tree().create_timer(SCENE_CHANGE_DELAY).timeout
 	
 	# Fade out
@@ -21,4 +22,5 @@ func change_scene(path: String):
 	# Fade in
 	animationPlayer.play_backwards("fade")
 	await animationPlayer.animation_finished
+	get_tree().paused = false
 	self.layer = -1
