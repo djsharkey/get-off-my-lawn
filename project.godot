@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="get-off-my-lawn"
-run/main_scene="uid://bk0mxc0k4b1nx"
+run/main_scene="uid://dxhpbp47s70f7"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Constants="*uid://c6g5p3vnvh7m2"
 EventBus="*uid://blhmyx2rehoj1"
 UiInteractionPrompt="*uid://dabmpyttylbcv"
+SceneSwitcher="*uid://dreo688iachln"
 
 [display]
 

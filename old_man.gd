@@ -121,3 +121,8 @@ func toggle_detection(val):
 	$DectectionArea.set_deferred("monitoring", !$DectectionArea.monitoring)
 	
 		
+
+
+func _on_child_grabbin_range_area_body_entered(body):
+	if body is Player:
+		SceneSwitcher.change_scene("res://main_menu.tscn")
