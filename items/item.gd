@@ -8,6 +8,7 @@ extends RigidBody3D
 @export var current_stack_count: int = 0
 @export var item_weight: float = 0
 @export var required_hold_duration: float = 0
+var item_type: Constants.ItemTypes
 var _original_parent: Node3D
 var pickup_cooldown_duration: float = 2
 
@@ -16,6 +17,10 @@ var pickup_cooldown_duration: float = 2
 func _ready() -> void:
 	_original_parent = self.get_parent()
 	interactable.interacted.connect(grab_item)
+	if item_type == null:
+		print("No ItemType provided!")
+		return
+	interactable.item_type = item_type
 
 
 func _use_item() -> void:

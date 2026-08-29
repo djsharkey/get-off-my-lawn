@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://bp248lqedycgr" path="res://materials/basic_green_ground.tres" id="1_2klcf"]
 [ext_resource type="PackedScene" uid="uid://0xg7405rywij" path="res://scenes/yard.tscn" id="1_paxxb"]
-[ext_resource type="PackedScene" uid="uid://brnrvdn5s8nv" path="res://items/twig.tscn" id="2_blm8a"]
+[ext_resource type="PackedScene" uid="uid://brnrvdn5s8nv" path="res://scenes/plants/twig.tscn" id="2_blm8a"]
 [ext_resource type="PackedScene" uid="uid://dwst6bfduiytc" path="res://scenes/flower_bed.tscn" id="2_gldc4"]
 [ext_resource type="PackedScene" uid="uid://dfcg03u1y5mi8" path="res://scenes/house_6.tscn" id="4_2klcf"]
 [ext_resource type="PackedScene" uid="uid://bxbkim3dep6xq" path="res://scenes/compost_bin.tscn" id="4_nakos"]
