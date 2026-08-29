@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dm36e0tl7ydu5"
+path="res://.godot/imported/house_type18.obj-6f380fad7b85407e853696f6a630fd3e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/house_type18.obj-6f380fad7b85407e853696f6a630fd3e.mesh"]
+
+source_file="res://assets/kenney_cityKitSuburban/Models/OBJ format/house_type18.obj"
+dest_files=["res://.godot/imported/house_type18.obj-6f380fad7b85407e853696f6a630fd3e.mesh", "res://.godot/imported/house_type18.obj-6f380fad7b85407e853696f6a630fd3e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

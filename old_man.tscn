@@ -1,26 +1,15 @@
 [gd_scene format=3 uid="uid://b5gcgdsohlixh"]
 
 [ext_resource type="Script" uid="uid://cx67rmx6gat8t" path="res://old_man.gd" id="1_tjsre"]
+[ext_resource type="ArrayMesh" uid="uid://b2s0s1yvg1d4v" path="res://assets/Lizz Assets/old_man_v1_Sphere.res" id="2_de2qa"]
 [ext_resource type="Script" uid="uid://ct7h7jgv4xb5f" path="res://state_machine.gd" id="2_ycqd0"]
 [ext_resource type="Script" uid="uid://cd8bj1nfx05dj" path="res://idle_state.gd" id="3_o7sqg"]
+[ext_resource type="ArrayMesh" uid="uid://mrdxn2cb1wal" path="res://assets/Lizz Assets/old_man_v1_Cylinder_001.res" id="3_ph15b"]
+[ext_resource type="ArrayMesh" uid="uid://dvnbta7y3crx2" path="res://assets/Lizz Assets/old_man_v1_Cylinder.res" id="4_3xlp6"]
 [ext_resource type="Script" uid="uid://dlgo4lc26rvks" path="res://investigate_state.gd" id="4_o7sqg"]
 [ext_resource type="Script" uid="uid://bfaqmk4wow2c5" path="res://return_home_state.gd" id="5_odgka"]
 [ext_resource type="Script" uid="uid://cp12k5sn1m301" path="res://chase_state.gd" id="6_odgka"]
 [ext_resource type="Script" uid="uid://bhhruqi3vp15l" path="res://exhaust_state.gd" id="7_vlbio"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_yqqs5"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
-albedo_color = Color(1, 0.4117647, 0.32156864, 1)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_dunvj"]
-material = SubResource("StandardMaterial3D_fj7yv")
-height = 1.75
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_dunvj"]
-top_radius = 0.1
-bottom_radius = 0.08
-height = 1.0
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fs47u"]
 points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
@@ -77,28 +66,29 @@ collision_mask = 7
 script = ExtResource("1_tjsre")
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1709034932]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0, 0, 0)
 
 [node name="HeadMesh" type="MeshInstance3D" parent="Node3D" unique_id=1651803413]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1864138, 0)
-mesh = SubResource("SphereMesh_yqqs5")
+transform = Transform3D(0.37999985, 0, 0, 0, 0.38, 0, 0, 0, 0.37999985, 0.10885402, 1.4774492, -3.5607028e-10)
+mesh = ExtResource("2_de2qa")
 
 [node name="BodyMesh" type="MeshInstance3D" parent="Node3D" unique_id=1682999848]
-mesh = SubResource("CapsuleMesh_dunvj")
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+mesh = ExtResource("3_ph15b")
 
 [node name="RightArmPivot" type="Node3D" parent="Node3D" unique_id=13780065]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0.56, 0.56)
+transform = Transform3D(0.75235146, -0.15249325, 0.6408686, 0.6587598, 0.17651416, -0.7313535, -0.0015958991, 0.97241354, 0.23325711, 0, 1.018, 0.44)
 
 [node name="RightArmMesh" type="MeshInstance3D" parent="Node3D/RightArmPivot" unique_id=254067376]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0.46)
-mesh = SubResource("CylinderMesh_dunvj")
+transform = Transform3D(0.1, 6.661338e-16, 3.970467e-23, 0, -3.5542234e-09, 0.09999999, 0, -0.08131115, -4.371138e-09, 0, 0, 0.54)
+mesh = ExtResource("4_3xlp6")
 
 [node name="LeftArmPivot" type="Node3D" parent="Node3D" unique_id=960186543]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0.56, -0.56)
+transform = Transform3D(-0.57530886, 0.5082389, -0.6408688, -0.6587598, 0.1765142, 0.73135364, 0.48482478, 0.84293294, 0.23325716, 0, 1.018, -0.447)
 
 [node name="LeftArmMesh" type="MeshInstance3D" parent="Node3D/LeftArmPivot" unique_id=812554613]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -0.46)
-mesh = SubResource("CylinderMesh_dunvj")
+transform = Transform3D(0.1, 0, 0, 0, -3.496911e-09, -0.1, 4.440892e-16, 0.07999999, -4.3711386e-09, -1.00887245e-08, 0, -0.5401968)
+mesh = ExtResource("4_3xlp6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1661647091]
 shape = SubResource("ConvexPolygonShape3D_fs47u")
