@@ -40,6 +40,7 @@ _data = {
 }
 
 [node name="SceneSwitcher" type="CanvasLayer" unique_id=2117774546]
+process_mode = 3
 layer = -1
 script = ExtResource("1_6uhv1")
 
