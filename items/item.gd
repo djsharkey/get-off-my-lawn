@@ -23,6 +23,10 @@ func _use_item() -> void:
 
 
 func grab_item(body: Node3D):
+	var player = body as Player
+	if player.equipped_item != null:
+		print("You cannot grab me!! You're hands are full!")
+		return
 	interactable.set_deferred("monitoring", false)
 	if $CollisionShape3D:
 		$CollisionShape3D.set_deferred("disabled", true)
