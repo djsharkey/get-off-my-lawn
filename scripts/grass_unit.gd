@@ -1,6 +1,8 @@
 extends MeshInstance3D
 
 var cut: bool = false
+var task: Constants.Tasks = Constants.Tasks.CUT_GRASS
+var points: float = 0.05
 
 func _ready() -> void:
 	#tall_grass = self
@@ -32,6 +34,7 @@ func _on_cut_grass(grass_collider: Area3D):
 
 
 func cut_grass_progress():
+	EventBus.progress_increased.emit(task, points)
 	return
 
 

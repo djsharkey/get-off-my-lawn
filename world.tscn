@@ -43,10 +43,8 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 theme = ExtResource("2_gbfbk")
-max_value = 7.0
-step = 1.0
-value = 3.0
-rounded = true
+max_value = 10.0
+step = 0.1
 show_percentage = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1300189680]
@@ -105,14 +103,21 @@ visible = false
 
 [node name="Twig" parent="." unique_id=91392894 instance=ExtResource("11_ic0uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3744626, 0.050001908, -30.301878)
+collision_layer = 4
 
 [node name="Flower" parent="." unique_id=1189765529 instance=ExtResource("10_ic0uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4032335, 0, -29.10126)
+collision_layer = 4
+collision_mask = 2
 
 [node name="Flower2" parent="." unique_id=599769201 instance=ExtResource("10_ic0uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7447596, 0, -30.991589)
+collision_layer = 4
+collision_mask = 2
 
 [node name="Flower3" parent="." unique_id=2057986277 instance=ExtResource("10_ic0uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.626575, -2.3841858e-07, -29.828386)
+collision_layer = 4
+collision_mask = 2
 
 [connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]
