@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://0xg7405rywij"]
 
 [ext_resource type="Script" uid="uid://bd05kcipylukw" path="res://scripts/grass_mm.gd" id="1_e3kx7"]
-[ext_resource type="ArrayMesh" uid="uid://cka5gjjonk42j" path="res://models/kenneyAssets/nature/meshes/grass_leafs_large.res" id="2_e3kx7"]
+[ext_resource type="ArrayMesh" uid="uid://cy30hqkueeqos" path="res://models/kenneyAssets/nature/meshes/grass_leafs_large.res" id="2_e3kx7"]
 [ext_resource type="Script" uid="uid://bjsb4jqu316wu" path="res://scripts/grass_area3d.gd" id="3_cvr5o"]
 [ext_resource type="Script" uid="uid://duol6tlpgg1gg" path="res://scripts/grass_unit.gd" id="3_g7wxf"]
 
@@ -80,6 +80,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit" unique_id=1569692506]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit/Area3D" unique_id=233758948]
@@ -92,6 +94,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit2" unique_id=1074698884]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit2/Area3D" unique_id=541289454]
@@ -104,6 +108,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit3" unique_id=510116275]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit3/Area3D" unique_id=551483219]
@@ -116,6 +122,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit4" unique_id=1862068726]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit4/Area3D" unique_id=1648520625]
@@ -128,6 +136,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit5" unique_id=575164538]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit5/Area3D" unique_id=1642315220]
@@ -140,6 +150,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit6" unique_id=1570847373]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit6/Area3D" unique_id=2021248123]
@@ -152,6 +164,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit7" unique_id=1286718994]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit7/Area3D" unique_id=1239013532]
@@ -164,6 +178,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit8" unique_id=1839896166]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit8/Area3D" unique_id=1526026547]
@@ -176,6 +192,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit9" unique_id=350374742]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit9/Area3D" unique_id=1161026646]
@@ -188,6 +206,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit10" unique_id=2132840773]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit10/Area3D" unique_id=512458596]
@@ -200,6 +220,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit11" unique_id=654601072]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit11/Area3D" unique_id=635201531]
@@ -212,6 +234,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit12" unique_id=2115215928]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit12/Area3D" unique_id=2116361446]
@@ -224,6 +248,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit13" unique_id=476402299]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit13/Area3D" unique_id=1636308078]
@@ -236,6 +262,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit14" unique_id=370050391]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit14/Area3D" unique_id=1584798913]
@@ -248,6 +276,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit15" unique_id=1794436503]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit15/Area3D" unique_id=8319067]
@@ -260,6 +290,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit16" unique_id=1417686124]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit16/Area3D" unique_id=898186338]
@@ -272,6 +304,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit17" unique_id=1406854225]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit17/Area3D" unique_id=493726024]
@@ -284,6 +318,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit18" unique_id=1908718155]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit18/Area3D" unique_id=1557295031]
@@ -296,6 +332,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit19" unique_id=1623163239]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit19/Area3D" unique_id=48999251]
@@ -308,6 +346,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit20" unique_id=1888538502]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit20/Area3D" unique_id=22858486]
@@ -320,6 +360,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit21" unique_id=1910021197]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit21/Area3D" unique_id=815522424]
@@ -332,6 +374,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit22" unique_id=1445697742]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit22/Area3D" unique_id=1867059559]
@@ -344,6 +388,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit23" unique_id=2025981398]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit23/Area3D" unique_id=841401466]
@@ -356,6 +402,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit24" unique_id=1882746911]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit24/Area3D" unique_id=127060834]
@@ -368,6 +416,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit25" unique_id=1377194792]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit25/Area3D" unique_id=562522425]
@@ -380,6 +430,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit26" unique_id=1481214571]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit26/Area3D" unique_id=719315175]
@@ -392,6 +444,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit27" unique_id=1831266825]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit27/Area3D" unique_id=15192023]
@@ -404,6 +458,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit28" unique_id=490777009]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit28/Area3D" unique_id=1038821729]
@@ -416,6 +472,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit29" unique_id=422454229]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit29/Area3D" unique_id=1585965061]
@@ -428,6 +486,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit30" unique_id=729826480]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit30/Area3D" unique_id=1711559780]
@@ -440,6 +500,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit31" unique_id=94711145]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit31/Area3D" unique_id=1209085006]
@@ -452,6 +514,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit32" unique_id=1824206769]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit32/Area3D" unique_id=1492568569]
@@ -464,6 +528,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit33" unique_id=2027164103]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit33/Area3D" unique_id=1469653990]
@@ -476,6 +542,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit34" unique_id=1530887699]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit34/Area3D" unique_id=804805490]
@@ -488,6 +556,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit35" unique_id=442612873]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit35/Area3D" unique_id=229953515]
@@ -500,6 +570,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit36" unique_id=1806413481]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit36/Area3D" unique_id=1199586594]
@@ -512,6 +584,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit37" unique_id=1314696648]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit37/Area3D" unique_id=1105519786]
@@ -524,6 +598,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit38" unique_id=162193855]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit38/Area3D" unique_id=1825674379]
@@ -536,6 +612,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit39" unique_id=1499598089]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit39/Area3D" unique_id=1815827481]
@@ -548,6 +626,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit40" unique_id=770494938]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit40/Area3D" unique_id=969911410]
@@ -560,6 +640,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit41" unique_id=131593546]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit41/Area3D" unique_id=673023180]
@@ -572,6 +654,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit42" unique_id=21053546]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit42/Area3D" unique_id=854304077]
@@ -584,6 +668,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit43" unique_id=341189821]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit43/Area3D" unique_id=1942473245]
@@ -596,6 +682,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit44" unique_id=1014381345]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit44/Area3D" unique_id=705223641]
@@ -608,6 +696,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit45" unique_id=472756806]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit45/Area3D" unique_id=469797414]
@@ -620,6 +710,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit46" unique_id=1896337998]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit46/Area3D" unique_id=2010157357]
@@ -632,6 +724,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit47" unique_id=1216660873]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit47/Area3D" unique_id=738239668]
@@ -644,6 +738,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit48" unique_id=1548487543]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit48/Area3D" unique_id=1245824947]
@@ -656,6 +752,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit49" unique_id=761773305]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit49/Area3D" unique_id=1434952595]
@@ -668,6 +766,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit50" unique_id=1836291146]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit50/Area3D" unique_id=187332910]
@@ -680,6 +780,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit51" unique_id=691230186]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit51/Area3D" unique_id=655248066]
@@ -692,6 +794,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit52" unique_id=841329105]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit52/Area3D" unique_id=307210902]
@@ -704,6 +808,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit53" unique_id=1472243721]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit53/Area3D" unique_id=500150943]
@@ -716,6 +822,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit54" unique_id=1365384850]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit54/Area3D" unique_id=428216668]
@@ -728,6 +836,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit55" unique_id=1040201090]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit55/Area3D" unique_id=447600650]
@@ -740,6 +850,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit56" unique_id=1324373716]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit56/Area3D" unique_id=658514611]
@@ -752,6 +864,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit57" unique_id=2022653591]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit57/Area3D" unique_id=793515431]
@@ -764,6 +878,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit58" unique_id=874727623]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit58/Area3D" unique_id=2129653021]
@@ -776,6 +892,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit59" unique_id=411572305]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit59/Area3D" unique_id=1650104458]
@@ -788,6 +906,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit60" unique_id=1937949821]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit60/Area3D" unique_id=137346235]
@@ -800,6 +920,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit61" unique_id=1716519577]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit61/Area3D" unique_id=374069312]
@@ -812,6 +934,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit62" unique_id=630730365]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit62/Area3D" unique_id=1901330421]
@@ -824,6 +948,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit63" unique_id=1644367751]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit63/Area3D" unique_id=742317078]
@@ -836,6 +962,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit64" unique_id=15052878]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit64/Area3D" unique_id=1522357607]
@@ -848,6 +976,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit65" unique_id=1746459889]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit65/Area3D" unique_id=1590727225]
@@ -860,6 +990,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit66" unique_id=70181114]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit66/Area3D" unique_id=1071718986]
@@ -872,6 +1004,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit67" unique_id=713581673]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit67/Area3D" unique_id=88062145]
@@ -884,6 +1018,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit68" unique_id=630222370]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit68/Area3D" unique_id=244679119]
@@ -896,6 +1032,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit69" unique_id=660702915]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit69/Area3D" unique_id=78084966]
@@ -908,6 +1046,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit70" unique_id=1690605441]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit70/Area3D" unique_id=187967738]
@@ -920,6 +1060,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit71" unique_id=964879345]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit71/Area3D" unique_id=1217647702]
@@ -932,6 +1074,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit72" unique_id=836593670]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit72/Area3D" unique_id=102899436]
@@ -944,6 +1088,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit73" unique_id=79211183]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit73/Area3D" unique_id=987229017]
@@ -956,6 +1102,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit74" unique_id=1567786886]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit74/Area3D" unique_id=1441480460]
@@ -968,6 +1116,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit75" unique_id=1811402902]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit75/Area3D" unique_id=29730988]
@@ -980,6 +1130,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit76" unique_id=1722116655]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit76/Area3D" unique_id=569482495]
@@ -992,6 +1144,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit77" unique_id=2085805299]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit77/Area3D" unique_id=1466727152]
@@ -1004,6 +1158,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit78" unique_id=1644243359]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit78/Area3D" unique_id=630289092]
@@ -1016,6 +1172,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit79" unique_id=1020558717]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit79/Area3D" unique_id=1074053357]
@@ -1028,6 +1186,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit80" unique_id=650325269]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit80/Area3D" unique_id=2017977632]
@@ -1040,6 +1200,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit81" unique_id=1893417342]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit81/Area3D" unique_id=1985344295]
@@ -1052,6 +1214,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit82" unique_id=2125897892]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit82/Area3D" unique_id=134427071]
@@ -1064,6 +1228,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit83" unique_id=825311517]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit83/Area3D" unique_id=1862825127]
@@ -1076,6 +1242,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit84" unique_id=775077623]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit84/Area3D" unique_id=1871240982]
@@ -1088,6 +1256,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit85" unique_id=160093011]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit85/Area3D" unique_id=713072389]
@@ -1100,6 +1270,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit86" unique_id=746814642]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit86/Area3D" unique_id=305211043]
@@ -1112,6 +1284,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit87" unique_id=1588553740]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit87/Area3D" unique_id=1210187363]
@@ -1124,6 +1298,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit88" unique_id=815086443]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit88/Area3D" unique_id=202784600]
@@ -1136,6 +1312,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit89" unique_id=174569464]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit89/Area3D" unique_id=1812540720]
@@ -1148,6 +1326,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit90" unique_id=1676984513]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit90/Area3D" unique_id=1433703252]
@@ -1160,6 +1340,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit91" unique_id=1625417149]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit91/Area3D" unique_id=310495788]
@@ -1172,6 +1354,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit92" unique_id=1507641895]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit92/Area3D" unique_id=1384740924]
@@ -1184,6 +1368,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit93" unique_id=234336793]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit93/Area3D" unique_id=817739701]
@@ -1196,6 +1382,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit94" unique_id=1805944874]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit94/Area3D" unique_id=1694948506]
@@ -1208,6 +1396,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit95" unique_id=1426306052]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit95/Area3D" unique_id=211375803]
@@ -1220,6 +1410,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit96" unique_id=221189405]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit96/Area3D" unique_id=1289008062]
@@ -1232,6 +1424,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit97" unique_id=22676754]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit97/Area3D" unique_id=1335301490]
@@ -1244,6 +1438,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit98" unique_id=817295065]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit98/Area3D" unique_id=1696039456]
@@ -1256,6 +1452,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit99" unique_id=1321895857]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit99/Area3D" unique_id=863659128]
@@ -1268,6 +1466,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit100" unique_id=2132649663]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit100/Area3D" unique_id=1020247953]
@@ -1280,6 +1480,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit101" unique_id=59238316]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit101/Area3D" unique_id=1084777172]
@@ -1292,6 +1494,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit102" unique_id=1971397101]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit102/Area3D" unique_id=1171287885]
@@ -1304,6 +1508,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit103" unique_id=2639209]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit103/Area3D" unique_id=1903051620]
@@ -1316,6 +1522,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit104" unique_id=1770376926]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit104/Area3D" unique_id=1028525785]
@@ -1328,6 +1536,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit105" unique_id=2123642519]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit105/Area3D" unique_id=693958671]
@@ -1340,6 +1550,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit106" unique_id=924559887]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit106/Area3D" unique_id=210109221]
@@ -1352,6 +1564,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit107" unique_id=44738333]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit107/Area3D" unique_id=1587864546]
@@ -1364,6 +1578,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit108" unique_id=2073637024]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit108/Area3D" unique_id=1842971478]
@@ -1376,6 +1592,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit109" unique_id=397310216]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit109/Area3D" unique_id=2071420568]
@@ -1388,6 +1606,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit110" unique_id=1417899145]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit110/Area3D" unique_id=891726766]
@@ -1400,6 +1620,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit111" unique_id=1094712311]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit111/Area3D" unique_id=782694302]
@@ -1412,6 +1634,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit112" unique_id=1864546241]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit112/Area3D" unique_id=550628792]
@@ -1424,6 +1648,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit113" unique_id=1492585279]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit113/Area3D" unique_id=1819590114]
@@ -1436,6 +1662,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit114" unique_id=504276405]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit114/Area3D" unique_id=1417516140]
@@ -1448,6 +1676,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit115" unique_id=642127428]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit115/Area3D" unique_id=845990595]
@@ -1460,6 +1690,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit116" unique_id=559289854]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit116/Area3D" unique_id=651382089]
@@ -1472,6 +1704,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit117" unique_id=488707117]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit117/Area3D" unique_id=2044790723]
@@ -1484,6 +1718,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit118" unique_id=129331458]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit118/Area3D" unique_id=1686304552]
@@ -1496,6 +1732,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit119" unique_id=1385859864]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit119/Area3D" unique_id=755189076]
@@ -1508,6 +1746,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit120" unique_id=43407550]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit120/Area3D" unique_id=1341450895]
@@ -1520,6 +1760,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit121" unique_id=1556609913]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit121/Area3D" unique_id=738527852]
@@ -1532,6 +1774,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit122" unique_id=1563630301]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit122/Area3D" unique_id=1650876900]
@@ -1544,6 +1788,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit123" unique_id=1481814488]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit123/Area3D" unique_id=440339013]
@@ -1556,6 +1802,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit124" unique_id=91582390]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit124/Area3D" unique_id=455389008]
@@ -1568,6 +1816,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit125" unique_id=61264979]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit125/Area3D" unique_id=1089199788]
@@ -1580,6 +1830,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit126" unique_id=551996978]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit126/Area3D" unique_id=1031547239]
@@ -1592,6 +1844,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit127" unique_id=636093844]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit127/Area3D" unique_id=1182698810]
@@ -1604,6 +1858,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit128" unique_id=999098009]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit128/Area3D" unique_id=272862118]
@@ -1616,6 +1872,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit129" unique_id=341880873]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit129/Area3D" unique_id=797447802]
@@ -1628,6 +1886,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit130" unique_id=230442949]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit130/Area3D" unique_id=1622765072]
@@ -1640,6 +1900,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit131" unique_id=728557293]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit131/Area3D" unique_id=904519664]
@@ -1652,6 +1914,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit132" unique_id=1070823007]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit132/Area3D" unique_id=932491540]
@@ -1664,6 +1928,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit133" unique_id=437974267]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit133/Area3D" unique_id=1063759907]
@@ -1676,6 +1942,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit134" unique_id=2098651066]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit134/Area3D" unique_id=1092652829]
@@ -1688,6 +1956,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit135" unique_id=1949463587]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit135/Area3D" unique_id=2054525971]
@@ -1700,6 +1970,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit136" unique_id=122608583]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit136/Area3D" unique_id=167191900]
@@ -1712,6 +1984,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit137" unique_id=1489742092]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit137/Area3D" unique_id=1384675539]
@@ -1724,6 +1998,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit138" unique_id=784753122]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit138/Area3D" unique_id=1147541022]
@@ -1736,6 +2012,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit139" unique_id=111837134]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit139/Area3D" unique_id=1265533381]
@@ -1748,6 +2026,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit140" unique_id=1770986602]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit140/Area3D" unique_id=329927181]
@@ -1760,6 +2040,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit141" unique_id=103320660]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit141/Area3D" unique_id=263555199]
@@ -1772,6 +2054,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit142" unique_id=1730062400]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit142/Area3D" unique_id=527454795]
@@ -1784,6 +2068,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit143" unique_id=2098691071]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit143/Area3D" unique_id=2037084390]
@@ -1796,6 +2082,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit144" unique_id=1137194678]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit144/Area3D" unique_id=1914708909]
@@ -1808,6 +2096,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit145" unique_id=669087012]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit145/Area3D" unique_id=266210087]
@@ -1820,6 +2110,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit146" unique_id=943334646]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit146/Area3D" unique_id=1576197002]
@@ -1832,6 +2124,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit147" unique_id=411940038]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit147/Area3D" unique_id=1646460348]
@@ -1844,6 +2138,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit148" unique_id=1278006989]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit148/Area3D" unique_id=1556576401]
@@ -1856,6 +2152,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit149" unique_id=1524090682]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit149/Area3D" unique_id=316805065]
@@ -1868,6 +2166,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit150" unique_id=301058526]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit150/Area3D" unique_id=1809812274]
@@ -1880,6 +2180,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit151" unique_id=1559352311]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit151/Area3D" unique_id=1481684891]
@@ -1892,6 +2194,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit152" unique_id=1115237260]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit152/Area3D" unique_id=1899345976]
@@ -1904,6 +2208,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit153" unique_id=1028862451]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit153/Area3D" unique_id=813116611]
@@ -1916,6 +2222,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit154" unique_id=1174347218]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit154/Area3D" unique_id=533131194]
@@ -1928,6 +2236,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit155" unique_id=237582774]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit155/Area3D" unique_id=1948740954]
@@ -1940,6 +2250,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit156" unique_id=2138913261]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit156/Area3D" unique_id=746084349]
@@ -1952,6 +2264,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit157" unique_id=2052706787]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit157/Area3D" unique_id=1237051232]
@@ -1964,6 +2278,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit158" unique_id=498625975]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit158/Area3D" unique_id=426319318]
@@ -1976,6 +2292,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit159" unique_id=1443366419]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit159/Area3D" unique_id=370775299]
@@ -1988,6 +2306,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit160" unique_id=104329438]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit160/Area3D" unique_id=391737053]
@@ -2000,6 +2320,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit161" unique_id=1480689417]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit161/Area3D" unique_id=27168586]
@@ -2012,6 +2334,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit162" unique_id=1226650972]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit162/Area3D" unique_id=1375749203]
@@ -2024,6 +2348,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit163" unique_id=1794428087]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit163/Area3D" unique_id=1963256257]
@@ -2036,6 +2362,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit164" unique_id=2010642126]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit164/Area3D" unique_id=155582541]
@@ -2048,6 +2376,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit165" unique_id=147625972]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit165/Area3D" unique_id=313993223]
@@ -2060,6 +2390,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit166" unique_id=6772821]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit166/Area3D" unique_id=1666602642]
@@ -2072,6 +2404,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit167" unique_id=1972001930]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit167/Area3D" unique_id=121270844]
@@ -2084,6 +2418,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit168" unique_id=724743879]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit168/Area3D" unique_id=1620898197]
@@ -2096,6 +2432,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit169" unique_id=525521269]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit169/Area3D" unique_id=541882677]
@@ -2108,6 +2446,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit170" unique_id=1021436242]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit170/Area3D" unique_id=652690856]
@@ -2120,6 +2460,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit171" unique_id=922235280]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit171/Area3D" unique_id=128549434]
@@ -2132,6 +2474,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit172" unique_id=1119299782]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit172/Area3D" unique_id=665915588]
@@ -2144,6 +2488,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit173" unique_id=1987649698]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit173/Area3D" unique_id=509949899]
@@ -2156,6 +2502,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit174" unique_id=1870231403]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit174/Area3D" unique_id=15240160]
@@ -2168,6 +2516,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit175" unique_id=989839776]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit175/Area3D" unique_id=1390892533]
@@ -2180,6 +2530,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit176" unique_id=539358284]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit176/Area3D" unique_id=405867658]
@@ -2192,6 +2544,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit177" unique_id=1069824038]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit177/Area3D" unique_id=413267913]
@@ -2204,6 +2558,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit178" unique_id=1953316933]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit178/Area3D" unique_id=1359516202]
@@ -2216,6 +2572,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit179" unique_id=1478988851]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit179/Area3D" unique_id=811538754]
@@ -2228,6 +2586,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit180" unique_id=1872014135]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit180/Area3D" unique_id=485115264]
@@ -2240,6 +2600,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit181" unique_id=1371430104]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit181/Area3D" unique_id=922644085]
@@ -2252,6 +2614,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit182" unique_id=1058361027]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit182/Area3D" unique_id=914950641]
@@ -2264,6 +2628,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit183" unique_id=1645435346]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit183/Area3D" unique_id=1975327697]
@@ -2276,6 +2642,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit184" unique_id=1089482676]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit184/Area3D" unique_id=1177641826]
@@ -2288,6 +2656,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit185" unique_id=620076542]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit185/Area3D" unique_id=244466445]
@@ -2300,6 +2670,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit186" unique_id=1420249943]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit186/Area3D" unique_id=518078479]
@@ -2312,6 +2684,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit187" unique_id=1458894997]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit187/Area3D" unique_id=1862443799]
@@ -2324,6 +2698,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit188" unique_id=599538524]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit188/Area3D" unique_id=200482493]
@@ -2336,6 +2712,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit189" unique_id=418474922]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit189/Area3D" unique_id=1981393302]
@@ -2348,6 +2726,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit190" unique_id=1831719909]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit190/Area3D" unique_id=70874694]
@@ -2360,6 +2740,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit191" unique_id=2024175164]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit191/Area3D" unique_id=1196420012]
@@ -2372,6 +2754,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit192" unique_id=1691738774]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit192/Area3D" unique_id=1481571370]
@@ -2384,6 +2768,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit193" unique_id=1852316867]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit193/Area3D" unique_id=1644286049]
@@ -2396,6 +2782,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit194" unique_id=523898489]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit194/Area3D" unique_id=1264330233]
@@ -2408,6 +2796,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit195" unique_id=434954169]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit195/Area3D" unique_id=1155376475]
@@ -2420,6 +2810,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit196" unique_id=1971357156]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit196/Area3D" unique_id=2059539185]
@@ -2432,6 +2824,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit197" unique_id=1795671941]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit197/Area3D" unique_id=1670135652]
@@ -2444,6 +2838,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit198" unique_id=631644976]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit198/Area3D" unique_id=2051048664]
@@ -2456,6 +2852,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit199" unique_id=1909316302]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit199/Area3D" unique_id=53108483]
@@ -2468,6 +2866,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit200" unique_id=710176171]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit200/Area3D" unique_id=495111564]
@@ -2480,6 +2880,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit201" unique_id=1731675096]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit201/Area3D" unique_id=659505229]
@@ -2492,6 +2894,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit202" unique_id=1584195748]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit202/Area3D" unique_id=864023621]
@@ -2504,6 +2908,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit203" unique_id=790079885]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit203/Area3D" unique_id=1961344710]
@@ -2516,6 +2922,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit204" unique_id=802035443]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit204/Area3D" unique_id=1484779035]
@@ -2528,6 +2936,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit205" unique_id=893308866]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit205/Area3D" unique_id=1415770157]
@@ -2540,6 +2950,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit206" unique_id=1544730961]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit206/Area3D" unique_id=1805044800]
@@ -2552,6 +2964,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit207" unique_id=555422615]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit207/Area3D" unique_id=1966905039]
@@ -2564,6 +2978,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit208" unique_id=1685753546]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit208/Area3D" unique_id=527566965]
@@ -2576,6 +2992,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit209" unique_id=611006048]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit209/Area3D" unique_id=503773120]
@@ -2588,6 +3006,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit210" unique_id=257593167]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit210/Area3D" unique_id=2096129878]
@@ -2600,6 +3020,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit211" unique_id=232591654]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit211/Area3D" unique_id=887068636]
@@ -2612,6 +3034,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit212" unique_id=745376692]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit212/Area3D" unique_id=714360498]
@@ -2624,6 +3048,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit213" unique_id=1642822425]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit213/Area3D" unique_id=606381732]
@@ -2636,6 +3062,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit214" unique_id=1663913870]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit214/Area3D" unique_id=2088065971]
@@ -2648,6 +3076,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit215" unique_id=1231998959]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit215/Area3D" unique_id=867596977]
@@ -2660,6 +3090,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit216" unique_id=1764873273]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit216/Area3D" unique_id=771123551]
@@ -2672,6 +3104,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit217" unique_id=143215057]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit217/Area3D" unique_id=1425244649]
@@ -2684,6 +3118,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit218" unique_id=1389174624]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit218/Area3D" unique_id=1081904482]
@@ -2696,6 +3132,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit219" unique_id=1019148081]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit219/Area3D" unique_id=1495965912]
@@ -2708,6 +3146,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit220" unique_id=246317482]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit220/Area3D" unique_id=867113041]
@@ -2720,6 +3160,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit221" unique_id=385160650]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit221/Area3D" unique_id=898272495]
@@ -2732,6 +3174,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit222" unique_id=789301331]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit222/Area3D" unique_id=410716944]
@@ -2744,6 +3188,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit223" unique_id=1543044434]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit223/Area3D" unique_id=530802832]
@@ -2756,6 +3202,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit224" unique_id=1457756853]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit224/Area3D" unique_id=1873790029]
@@ -2768,6 +3216,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit225" unique_id=2077692398]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit225/Area3D" unique_id=983788603]
@@ -2780,6 +3230,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit226" unique_id=615447477]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit226/Area3D" unique_id=540615028]
@@ -2792,6 +3244,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit227" unique_id=1777481298]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit227/Area3D" unique_id=1437095727]
@@ -2804,6 +3258,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit228" unique_id=790081970]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit228/Area3D" unique_id=2054784842]
@@ -2816,6 +3272,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit229" unique_id=254864864]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit229/Area3D" unique_id=110964234]
@@ -2828,6 +3286,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit230" unique_id=1308169688]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit230/Area3D" unique_id=1826906445]
@@ -2840,6 +3300,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit231" unique_id=402627538]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit231/Area3D" unique_id=806853086]
@@ -2852,6 +3314,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit232" unique_id=1277320246]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit232/Area3D" unique_id=506679537]
@@ -2864,6 +3328,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit233" unique_id=372128030]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit233/Area3D" unique_id=1051775872]
@@ -2876,6 +3342,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit234" unique_id=408081225]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit234/Area3D" unique_id=1406099968]
@@ -2888,6 +3356,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit235" unique_id=656141630]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit235/Area3D" unique_id=1298576190]
@@ -2900,6 +3370,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit236" unique_id=1298776744]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit236/Area3D" unique_id=179037339]
@@ -2912,6 +3384,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit237" unique_id=504977586]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit237/Area3D" unique_id=101598709]
@@ -2924,6 +3398,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit238" unique_id=1970940882]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit238/Area3D" unique_id=953978040]
@@ -2936,6 +3412,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit239" unique_id=1536452855]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit239/Area3D" unique_id=1868845376]
@@ -2948,6 +3426,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit240" unique_id=683279591]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit240/Area3D" unique_id=135382159]
@@ -2960,6 +3440,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit241" unique_id=1787720854]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit241/Area3D" unique_id=1217721510]
@@ -2972,6 +3454,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit242" unique_id=546263841]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit242/Area3D" unique_id=49911441]
@@ -2984,6 +3468,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit243" unique_id=577390858]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit243/Area3D" unique_id=1844894721]
@@ -2996,6 +3482,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit244" unique_id=1024524717]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit244/Area3D" unique_id=546683822]
@@ -3008,6 +3496,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit245" unique_id=817681805]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit245/Area3D" unique_id=1861078010]
@@ -3020,6 +3510,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit246" unique_id=2047849175]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit246/Area3D" unique_id=938886137]
@@ -3032,6 +3524,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit247" unique_id=1703003337]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit247/Area3D" unique_id=1630852928]
@@ -3044,6 +3538,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit248" unique_id=782315298]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit248/Area3D" unique_id=1439104818]
@@ -3056,6 +3552,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit249" unique_id=1649558236]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit249/Area3D" unique_id=244035188]
@@ -3068,6 +3566,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit250" unique_id=1659185370]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit250/Area3D" unique_id=1613594904]
@@ -3080,6 +3580,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit251" unique_id=119492966]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit251/Area3D" unique_id=2128567021]
@@ -3092,6 +3594,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit252" unique_id=979549008]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit252/Area3D" unique_id=1419736923]
@@ -3104,6 +3608,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit253" unique_id=1502815487]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit253/Area3D" unique_id=1855614865]
@@ -3116,6 +3622,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit254" unique_id=423949693]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit254/Area3D" unique_id=262386818]
@@ -3128,6 +3636,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit255" unique_id=1292633368]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit255/Area3D" unique_id=1383541774]
@@ -3140,6 +3650,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit256" unique_id=1177720787]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit256/Area3D" unique_id=464643175]
@@ -3152,6 +3664,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit257" unique_id=958478710]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit257/Area3D" unique_id=1344512627]
@@ -3164,6 +3678,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit258" unique_id=1693991774]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit258/Area3D" unique_id=1988887877]
@@ -3176,6 +3692,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit259" unique_id=286895494]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit259/Area3D" unique_id=111554206]
@@ -3188,6 +3706,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit260" unique_id=1202716799]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit260/Area3D" unique_id=1114618540]
@@ -3200,6 +3720,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit261" unique_id=1409018134]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit261/Area3D" unique_id=1609471321]
@@ -3212,6 +3734,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit262" unique_id=1877053416]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit262/Area3D" unique_id=1865140486]
@@ -3224,6 +3748,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit263" unique_id=616253998]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit263/Area3D" unique_id=526051226]
@@ -3236,6 +3762,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit264" unique_id=146609781]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit264/Area3D" unique_id=1492975888]
@@ -3248,6 +3776,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit265" unique_id=157171025]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit265/Area3D" unique_id=976042798]
@@ -3260,6 +3790,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit266" unique_id=446286903]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit266/Area3D" unique_id=71182232]
@@ -3272,6 +3804,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit267" unique_id=246479513]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit267/Area3D" unique_id=850212889]
@@ -3284,6 +3818,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit268" unique_id=1463370299]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit268/Area3D" unique_id=1630121131]
@@ -3296,6 +3832,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit269" unique_id=1169403400]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit269/Area3D" unique_id=1425507115]
@@ -3308,6 +3846,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit270" unique_id=766541402]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit270/Area3D" unique_id=136214867]
@@ -3320,6 +3860,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit271" unique_id=1478362803]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit271/Area3D" unique_id=571412836]
@@ -3332,6 +3874,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit272" unique_id=1063145106]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit272/Area3D" unique_id=995977902]
@@ -3344,6 +3888,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit273" unique_id=1664702058]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit273/Area3D" unique_id=514217]
@@ -3356,6 +3902,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit274" unique_id=1434707835]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit274/Area3D" unique_id=804245385]
@@ -3368,6 +3916,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit275" unique_id=1155038362]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit275/Area3D" unique_id=444720489]
@@ -3380,6 +3930,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit276" unique_id=951381256]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit276/Area3D" unique_id=1868155841]
@@ -3392,6 +3944,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit277" unique_id=1603490511]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit277/Area3D" unique_id=1490943883]
@@ -3404,6 +3958,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit278" unique_id=1287665323]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit278/Area3D" unique_id=1954944345]
@@ -3416,6 +3972,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit279" unique_id=500476919]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit279/Area3D" unique_id=388051858]
@@ -3428,6 +3986,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit280" unique_id=720894348]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit280/Area3D" unique_id=2074793547]
@@ -3440,6 +4000,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit281" unique_id=1734143286]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit281/Area3D" unique_id=1568629904]
@@ -3452,6 +4014,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit282" unique_id=782274217]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit282/Area3D" unique_id=1635521567]
@@ -3464,6 +4028,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit283" unique_id=194908437]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit283/Area3D" unique_id=1397287863]
@@ -3476,6 +4042,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit284" unique_id=1071846876]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit284/Area3D" unique_id=1253345610]
@@ -3488,6 +4056,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit285" unique_id=946969814]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit285/Area3D" unique_id=1722450317]
@@ -3500,6 +4070,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit286" unique_id=357582308]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit286/Area3D" unique_id=1304540727]
@@ -3512,6 +4084,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit287" unique_id=446544036]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit287/Area3D" unique_id=1774916413]
@@ -3524,6 +4098,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit288" unique_id=1626298317]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit288/Area3D" unique_id=1136349627]
@@ -3536,6 +4112,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit289" unique_id=1257779347]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit289/Area3D" unique_id=1342050247]
@@ -3548,6 +4126,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit290" unique_id=1443906477]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit290/Area3D" unique_id=14051976]
@@ -3560,6 +4140,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit291" unique_id=1538690898]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit291/Area3D" unique_id=1594103000]
@@ -3572,6 +4154,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit292" unique_id=2015792502]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit292/Area3D" unique_id=1057236345]
@@ -3584,6 +4168,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit293" unique_id=11273898]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit293/Area3D" unique_id=1066270388]
@@ -3596,6 +4182,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit294" unique_id=1837734951]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit294/Area3D" unique_id=1360707411]
@@ -3608,6 +4196,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit295" unique_id=211522862]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit295/Area3D" unique_id=1006881506]
@@ -3620,6 +4210,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit296" unique_id=759802718]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit296/Area3D" unique_id=957877998]
@@ -3632,6 +4224,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit297" unique_id=1797472937]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit297/Area3D" unique_id=2097582738]
@@ -3644,6 +4238,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit298" unique_id=711888858]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit298/Area3D" unique_id=1920884133]
@@ -3656,6 +4252,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit299" unique_id=1464403976]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit299/Area3D" unique_id=728356727]
@@ -3668,6 +4266,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit300" unique_id=2056365630]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit300/Area3D" unique_id=1542896492]
@@ -3680,6 +4280,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit301" unique_id=1641617654]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit301/Area3D" unique_id=1729663456]
@@ -3692,6 +4294,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit302" unique_id=1408510365]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit302/Area3D" unique_id=1609860062]
@@ -3704,6 +4308,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit303" unique_id=2056664933]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit303/Area3D" unique_id=986840238]
@@ -3716,6 +4322,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit304" unique_id=670248646]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit304/Area3D" unique_id=1294779801]
@@ -3728,6 +4336,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit305" unique_id=285724936]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit305/Area3D" unique_id=593122978]
@@ -3740,6 +4350,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit306" unique_id=1325572176]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit306/Area3D" unique_id=458164438]
@@ -3752,6 +4364,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit307" unique_id=1058345771]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit307/Area3D" unique_id=64291779]
@@ -3764,6 +4378,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit308" unique_id=2143586524]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit308/Area3D" unique_id=627850640]
@@ -3776,6 +4392,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit309" unique_id=955615474]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit309/Area3D" unique_id=942154479]
@@ -3788,6 +4406,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit310" unique_id=93865141]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit310/Area3D" unique_id=684690010]
@@ -3800,6 +4420,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit311" unique_id=278102000]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit311/Area3D" unique_id=1142170213]
@@ -3812,6 +4434,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit312" unique_id=831960108]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit312/Area3D" unique_id=2131003491]
@@ -3824,6 +4448,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit313" unique_id=444994707]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit313/Area3D" unique_id=1093386623]
@@ -3836,6 +4462,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit314" unique_id=576110698]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit314/Area3D" unique_id=1927489948]
@@ -3848,6 +4476,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit315" unique_id=1251628634]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit315/Area3D" unique_id=1578693659]
@@ -3860,6 +4490,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit316" unique_id=881876218]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit316/Area3D" unique_id=1750323079]
@@ -3872,6 +4504,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit317" unique_id=370285916]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit317/Area3D" unique_id=459981500]
@@ -3884,6 +4518,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit318" unique_id=2033162311]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit318/Area3D" unique_id=652635922]
@@ -3896,6 +4532,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit319" unique_id=1829642296]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit319/Area3D" unique_id=915689302]
@@ -3908,6 +4546,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit320" unique_id=221900402]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit320/Area3D" unique_id=369496332]
@@ -3920,6 +4560,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit321" unique_id=1221337205]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit321/Area3D" unique_id=2084209045]
@@ -3932,6 +4574,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit322" unique_id=691604434]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit322/Area3D" unique_id=820681825]
@@ -3944,6 +4588,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit323" unique_id=838965741]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit323/Area3D" unique_id=874292636]
@@ -3956,6 +4602,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit324" unique_id=734748376]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit324/Area3D" unique_id=978257598]
@@ -3968,6 +4616,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit325" unique_id=1120123578]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit325/Area3D" unique_id=1216147342]
@@ -3980,6 +4630,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit326" unique_id=1810924789]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit326/Area3D" unique_id=2093378556]
@@ -3992,6 +4644,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit327" unique_id=979062986]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit327/Area3D" unique_id=1875912159]
@@ -4004,6 +4658,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit328" unique_id=2144193041]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit328/Area3D" unique_id=461408258]
@@ -4016,6 +4672,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit329" unique_id=181354971]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit329/Area3D" unique_id=1161943066]
@@ -4028,6 +4686,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit330" unique_id=359496849]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit330/Area3D" unique_id=426602061]
@@ -4040,6 +4700,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit331" unique_id=474488641]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit331/Area3D" unique_id=145720540]
@@ -4052,6 +4714,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit332" unique_id=116390678]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit332/Area3D" unique_id=59568613]
@@ -4064,6 +4728,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit333" unique_id=330227827]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit333/Area3D" unique_id=1459320363]
@@ -4076,6 +4742,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit334" unique_id=159180406]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit334/Area3D" unique_id=415649164]
@@ -4088,6 +4756,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit335" unique_id=1157013327]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit335/Area3D" unique_id=70738994]
@@ -4100,6 +4770,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit336" unique_id=562397508]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit336/Area3D" unique_id=1398980060]
@@ -4112,6 +4784,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit337" unique_id=248575388]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit337/Area3D" unique_id=1779157728]
@@ -4124,6 +4798,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit338" unique_id=486924572]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit338/Area3D" unique_id=542749551]
@@ -4136,6 +4812,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit339" unique_id=749504589]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit339/Area3D" unique_id=95996573]
@@ -4148,6 +4826,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit340" unique_id=1224672686]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit340/Area3D" unique_id=1300051680]
@@ -4160,6 +4840,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit341" unique_id=474756969]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit341/Area3D" unique_id=863117352]
@@ -4172,6 +4854,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit342" unique_id=855354609]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit342/Area3D" unique_id=945902902]
@@ -4184,6 +4868,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit343" unique_id=519548138]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit343/Area3D" unique_id=2035969965]
@@ -4196,6 +4882,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit344" unique_id=785798082]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit344/Area3D" unique_id=485018071]
@@ -4208,6 +4896,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit345" unique_id=653945786]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit345/Area3D" unique_id=1991263613]
@@ -4220,6 +4910,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit346" unique_id=633622152]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit346/Area3D" unique_id=1606375449]
@@ -4232,6 +4924,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit347" unique_id=317872185]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit347/Area3D" unique_id=222198008]
@@ -4244,6 +4938,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit348" unique_id=1513364098]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit348/Area3D" unique_id=968850571]
@@ -4256,6 +4952,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit349" unique_id=653792575]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit349/Area3D" unique_id=1547403681]
@@ -4268,6 +4966,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit350" unique_id=194935689]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit350/Area3D" unique_id=1255608866]
@@ -4280,6 +4980,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit351" unique_id=1192756311]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit351/Area3D" unique_id=1419755243]
@@ -4292,6 +4994,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit352" unique_id=1651746275]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit352/Area3D" unique_id=2137227344]
@@ -4304,6 +5008,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit353" unique_id=898777673]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit353/Area3D" unique_id=573438785]
@@ -4316,6 +5022,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit354" unique_id=1411091537]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit354/Area3D" unique_id=1023302947]
@@ -4328,6 +5036,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit355" unique_id=2001302750]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit355/Area3D" unique_id=1338908044]
@@ -4340,6 +5050,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit356" unique_id=694316285]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit356/Area3D" unique_id=1870456678]
@@ -4352,6 +5064,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit357" unique_id=506249671]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit357/Area3D" unique_id=1510048042]
@@ -4364,6 +5078,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit358" unique_id=23995291]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit358/Area3D" unique_id=1674119610]
@@ -4376,6 +5092,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit359" unique_id=1692153031]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit359/Area3D" unique_id=830399529]
@@ -4388,6 +5106,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit360" unique_id=1889543562]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit360/Area3D" unique_id=1904523942]
@@ -4400,6 +5120,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit361" unique_id=1211029248]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit361/Area3D" unique_id=1034501020]
@@ -4412,6 +5134,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit362" unique_id=1899334233]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit362/Area3D" unique_id=2145735178]
@@ -4424,6 +5148,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit363" unique_id=1069966410]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit363/Area3D" unique_id=599431127]
@@ -4436,6 +5162,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit364" unique_id=1440484788]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit364/Area3D" unique_id=1961601172]
@@ -4448,6 +5176,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit365" unique_id=2070570000]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit365/Area3D" unique_id=1082205684]
@@ -4460,6 +5190,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit366" unique_id=1269739565]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit366/Area3D" unique_id=1481068375]
@@ -4472,6 +5204,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit367" unique_id=1314452780]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit367/Area3D" unique_id=298725928]
@@ -4484,6 +5218,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit368" unique_id=1458971334]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit368/Area3D" unique_id=236132429]
@@ -4496,6 +5232,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit369" unique_id=1973621974]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit369/Area3D" unique_id=1788437409]
@@ -4508,6 +5246,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit370" unique_id=379183970]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit370/Area3D" unique_id=701274868]
@@ -4520,6 +5260,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit371" unique_id=1108406089]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit371/Area3D" unique_id=1951899972]
@@ -4532,6 +5274,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit372" unique_id=1061838691]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit372/Area3D" unique_id=1277259241]
@@ -4544,6 +5288,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit373" unique_id=524708036]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit373/Area3D" unique_id=68797044]
@@ -4556,6 +5302,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit374" unique_id=675443719]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit374/Area3D" unique_id=641252509]
@@ -4568,6 +5316,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit375" unique_id=476966437]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit375/Area3D" unique_id=1524798444]
@@ -4580,6 +5330,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit376" unique_id=929392073]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit376/Area3D" unique_id=1435010736]
@@ -4592,6 +5344,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit377" unique_id=1311605555]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit377/Area3D" unique_id=1928065716]
@@ -4604,6 +5358,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit378" unique_id=1661961595]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit378/Area3D" unique_id=1169446467]
@@ -4616,6 +5372,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit379" unique_id=1469736057]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit379/Area3D" unique_id=1922865508]
@@ -4628,6 +5386,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit380" unique_id=1050252046]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit380/Area3D" unique_id=1513110099]
@@ -4640,6 +5400,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit381" unique_id=509200072]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit381/Area3D" unique_id=690379148]
@@ -4652,6 +5414,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit382" unique_id=1146953706]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit382/Area3D" unique_id=1728501186]
@@ -4664,6 +5428,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit383" unique_id=1895121428]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit383/Area3D" unique_id=898147564]
@@ -4676,6 +5442,8 @@ mesh = ExtResource("2_e3kx7")
 script = ExtResource("3_g7wxf")
 
 [node name="Area3D" type="Area3D" parent="ManualGrassGroup/GrassUnit384" unique_id=1620476391]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("3_cvr5o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ManualGrassGroup/GrassUnit384/Area3D" unique_id=1517062871]

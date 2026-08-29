@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dtpodsc38vtth"]
 
-[ext_resource type="ArrayMesh" uid="uid://c6gwdd6hiihei" path="res://models/kenneyAssets/fantasy_town_kit/meshes/fence.res" id="1_hvnpl"]
+[ext_resource type="ArrayMesh" uid="uid://3a57dfvj0xdp" path="res://models/kenneyAssets/fantasy_town_kit/meshes/fence.res" id="1_hvnpl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ot21c"]
 size = Vector3(0.07409668, 0.41259766, 1)
@@ -10,6 +10,8 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 mesh = ExtResource("1_hvnpl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1300152123]
+collision_layer = 2
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1104099438]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46295166, 0.20532227, 0)

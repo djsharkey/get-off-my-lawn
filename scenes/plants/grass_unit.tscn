@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b8ed113yn2fki"]
+
+[ext_resource type="ArrayMesh" uid="uid://cy30hqkueeqos" path="res://models/kenneyAssets/nature/meshes/grass_leafs_large.res" id="1_frogo"]
+[ext_resource type="Script" uid="uid://duol6tlpgg1gg" path="res://scripts/grass_unit.gd" id="2_14gds"]
+[ext_resource type="Script" uid="uid://bjsb4jqu316wu" path="res://scripts/grass_area3d.gd" id="3_h0evl"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ot21c"]
+height = 0.13841629
+radius = 0.19384766
+
+[node name="GrassUnit" type="MeshInstance3D" unique_id=436360024]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("1_frogo")
+script = ExtResource("2_14gds")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=755401414]
+collision_layer = 2
+script = ExtResource("3_h0evl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=54810878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.069768906, 0)
+shape = SubResource("CylinderShape3D_ot21c")

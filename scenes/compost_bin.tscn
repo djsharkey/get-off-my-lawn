@@ -24,12 +24,15 @@ script = ExtResource("1_kk1od")
 _glow_color = Color(0.9999998, 0.08017988, 0.16135159, 1)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1318123913]
+collision_layer = 2
+collision_mask = 13
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=701027399]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009643555, 0.1210022, -0.010375977)
 shape = SubResource("BoxShape3D_036b0")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=735547661]
+collision_layer = 2
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1487696405]
