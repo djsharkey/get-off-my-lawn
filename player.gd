@@ -34,22 +34,18 @@ func _physics_process(delta):
 
 	# TODO: Handle item drop
 	if Input.is_action_just_pressed("drop_item"):
-		if equipped_item == null:
-			return
-
-		if direction:
-			var modified_dir: Vector3 = (direction + Vector3.UP * 0.5).normalized()
-			equipped_item.drop_item(modified_dir * 10)
-		else:
-			equipped_item.drop_item(Vector3.UP * 8)
+		if equipped_item != null:
+			if direction:
+				var modified_dir: Vector3 = (direction + Vector3.UP * 0.5).normalized()
+				equipped_item.drop_item(modified_dir * 10)
+			else:
+				equipped_item.drop_item(Vector3.UP * 8)
 
 	if Input.is_action_just_pressed("grab_item"):
 		var interactable: Interactable = get_current_interactable()
 
-		if interactable == null:
-			return
-
-		interactable.interact(self)
+		if interactable != null:
+			interactable.interact(self)
 
 	if Input.is_action_just_pressed("debug_focus_oldman"):
 		%CameraRig.focus_on(%OldMan)
