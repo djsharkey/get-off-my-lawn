@@ -13,6 +13,7 @@ func _ready() -> void:
 			print("Missing textures for input prompts!")
 
 	EventBus.interactable_selected.connect(_on_interactable_selected)
+	EventBus.interactable_unselected.connect(_on_interactable_unselected)
 	EventBus.item_grabbed.connect(_on_item_grabbed)
 
 func _on_interactable_selected(interactable: Interactable) -> void:
@@ -21,6 +22,11 @@ func _on_interactable_selected(interactable: Interactable) -> void:
 		return
 
 	show_prompt(interactable.get_prompt_text())
+
+
+func _on_interactable_unselected(interactable: Interactable) -> void:
+	_hide_prompt()
+
 
 func show_prompt(text: String) -> void:
 	visible =true

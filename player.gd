@@ -69,7 +69,7 @@ func _physics_process(delta):
 		%CameraRig.focus_on(%Player)
 
 	if Input.is_action_just_pressed("complete_task"):
-		%ProgressBar.value = fmod(%ProgressBar.value + 1, %ProgressBar.max_value + 1)
+		EventBus.progress_increased.emit(Constants.Tasks.TOTAL, 1)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -117,6 +117,7 @@ func _on_interactable_entered(interactable: Interactable) -> void:
 	# how do you check if the interactable is an item and your hands are already full to prevent the text from popping up?
 	print("Interactable is ItemType: %s" % interactable.item_type)
 	nearby_interactables.append(interactable)
+	
 	EventBus.interactable_selected.emit(get_current_interactable())
 
 

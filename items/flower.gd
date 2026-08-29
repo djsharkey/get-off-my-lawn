@@ -47,7 +47,8 @@ func _ready() -> void:
 
 
 func _on_flower_selected(interactable: Interactable) -> void:
-	highlighter.highlight_object()
+	if interactable.interactable_object_id == get_instance_id():
+		highlighter.highlight_object()
 
 
 func _on_flower_unselected(interactable: Interactable) -> void:

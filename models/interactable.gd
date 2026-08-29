@@ -4,6 +4,7 @@ extends Area3D
 @export var prompt_text: String = "Grab"
 
 var item_type: Constants.ItemTypes
+var interactable_object_id: int
 
 signal interacted(interactee: Node3D)
 

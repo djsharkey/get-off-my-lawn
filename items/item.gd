@@ -21,6 +21,7 @@ func _ready() -> void:
 		print("No ItemType provided!")
 		return
 	interactable.item_type = item_type
+	interactable.interactable_object_id = get_instance_id()
 
 
 func _use_item() -> void:

@@ -31,12 +31,13 @@ func _ready() -> void:
 	 	_glow_intensity,
 	 	_glow_sharpness
 	 )
-
+	
 	EventBus.interactable_selected.connect(_on_twig_selected)
 	EventBus.interactable_unselected.connect(_on_twig_unselected)
 
 func _on_twig_selected(interactable: Interactable) -> void:
-	highlighter.highlight_object()
+	if interactable.interactable_object_id == get_instance_id():
+		highlighter.highlight_object()
 
 
 func _on_twig_unselected(interactable: Interactable) -> void:

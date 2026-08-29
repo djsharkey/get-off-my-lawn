@@ -23,8 +23,9 @@ func _ready() -> void:
 		_glow_intensity,
 		_glow_sharpness
 	)
-	EventBus.interactable_selected.connect(_on_area_3d_body_entered)
-	EventBus.interactable_exited.connect(_on_area_3d_body_exited)
+	EventBus.interactable_selected.connect(_on_compost_bin_selected)
+	EventBus.interactable_exited.connect(_on_compost_bin_unselected)
+	interactable.interactable_object_id = get_instance_id()
 	interactable.interacted.connect(_on_discarded)
 	return
 
@@ -34,18 +35,21 @@ func _on_discarded(obj: Node3D):
 	if player.equipped_item == null:
 		return
 	var item = player.equipped_item
+	if item.item_type == Constants.ItemTypes.TOOL:
+		print("Tools can't go in the compost bin!")
+		return
 	print(item.name + " has been discarded")
 	item.queue_free()
 	EventBus.progress_increased.emit(task, points)
 	return
 
 
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	# currently no way to tell if player is holding something that can be discarded, so it will always highlight when in range
-	highlighter.highlight_object()
-	EventBus.task_progress_requested.emit(task) # show progress of debris task for 5 sec
+func _on_compost_bin_selected(interactable: Interactable) -> void:
+	if interactable.interactable_object_id == get_instance_id():
+		highlighter.highlight_object()
+		EventBus.task_progress_requested.emit(task) # show progress of debris task for 5 sec
 
 
 
-func _on_area_3d_body_exited(body: Node3D) -> void:
+func _on_compost_bin_unselected(interactable: Interactable) -> void:
 	highlighter.unhighlight_object()
