@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dxhpbp47s70f7"]
+
+[ext_resource type="Script" uid="uid://dhqk1vdmm0j4o" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=1731834849]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=214151503]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.24115604, 0.24115604, 0.24115604, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1690031461]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -276.0
+offset_top = -273.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 53
+
+[node name="ButtonContainer" type="VBoxContainer" parent="MarginContainer" unique_id=969734603]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 8
+
+[node name="StartButton" type="Button" parent="MarginContainer/ButtonContainer" unique_id=272600815]
+layout_mode = 2
+text = "Start Game"
+
+[node name="QuitButton" type="Button" parent="MarginContainer/ButtonContainer" unique_id=252694032]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="pressed" from="MarginContainer/ButtonContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MarginContainer/ButtonContainer/QuitButton" to="." method="_on_quit_button_pressed"]
