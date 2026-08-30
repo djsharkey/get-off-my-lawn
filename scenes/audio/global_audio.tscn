@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://sws4hbnsarpw"]
+
+[ext_resource type="AudioStream" uid="uid://j2fmubbar8gk" path="res://assets/audio/music/Mission Plausible.ogg" id="1_5pg2w"]
+
+[node name="GlobalAudio" type="AudioStreamPlayer" unique_id=921865209]
+stream = ExtResource("1_5pg2w")
+volume_db = -2.0
+autoplay = true
+parameters/looping = true
