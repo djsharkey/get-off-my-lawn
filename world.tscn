@@ -67,7 +67,7 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, 1.4709044, -10.400167)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, 1.1301808, -10.783103)
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=1682353331]
 unique_name_in_owner = true
@@ -86,7 +86,6 @@ transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.625526, 1.1, -17.181734)
-visibilityPercentageThreshold = 0
 
 [node name="Distraction_Parent" type="Node3D" parent="." unique_id=1764872477]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.742409, 0, -25.132105)

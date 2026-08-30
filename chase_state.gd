@@ -27,6 +27,7 @@ func physics_update(delta: float) -> void:
 	var direction = actor.global_position.direction_to(nav_target)
 	actor.velocity = direction * actor.speed
 	actor.look_at(target.global_position + actor.velocity.normalized())
+	
 		
 	if actor.global_position.distance_to(target.global_position) < 1.0:
 		transitioned.emit("IdleState", {})

@@ -19,6 +19,7 @@ var losCollisionMask = 1 << 3
 
 var homeSpawnLocation
 var distractions = []
+var patrol_spots: Array[Vector3] = []
 var playerRef: Player
 
 #Navigation Agent/Mesh vars
