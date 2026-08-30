@@ -101,7 +101,8 @@ func _physics_process(delta):
 				Vector2(direction.x, -direction.z).angle(),
 				rotation_speed * delta
 			)
-		
+		if !equipped_item:
+			current_speed = SPEED
 		var forwardDirection = -player_model.global_transform.basis.x.normalized()
 		velocity.x = forwardDirection.x * current_speed
 		velocity.z = forwardDirection.z * current_speed
@@ -140,7 +141,8 @@ func _on_item_grabbed(item: Item, owner: Node3D):
 		# TODO: Increase "interaction area size" on player
 		current_speed *= 2.0
 		rotation_speed /= 4.0
-		
+	else:
+		current_speed = SPEED - (item_weight + baseline_weight)
 
 
 func _on_item_used(item: Item, owner: Node3D):
