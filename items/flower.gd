@@ -46,7 +46,7 @@ func _ready() -> void:
 	EventBus.interactable_unselected.connect(_on_flower_unselected)
 
 
-func _on_flower_selected(interactable: Interactable) -> void:
+func _on_flower_selected(interactable: Interactable, player: Player) -> void:
 	if interactable.interactable_object_id == get_instance_id():
 		highlighter.highlight_object()
 

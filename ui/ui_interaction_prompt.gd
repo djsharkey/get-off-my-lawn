@@ -16,9 +16,11 @@ func _ready() -> void:
 	EventBus.interactable_unselected.connect(_on_interactable_unselected)
 	EventBus.item_grabbed.connect(_on_item_grabbed)
 
-func _on_interactable_selected(interactable: Interactable) -> void:
+func _on_interactable_selected(interactable: Interactable, player: Player) -> void:
 	if interactable == null:
 		_hide_prompt()
+		return
+	if interactable.item_type == Constants.ItemTypes.BIN && player.equipped_item == null:
 		return
 
 	show_prompt(interactable.get_prompt_text())

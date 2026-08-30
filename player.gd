@@ -8,6 +8,7 @@ var equipped_item: Item
 var nearby_interactables: Array[Interactable] = []
 var baseline_weight: float = 1.0
 var item_weight = 0
+var item_stack_count = 0
 
 @onready var player_model: Node3D = $Model
 #@onready var audio_streams: Array[AudioStreamPlayer3D]
@@ -90,6 +91,7 @@ func _physics_process(delta):
 func _on_item_grabbed(item: Item, owner: Node3D):
 	if equipped_item == null:
 		equipped_item = item
+		item_stack_count += 1
 	else:
 		# TODO: Drop it first or put into inventory
 		return
@@ -107,6 +109,7 @@ func _on_item_dropped(item: Item):
 		return
 
 	equipped_item = null
+	item_stack_count = 0
 
 
 func _on_interactable_entered(interactable: Interactable) -> void:
@@ -116,9 +119,36 @@ func _on_interactable_entered(interactable: Interactable) -> void:
 
 	# how do you check if the interactable is an item and your hands are already full to prevent the text from popping up?
 	print("Interactable is ItemType: %s" % interactable.item_type)
+	#if !check_if_can_interact(interactable):
+		#return
 	nearby_interactables.append(interactable)
+	EventBus.interactable_selected.emit(get_current_interactable(), self)
+
+
+func check_if_can_interact(interactable: Interactable) -> bool:
+	if equipped_item != null:
+		if equipped_item.item_type == Constants.ItemTypes.TOOL:
+			if interactable.item_type == Constants.ItemTypes.TOOL:
+				return false
+			elif interactable.item_type == Constants.ItemTypes.BIN:
+				return false
+			elif interactable.item_type == Constants.ItemTypes.TWIG:
+				return false
+			elif interactable.item_type == Constants.ItemTypes.FLOWER:
+				return false
+			elif interactable.item_type == Constants.ItemTypes.WEED:
+				return false
+		elif equipped_item.item_type != Constants.ItemTypes.TOOL:
+			if equipped_item.item_type != interactable.item_type:
+				return false
+			else:
+				if item_stack_count <= equipped_item.stack_limit:
+					return false
+	else:
+		if interactable.item_type == Constants.ItemTypes.BIN:
+			return false
 	
-	EventBus.interactable_selected.emit(get_current_interactable())
+	return true
 
 
 func _on_interactable_exited(interactable: Interactable) -> void:

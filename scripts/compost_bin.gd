@@ -26,6 +26,7 @@ func _ready() -> void:
 	EventBus.interactable_selected.connect(_on_compost_bin_selected)
 	EventBus.interactable_exited.connect(_on_compost_bin_unselected)
 	interactable.interactable_object_id = get_instance_id()
+	interactable.item_type = Constants.ItemTypes.BIN
 	interactable.interacted.connect(_on_discarded)
 	return
 
@@ -44,7 +45,9 @@ func _on_discarded(obj: Node3D):
 	return
 
 
-func _on_compost_bin_selected(interactable: Interactable) -> void:
+func _on_compost_bin_selected(interactable: Interactable, player: Player) -> void:
+	if player.equipped_item == null:
+		return
 	if interactable.interactable_object_id == get_instance_id():
 		highlighter.highlight_object()
 		EventBus.task_progress_requested.emit(task) # show progress of debris task for 5 sec
