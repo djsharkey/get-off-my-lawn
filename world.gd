@@ -64,7 +64,7 @@ func _check_point_total(points: float):
 
 func _progress_increased(task: Constants.Tasks, points: float):
 	task_points[task] += points
-	task_points[Constants.Tasks.TOTAL] += points/3
+	task_points[Constants.Tasks.TOTAL] += points#/3
 	_check_point_total(task_points[Constants.Tasks.TOTAL])
 	display_task_progress(task)
 
