@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b5gcgdsohlixh"]
 
 [ext_resource type="Script" uid="uid://cx67rmx6gat8t" path="res://old_man.gd" id="1_tjsre"]
-[ext_resource type="ArrayMesh" uid="uid://b2s0s1yvg1d4v" path="res://assets/Lizz Assets/old_man_v1_Sphere.res" id="2_de2qa"]
+[ext_resource type="ArrayMesh" uid="uid://pe4n2ncifngo" path="res://assets/Lizz Assets/old_man_v1_Sphere.res" id="2_de2qa"]
 [ext_resource type="Script" uid="uid://ct7h7jgv4xb5f" path="res://state_machine.gd" id="2_ycqd0"]
 [ext_resource type="Script" uid="uid://cd8bj1nfx05dj" path="res://idle_state.gd" id="3_o7sqg"]
-[ext_resource type="ArrayMesh" uid="uid://mrdxn2cb1wal" path="res://assets/Lizz Assets/old_man_v1_Cylinder_001.res" id="3_ph15b"]
-[ext_resource type="ArrayMesh" uid="uid://dvnbta7y3crx2" path="res://assets/Lizz Assets/old_man_v1_Cylinder.res" id="4_3xlp6"]
+[ext_resource type="ArrayMesh" uid="uid://cswqaj03phyh5" path="res://assets/Lizz Assets/old_man_v1_Cylinder_001.res" id="3_ph15b"]
+[ext_resource type="ArrayMesh" uid="uid://bngdd2s4abce5" path="res://assets/Lizz Assets/old_man_v1_Cylinder.res" id="4_3xlp6"]
 [ext_resource type="Script" uid="uid://dlgo4lc26rvks" path="res://investigate_state.gd" id="4_o7sqg"]
 [ext_resource type="Script" uid="uid://bfaqmk4wow2c5" path="res://return_home_state.gd" id="5_odgka"]
 [ext_resource type="Script" uid="uid://cp12k5sn1m301" path="res://chase_state.gd" id="6_odgka"]
@@ -140,6 +140,8 @@ collision_layer = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChildGrabbinRangeArea" unique_id=438163780]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.3712331)
 shape = SubResource("BoxShape3D_yqqs5")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1000352999]
 
 [connection signal="body_entered" from="DectectionArea" to="." method="_on_dectection_area_body_entered"]
 [connection signal="body_exited" from="DectectionArea" to="." method="_on_dectection_area_body_exited"]

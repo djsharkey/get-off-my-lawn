@@ -1,11 +1,12 @@
 extends CharacterBody3D
 
 @export var speed = 3.0
+@export var visibilityPercentageThreshold = 50
 
 @onready var animationPlayer = $AnimationPlayer
 @onready var stateMachine = $StateMachine
+@onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 
-@export var visibilityPercentageThreshold = 50
 var shouldCheckLOS: bool = false
 var canSeePlayer: bool = false
 var losSourceMesh: MeshInstance3D
@@ -19,6 +20,9 @@ var losCollisionMask = 1 << 3
 var homeSpawnLocation
 var distractions = []
 var playerRef: Player
+
+#Navigation Agent/Mesh vars
+var target: Vector3
 
 func _ready():
 	losSourceMesh = $RaycasterMesh
@@ -113,6 +117,7 @@ func _on_dectection_area_body_exited(body):
 		shouldCheckLOS = false
 		stateMachine.transition_to_previous_state()
 		playerRef = null
+
 
 func toggle_detection(val):
 	if val != null:

@@ -86,7 +86,6 @@ transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.625526, 1.1, -17.181734)
-speed = 0.0
 
 [node name="Distraction_Parent" type="Node3D" parent="." unique_id=1764872477]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.742409, 0, -25.132105)
