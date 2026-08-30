@@ -19,7 +19,20 @@ var losCollisionMask = 1 << 3
 
 var homeSpawnLocation
 var distractions = []
-var patrol_spots: Array[Vector3] = []
+var patrolling = false
+var patrol_spots: Array[Vector3] = [
+	Vector3(0.431,0.5,-10.7),
+	Vector3(13.03,0.5,-3.28),
+	Vector3(10.89,0.5,-3.28),
+	Vector3(27.49,0.5,-16.4),
+	Vector3(-0.77,0.5,-19.5),
+	Vector3(-20.7,0.5,-19.2),
+	Vector3(-21.5,0.5,-26.1),
+	Vector3(-28.5,0.5,-12.4),
+	Vector3(-28.4,0.5,-12.4),
+	Vector3(-21.5,0.5,-2.77),
+	Vector3(10,0.5,-2.77)
+]
 var playerRef: Player
 
 #Navigation Agent/Mesh vars
