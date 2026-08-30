@@ -53,8 +53,8 @@ func _physics_process(delta):
 				equipped_item.drop_item(modified_dir * 10)
 			else:
 				equipped_item.drop_item(Vector3.UP * 8)
-		
-		if audio_stream != null:
+
+		if audio_stream != null && equipped_item != null:
 			audio_stream.play()
 
 	if Input.is_action_just_pressed("grab_item"):
