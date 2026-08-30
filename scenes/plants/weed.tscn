@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bhwb65regg3th"]
+
+[ext_resource type="Script" uid="uid://db2ru20qb80mb" path="res://items/weed.gd" id="1_mxt3w"]
+[ext_resource type="ArrayMesh" uid="uid://qfqlfnkcv0uj" path="res://models/kenneyAssets/nature/meshes/plant_flatshort.res" id="2_d7qyg"]
+[ext_resource type="ArrayMesh" uid="uid://yufnot3uvwbw" path="res://models/kenneyAssets/nature/meshes/plant_bush.res" id="3_r4yos"]
+[ext_resource type="PackedScene" uid="uid://bttbikbhg2veb" path="res://models/interactable.tscn" id="6_fo233"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nwts5"]
+size = Vector3(0.37597656, 0.52547365, 0.409729)
+
+[node name="Weed" type="RigidBody3D" unique_id=1189765529 node_paths=PackedStringArray("meshes")]
+collision_layer = 14
+collision_mask = 6
+script = ExtResource("1_mxt3w")
+meshes = [NodePath("WeedSpikey"), NodePath("WeedLeafy"), NodePath(""), NodePath("")]
+metadata/_custom_type_script = "uid://cjcbuofcv1kxy"
+
+[node name="WeedSpikey" type="MeshInstance3D" parent="." unique_id=808581987]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("2_d7qyg")
+
+[node name="WeedLeafy" type="MeshInstance3D" parent="." unique_id=1606402805]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+visible = false
+mesh = ExtResource("3_r4yos")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=915669458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2772632, 0)
+shape = SubResource("BoxShape3D_nwts5")
+
+[node name="Interactable" parent="." unique_id=2043117790 instance=ExtResource("6_fo233")]

@@ -2,12 +2,9 @@
 
 [ext_resource type="Shader" uid="uid://dcfgyptyscqqa" path="res://shaders/terrain.gdshader" id="1_i33q1"]
 [ext_resource type="Script" uid="uid://bimbcxn6mmgln" path="res://terrain.gd" id="2_8mo8g"]
-[ext_resource type="PackedScene" uid="uid://b42w4rqeyfn3p" path="res://scenes/plants/red_flower_a.tscn" id="3_bcfh6"]
+[ext_resource type="PackedScene" uid="uid://ox814wdckq7l" path="res://scenes/plants/flower.tscn" id="3_es314"]
 [ext_resource type="PackedScene" uid="uid://cdmsljeatqy07" path="res://scenes/plants/leaf_weed.tscn" id="3_oefmf"]
-[ext_resource type="PackedScene" uid="uid://deot5n3btx8ly" path="res://scenes/plants/red_flower_c.tscn" id="4_8qj8n"]
 [ext_resource type="PackedScene" uid="uid://dpdq31lu753nj" path="res://scenes/plants/spike_weed.tscn" id="4_ligwd"]
-[ext_resource type="PackedScene" uid="uid://casvnvlm71ldu" path="res://scenes/plants/purple_flower_a.tscn" id="5_1vv1w"]
-[ext_resource type="PackedScene" uid="uid://c2oro3etjj30j" path="res://scenes/plants/purple_flower_c.tscn" id="6_m2o8e"]
 
 [sub_resource type="Gradient" id="Gradient_aqk2v"]
 colors = PackedColorArray(0, 0, 0, 1, 0.34501466, 0.114228286, 0, 1)
@@ -30,7 +27,7 @@ shader_parameter/height = 8.0
 shader_parameter/color_gradient = SubResource("GradientTexture1D_dwbse")
 shader_parameter/normal_map = SubResource("NoiseTexture2D_dwbse")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bcfh6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vs0da"]
 _surfaces = [{
 "aabb": AABB(-1.5, -0.021130754, -0.49999997, 3, 0.043024175, 1),
 "attribute_data": PackedByteArray("AACAPwAAgD85jmM/AACAP3IcRz8AAIA/qqoqPwAAgD/kOA4/AACAPziO4z4AAIA/qqqqPgAAgD84jmM+AACAPziO4z0AAIA/AAAAAAAAgD8AAIA/OY5jPzmOYz85jmM/chxHPzmOYz+qqio/OY5jP+Q4Dj85jmM/OI7jPjmOYz+qqqo+OY5jPziOYz45jmM/OI7jPTmOYz8AAAAAOY5jPwAAgD9yHEc/OY5jP3IcRz9yHEc/chxHP6qqKj9yHEc/5DgOP3IcRz84juM+chxHP6qqqj5yHEc/OI5jPnIcRz84juM9chxHPwAAAAByHEc/AACAP6qqKj85jmM/qqoqP3IcRz+qqio/qqoqP6qqKj/kOA4/qqoqPziO4z6qqio/qqqqPqqqKj84jmM+qqoqPziO4z2qqio/AAAAAKqqKj8AAIA/5DgOPzmOYz/kOA4/chxHP+Q4Dj+qqio/5DgOP+Q4Dj/kOA4/OI7jPuQ4Dj+qqqo+5DgOPziOYz7kOA4/OI7jPeQ4Dj8AAAAA5DgOPwAAgD84juM+OY5jPziO4z5yHEc/OI7jPqqqKj84juM+5DgOPziO4z44juM+OI7jPqqqqj44juM+OI5jPjiO4z44juM9OI7jPgAAAAA4juM+AACAP6qqqj45jmM/qqqqPnIcRz+qqqo+qqoqP6qqqj7kOA4/qqqqPjiO4z6qqqo+qqqqPqqqqj44jmM+qqqqPjiO4z2qqqo+AAAAAKqqqj4AAIA/OI5jPjmOYz84jmM+chxHPziOYz6qqio/OI5jPuQ4Dj84jmM+OI7jPjiOYz6qqqo+OI5jPjiOYz44jmM+OI7jPTiOYz4AAAAAOI5jPgAAgD84juM9OY5jPziO4z1yHEc/OI7jPaqqKj84juM95DgOPziO4z04juM+OI7jPaqqqj44juM9OI5jPjiO4z04juM9OI7jPQAAAAA4juM9AACAPwAAAAA5jmM/AAAAAHIcRz8AAAAAqqoqPwAAAADkOA4/AAAAADiO4z4AAAAAqqqqPgAAAAA4jmM+AAAAADiO4z0AAAAAAAAAAAAAAAA="),
@@ -50,7 +47,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007, 0, 0)
 
 [node name="Terrain" type="MeshInstance3D" parent="Dirt" unique_id=1414479495]
 material_override = SubResource("ShaderMaterial_aqk2v")
-mesh = SubResource("ArrayMesh_bcfh6")
+mesh = SubResource("ArrayMesh_vs0da")
 script = ExtResource("2_8mo8g")
 length = 3
 width = 1
@@ -60,70 +57,41 @@ height = 4.0
 
 [node name="Flowers" type="Node3D" parent="Dirt" unique_id=109225192]
 
-[node name="red_flower_a" parent="Dirt/Flowers" unique_id=271173687 instance=ExtResource("3_bcfh6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1893784, 0.0053232536, 0.22424325)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
+[node name="Flower" parent="Dirt/Flowers" unique_id=1189765529 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.201587, 0, 0.14576447)
 
-[node name="red_flower_a3" parent="Dirt/Flowers" unique_id=1279464752 instance=ExtResource("3_bcfh6")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.08832869, 0.0053232536, -2.545403)
-_glow_color = Color(0.955705, 0.90684277, 0, 1)
-_glow_intensity = 10.0
-_glow_sharpness = 1.0
+[node name="Flower2" parent="Dirt/Flowers" unique_id=2104866828 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1436667, 0, -0.28440148)
 
-[node name="red_flower_c" parent="Dirt/Flowers" unique_id=1093268429 instance=ExtResource("4_8qj8n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2394005, -2.3841858e-07, -0.18111473)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
+[node name="Flower3" parent="Dirt/Flowers" unique_id=709023539 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.57395136, 0, 0.08586621)
 
-[node name="purple_flower_a" parent="Dirt/Flowers" unique_id=42346907 instance=ExtResource("5_1vv1w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.432481, 0, 0.20701051)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
+[node name="Flower4" parent="Dirt/Flowers" unique_id=1401934160 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027040333, 0, -0.2926798)
 
-[node name="purple_flower_c" parent="Dirt/Flowers" unique_id=789644102 instance=ExtResource("6_m2o8e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36573133, 0, 0.29298937)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
+[node name="Flower5" parent="Dirt/Flowers" unique_id=916984784 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7866203, 0, 0.21522683)
 
-[node name="red_flower_a2" parent="Dirt/Flowers" unique_id=1505038756 instance=ExtResource("3_bcfh6")]
-transform = Transform3D(-0.9996668, 0, -0.025812944, 0, 1, 0, 0.025812944, 0, -0.9996668, -0.1882197, 0.0053232536, -0.13236001)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
+[node name="Flower6" parent="Dirt/Flowers" unique_id=5681724 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2039326, 0, -0.26807183)
 
-[node name="red_flower_c2" parent="Dirt/Flowers" unique_id=578635350 instance=ExtResource("4_8qj8n")]
-transform = Transform3D(-0.9996668, 0, -0.025812944, 0, 1, 0, 0.025812944, 0, -0.9996668, -0.86428046, -2.3841858e-07, -0.3284412)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
-
-[node name="purple_flower_a2" parent="Dirt/Flowers" unique_id=412799402 instance=ExtResource("5_1vv1w")]
-transform = Transform3D(-0.9996668, 0, -0.025812944, 0, 1, 0, 0.025812944, 0, -0.9996668, -1.2740104, 0, -0.04629825)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
-
-[node name="purple_flower_c2" parent="Dirt/Flowers" unique_id=1859677595 instance=ExtResource("6_m2o8e")]
-transform = Transform3D(-0.9996668, 0, -0.025812944, 0, 1, 0, 0.025812944, 0, -0.9996668, 0.57214826, 0, -0.37057358)
-_glow_intensity = 5.0
-_glow_sharpness = 1.5
+[node name="Flower7" parent="Dirt/Flowers" unique_id=2032171429 instance=ExtResource("3_es314")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4965715, 0, -0.09075096)
 
 [node name="Weeds" type="Node3D" parent="Dirt" unique_id=543653402]
 
 [node name="leaf_weed" parent="Dirt/Weeds" unique_id=1682646530 instance=ExtResource("3_oefmf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.60973763, -0.038287625, -0.25594127)
 _glow_intensity = 6.0
-_glow_sharpness = 1.5
 
 [node name="leaf_weed2" parent="Dirt/Weeds" unique_id=2001969612 instance=ExtResource("3_oefmf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23697701, -0.023454756, 0.028865933)
 _glow_intensity = 6.0
-_glow_sharpness = 1.5
 
 [node name="SpikeWeed" parent="Dirt/Weeds" unique_id=917563725 instance=ExtResource("4_ligwd")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.9827617, -0.0017190129, -0.12943733)
 _glow_intensity = 6.0
-_glow_sharpness = 1.5
 
 [node name="SpikeWeed2" parent="Dirt/Weeds" unique_id=920571437 instance=ExtResource("4_ligwd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1645107, 0, 0.2460022)
 _glow_intensity = 6.0
-_glow_sharpness = 1.5

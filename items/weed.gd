@@ -1,8 +1,8 @@
-class_name Flower
+class_name Weed
 
 extends Item
 
-@export var _priority: int = 2
+@export var _priority: int = 1
 @export_category("Highlight Properties")
 @export var _scale_factor: float = 1.0
 @export var _glow_color: Color = Color(1.0, 0.95, 0.3)
@@ -16,7 +16,7 @@ var highlighter: Highlighter
 var pulled = false
 
 func _init() -> void:
-	item_name = "Flower"
+	item_name = "Weed"
 	item_weight = 0.1
 	icon = preload("res://assets/items/twig/twig_icon.png")
 	item_type = Constants.ItemTypes.FLOWER
