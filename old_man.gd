@@ -29,7 +29,7 @@ var patrol_spots: Array[Vector3] = [
 	Vector3(-20.7,0.5,-19.2),
 	Vector3(-21.5,0.5,-26.1),
 	Vector3(-28.5,0.5,-12.4),
-	Vector3(-28.4,0.5,-12.4),
+	Vector3(-26,0.5,-9.5),
 	Vector3(-21.5,0.5,-2.77),
 	Vector3(10,0.5,-2.77)
 ]
