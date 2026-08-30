@@ -11,8 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://ox814wdckq7l" path="res://scenes/plants/flower.tscn" id="10_ic0uy"]
 [ext_resource type="PackedScene" uid="uid://qr3j2v1dsg5b" path="res://scenes/map.tscn" id="10_wse8f"]
 [ext_resource type="PackedScene" uid="uid://brnrvdn5s8nv" path="res://scenes/plants/twig.tscn" id="11_ic0uy"]
-[ext_resource type="PackedScene" uid="uid://sgcdb55juc2" path="res://scenes/mower/mower.tscn" id="12_k3n1d"]
-[ext_resource type="PackedScene" uid="uid://sws4hbnsarpw" path="res://scenes/audio/global_audio.tscn" id="13_2o6r5"]
+[ext_resource type="PlaneMesh" uid="uid://dgea1p0b11mmn" path="res://models/grass_blade/grass_blade.tres" id="12_2o6r5"]
+[ext_resource type="Script" uid="uid://b3uhjvpn2g6rj" path="res://grass_instances.gd" id="13_70uel"]
+[ext_resource type="Script" uid="uid://bso1kjr0dwk2f" path="res://grass_mask.gd" id="14_70uel"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -25,6 +26,12 @@ sky_material = SubResource("ProceduralSkyMaterial_gv5m4")
 background_mode = 2
 sky = SubResource("Sky_f3sb7")
 glow_enabled = true
+
+[sub_resource type="MultiMesh" id="MultiMesh_d8fr4"]
+transform_format = 1
+use_colors = true
+use_custom_data = true
+mesh = ExtResource("12_2o6r5")
 
 [node name="World" type="Node3D" unique_id=198200431]
 script = ExtResource("1_036b0")
@@ -69,7 +76,7 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="FrontDoorLocation" type="Node3D" parent="." unique_id=1621406070]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, 1.1301808, -10.783103)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43080807, 1.4709044, -10.400167)
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=1682353331]
 unique_name_in_owner = true
@@ -81,14 +88,15 @@ script = ExtResource("3_036b0")
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 3.5, 3.5)
 current = true
 
-[node name="Player" parent="." unique_id=198881104 instance=ExtResource("1_f3sb7")]
+[node name="Player" parent="." unique_id=198881104 node_paths=PackedStringArray("grass_mask") instance=ExtResource("1_f3sb7")]
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.8, -30.567942)
-rotation_speed = null
+grass_mask = NodePath("../GrassMask")
 
 [node name="OldMan" parent="." unique_id=1386305525 instance=ExtResource("2_fj7yv")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.625526, 1.1, -17.181734)
+speed = 0.0
 
 [node name="Distraction_Parent" type="Node3D" parent="." unique_id=1764872477]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.742409, 0, -25.132105)
@@ -127,6 +135,14 @@ transform = Transform3D(0.9997865, 0, 0.020667633, 0, 1, 0, -0.020667633, 0, 0.9
 
 [node name="GlobalAudio" parent="." unique_id=921865209 instance=ExtResource("13_2o6r5")]
 volume_db = -14.0
+
+[node name="GrassInstances" type="MultiMeshInstance3D" parent="." unique_id=2022363132 node_paths=PackedStringArray("grass_mask")]
+multimesh = SubResource("MultiMesh_d8fr4")
+script = ExtResource("13_70uel")
+grass_mask = NodePath("../GrassMask")
+
+[node name="GrassMask" type="Node" parent="." unique_id=470234741]
+script = ExtResource("14_70uel")
 
 [connection signal="timeout" from="UI/ProgressBar/ResetTimer" to="." method="_on_reset_timer_timeout"]
 [connection signal="pressed" from="ToggleMockDistraction/Button" to="." method="_on_button_pressed"]
