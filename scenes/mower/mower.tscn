@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://sgcdb55juc2"]
+
+[ext_resource type="Script" uid="uid://cjcbuofcv1kxy" path="res://items/item.gd" id="1_y0o4m"]
+[ext_resource type="Material" uid="uid://rouldaeikjv" path="res://materials/shinny_metal.tres" id="2_knspm"]
+[ext_resource type="Material" uid="uid://gh8fg4m7wpjn" path="res://materials/rubber.tres" id="3_erdix"]
+[ext_resource type="Material" uid="uid://bimkmhb0bi7ww" path="res://materials/matte_metal.tres" id="4_fp5k4"]
+[ext_resource type="PackedScene" uid="uid://bttbikbhg2veb" path="res://models/interactable.tscn" id="5_knspm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhjdo"]
+albedo_color = Color(0.87058824, 0.32941177, 0.105882354, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yqqs5"]
+material = SubResource("StandardMaterial3D_xhjdo")
+size = Vector3(0.5, 0.143, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dunvj"]
+material = ExtResource("2_knspm")
+size = Vector3(0.3, 0.15, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d55jx"]
+material = ExtResource("2_knspm")
+size = Vector3(0.2, 0.15, 0.2)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yqqs5"]
+material = ExtResource("3_erdix")
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vtdaj"]
+material = ExtResource("3_erdix")
+top_radius = 0.075
+bottom_radius = 0.075
+height = 0.1
+
+[sub_resource type="BoxMesh" id="BoxMesh_uhf2o"]
+material = ExtResource("4_fp5k4")
+size = Vector3(0.03, 0.03, 0.31)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8sg53"]
+material = ExtResource("4_fp5k4")
+size = Vector3(0.03, 0.03, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yqqs5"]
+size = Vector3(1.62, 0.54, 1.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dunvj"]
+size = Vector3(0.9, 0, 0.72)
+
+[node name="Mower" type="RigidBody3D" unique_id=433032282]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_y0o4m")
+metadata/_custom_type_script = "uid://cjcbuofcv1kxy"
+
+[node name="Meshes" type="Node3D" parent="." unique_id=820605497]
+transform = Transform3D(0.0017159283, 0, -2.9999995, 0, 3, 0, 2.9999995, 0, 0.0017159283, -0.3, 0, 0)
+
+[node name="Base" type="MeshInstance3D" parent="Meshes" unique_id=131318727]
+mesh = SubResource("BoxMesh_yqqs5")
+
+[node name="Motor" type="MeshInstance3D" parent="Meshes" unique_id=824900080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18378395, 0)
+mesh = SubResource("BoxMesh_dunvj")
+
+[node name="Transmission" type="MeshInstance3D" parent="Meshes" unique_id=31357049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10559356, 0)
+mesh = SubResource("BoxMesh_d55jx")
+
+[node name="RearLeftWheel" type="MeshInstance3D" parent="Meshes" unique_id=330419584]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.24, 0, -0.24)
+mesh = SubResource("CylinderMesh_yqqs5")
+
+[node name="RearRightWheel" type="MeshInstance3D" parent="Meshes" unique_id=824608611]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.24, 0, -0.24)
+mesh = SubResource("CylinderMesh_yqqs5")
+
+[node name="FrontRightWheel" type="MeshInstance3D" parent="Meshes" unique_id=756853626]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.24, -0.016, 0.2)
+mesh = SubResource("CylinderMesh_vtdaj")
+
+[node name="FrontLeftWheel" type="MeshInstance3D" parent="Meshes" unique_id=1092070534]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.24, -0.016, 0.2)
+mesh = SubResource("CylinderMesh_vtdaj")
+
+[node name="PushBar" type="Node3D" parent="Meshes" unique_id=572363141]
+transform = Transform3D(1, 0, 0, 0, 0.71382535, -0.7003238, 0, 0.7003238, 0.71382535, 0, -0.05394149, -0.2581651)
+
+[node name="Crossbar" type="MeshInstance3D" parent="Meshes/PushBar" unique_id=1999198021]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 1.7763568e-15, -1, 0, -4.371139e-08, 0, 0.09979758, -0.5494263)
+mesh = SubResource("BoxMesh_uhf2o")
+
+[node name="RightBar" type="MeshInstance3D" parent="Meshes/PushBar" unique_id=955610325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14, 0.1, -0.3)
+mesh = SubResource("BoxMesh_8sg53")
+
+[node name="RightBar2" type="MeshInstance3D" parent="Meshes/PushBar" unique_id=805703570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14, 0.1, -0.3)
+mesh = SubResource("BoxMesh_8sg53")
+
+[node name="BaseCollisionShape" type="CollisionShape3D" parent="." unique_id=836446108]
+transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 0, 0)
+shape = SubResource("BoxShape3D_yqqs5")
+
+[node name="EngineCollisionShape" type="CollisionShape3D" parent="." unique_id=1003530635]
+transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 0.7788211, 0)
+shape = SubResource("BoxShape3D_dunvj")
+
+[node name="Interactable" parent="." unique_id=2043117790 instance=ExtResource("5_knspm")]
+transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 0, 0)
+
+[node name="PlayerAttachPoint" type="Node3D" parent="." unique_id=1154832322]
+transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, 2.0655947, 1.1603602, 0)
+
+[node name="GrassCollider" type="StaticBody3D" parent="." unique_id=1221987804]
+collision_layer = 4
+collision_mask = 0
+
+[node name="BaseCollisionShape2" type="CollisionShape3D" parent="GrassCollider" unique_id=931247979]
+transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 0, 0)
+shape = SubResource("BoxShape3D_yqqs5")

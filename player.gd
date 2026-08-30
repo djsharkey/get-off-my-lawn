@@ -3,6 +3,8 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+const DEFAULT_TURN_SPEED = TAU * 2
+var current_speed = SPEED
 @export var rotation_speed: float = TAU * 2
 @export var whoosh_streams: Array[AudioStreamPlayer3D]
 @export var footstep_streams: Array[AudioStreamPlayer3D]
@@ -79,17 +81,32 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	var mower = get_node_or_null("Mower")
 	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-		player_model.rotation.y = rotate_toward(
-			player_model.rotation.y,
-			Vector2(direction.x, -direction.z).angle(),
-			rotation_speed * delta
-		)
+		# Handle mesh rotations including weird unique mower logic
+		if mower:
+			mower.rotation.y = rotate_toward(
+				mower.rotation.y,
+				Vector2(direction.x, -direction.z).angle(),
+				rotation_speed * delta
+			)
+			attach_to_point(mower.get_node("PlayerAttachPoint").global_position)
+			player_model.rotation.y = mower.rotation.y
+			
+		else:
+			player_model.rotation.y = rotate_toward(
+				player_model.rotation.y,
+				Vector2(direction.x, -direction.z).angle(),
+				rotation_speed * delta
+			)
+		
+		var forwardDirection = -player_model.global_transform.basis.x.normalized()
+		velocity.x = forwardDirection.x * current_speed
+		velocity.z = forwardDirection.z * current_speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		if !mower:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+			velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	if velocity.x > 0 || velocity.z > 0:
 		if  active_footstep_stream != null && !active_footstep_stream.playing:
@@ -111,6 +128,11 @@ func _on_item_grabbed(item: Item, owner: Node3D):
 		return
 
 	equipped_item = item
+	if item.name == "Mower":
+		# TODO: Increase "interaction area size" on player
+		current_speed *= 2.0
+		rotation_speed /= 4.0
+		
 
 
 func _on_item_used(item: Item, owner: Node3D):
@@ -121,7 +143,10 @@ func _on_item_dropped(item: Item):
 	if equipped_item == null:
 		# Nothing to drop
 		return
-
+	
+	current_speed = SPEED
+	rotation_speed = DEFAULT_TURN_SPEED
+	reset_attachment()
 	equipped_item = null
 	item_stack_count = 0
 
@@ -180,6 +205,13 @@ func get_current_interactable() -> Interactable:
 		return current_interactable
 	else:
 		return
+
+# Just visually moves player mesh to attach point
+func attach_to_point(globalAttachPosition):
+	player_model.position = to_local(globalAttachPosition)
+	
+func reset_attachment():
+	player_model.position = Vector3.ZERO
 
 func get_raycast_visibility_mesh() -> MeshInstance3D:
 	return $RaycastVisibilityMesh
