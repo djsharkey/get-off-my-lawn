@@ -34,15 +34,24 @@ func grab_item(body: Node3D):
 		print("You cannot grab me!! You're hands are full!")
 		return
 	interactable.set_deferred("monitoring", false)
-	if $CollisionShape3D:
-		$CollisionShape3D.set_deferred("disabled", true)
-	self.global_transform = body.global_transform
-	self.reparent.call_deferred(body, true)
+	for child in get_children():
+		if child is CollisionShape3D:
+			child.set_deferred("disabled", true)
 	self.freeze = true
-	EventBus.item_grabbed.emit.call_deferred(self, body)
+	self.reparent.call_deferred(player, true)
+	await get_tree().process_frame
+	self.global_transform = player.global_transform
+	var playerAttachmentPoint = get_node_or_null("PlayerAttachPoint")
+	if playerAttachmentPoint:
+		player.call_deferred("attach_to_point", playerAttachmentPoint.global_position)
+	EventBus.item_grabbed.emit.call_deferred(self, player)
+	
 
 
 func drop_item(direction: Vector3):
+	var playerAttachmentPoint = get_node_or_null("PlayerAttachPoint")
+	if playerAttachmentPoint:
+		get_parent().reset_attachment()
 	if _original_parent == null:
 		return
 
@@ -50,6 +59,7 @@ func drop_item(direction: Vector3):
 	self.freeze = false
 	self.apply_central_impulse(direction)
 	interactable.set_deferred("monitoring", true)
-	if $CollisionShape3D:
-		$CollisionShape3D.set_deferred("disabled", false)
+	for child in get_children():
+		if child is CollisionShape3D:
+			child.set_deferred("disabled", false)
 	EventBus.item_dropped.emit.call_deferred(self)
