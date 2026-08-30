@@ -31,6 +31,8 @@ func stamp_world_position(world_pos: Vector3) -> void:
 				continue
 			if Vector2(x - px, y - py).length() <= stamp_radius_px:
 				# FIXME add completion increment here
+				if _image.get_pixel(x,y) != Color(1, 0, 0):
+					EventBus.progress_increased.emit(Constants.Tasks.CUT_GRASS, 0.25)
 				_image.set_pixel(x, y, Color(1, 0, 0))
 
 	_stamps_since_update += 1

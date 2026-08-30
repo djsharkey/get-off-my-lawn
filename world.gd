@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var points_to_win: float = 10
+@export var points_to_win: float = 25000
 @onready var distraction = $Distraction_Parent/Distraction
 @onready var oldman = $OldMan
 
@@ -58,13 +58,16 @@ func display_task_progress(task: Constants.Tasks):
 
 func _check_point_total(points: float):
 	if  points >= points_to_win:
+		display_task_progress(Constants.Tasks.TOTAL)
+		await get_tree().create_timer(2).timeout
 		# TODO: Switch to "Victory" screen instead
 		SceneSwitcher.change_scene("res://main_menu.tscn")
 
 
 func _progress_increased(task: Constants.Tasks, points: float):
+	#print("YOU GOT POINTS")
 	task_points[task] += points
-	task_points[Constants.Tasks.TOTAL] += points#/3
+	task_points[Constants.Tasks.TOTAL] += points/2
 	_check_point_total(task_points[Constants.Tasks.TOTAL])
 	display_task_progress(task)
 
