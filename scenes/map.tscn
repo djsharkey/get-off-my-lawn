@@ -49,47 +49,6 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.01, -4.153)
 [node name="fence-3x32" parent="." unique_id=32276371 instance=ExtResource("6_nakos")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.5187123, -0.034824133, 8.392857)
 
-[node name="TwigStack" type="Node" parent="." unique_id=675514917]
-
-[node name="Twig" parent="TwigStack" unique_id=1334450351 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.46688947, 0, -0.88431567, 0, 1, 0, 0.88431567, 0, 0.46688947, -14.089657, 0.049998093, -0.28801727)
-
-[node name="Twig2" parent="TwigStack" unique_id=758117547 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.87458897, -0.11318958, 0.4714684, 0, 0.97237, 0.23344539, -0.48486537, -0.20416874, 0.85042393, -14.470541, 0.23059672, -0.29740906)
-
-[node name="Twig3" parent="TwigStack" unique_id=1784506649 instance=ExtResource("2_blm8a")]
-transform = Transform3D(-0.5506673, 0, 0.83472484, 0, 1, 0, -0.83472484, 0, -0.5506673, -14.470095, 0.5454877, -0.27886832)
-
-[node name="Twig4" parent="TwigStack" unique_id=942908877 instance=ExtResource("2_blm8a")]
-transform = Transform3D(-0.8232962, 0.13250642, -0.5519289, -6.5161956e-09, 0.97236997, 0.23344538, 0.5676122, 0.19219469, -0.8005484, -14.090103, 0.7260863, -0.306558)
-
-[node name="Twig5" parent="TwigStack" unique_id=1746172819 instance=ExtResource("2_blm8a")]
-transform = Transform3D(-0.73506916, 0, -0.67799205, 0, 1, 0, 0.67799205, 0, -0.73506916, -14.235816, 1.0058905, -0.107431695)
-
-[node name="Twig6" parent="TwigStack" unique_id=1013045152 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.6928736, 0.1683279, -0.7011362, -6.5161956e-09, 0.97236997, 0.23344538, 0.72105914, -0.16174814, 0.67372936, -14.324382, 1.1864891, -0.47799462)
-
-[node name="Twig7" parent="TwigStack" unique_id=1421421053 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.6656581, 0, 0.7462568, 0, 1, 0, -0.7462568, 0, 0.6656581, -14.342189, 1.5013802, -0.4728101)
-
-[node name="Twig8" parent="TwigStack" unique_id=949625444 instance=ExtResource("2_blm8a")]
-transform = Transform3D(-0.7597054, -0.15180191, 0.6323003, 5.7518745e-09, 0.97236985, 0.23344536, -0.6502673, 0.17734972, -0.7387146, -14.218009, 1.6819787, -0.112616256)
-
-[node name="Twig9" parent="TwigStack" unique_id=1265021620 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.86781746, 1.4901161e-08, 0.4968833, 0, 1, -7.450581e-09, -0.4968833, -1.4901161e-08, 0.86781746, 28.773808, 0.049997807, -14.387748)
-
-[node name="Twig10" parent="TwigStack" unique_id=1534325012 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.86781746, 1.4901161e-08, 0.4968833, 0, 1, -7.450581e-09, -0.4968833, -1.4901161e-08, 0.86781746, 12.145627, 0.049997807, -1.2407396)
-
-[node name="Twig11" parent="TwigStack" unique_id=61487519 instance=ExtResource("2_blm8a")]
-transform = Transform3D(0.3890664, 1.30037545e-08, -0.9212098, 0, 1, -7.450581e-09, 0.9212098, 1.658287e-08, 0.3890664, -31.933609, 0.049997807, -21.45017)
-
-[node name="Twig12" parent="TwigStack" unique_id=178763631 instance=ExtResource("2_blm8a")]
-transform = Transform3D(-0.6086432, -7.991497e-09, -0.79344416, 0, 1, -7.450581e-09, 0.79344416, 1.9499362e-08, -0.6086432, 10.318161, 0.049997807, -22.370605)
-
-[node name="Twig13" parent="TwigStack" unique_id=1266538208 instance=ExtResource("2_blm8a")]
-transform = Transform3D(-0.6086432, -7.991497e-09, -0.79344416, 0, 1, -7.450581e-09, 0.79344416, 1.9499362e-08, -0.6086432, 3.959971, 0.049997807, -11.870465)
-
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=962088029]
 navigation_mesh = SubResource("NavigationMesh_ot21c")
 
@@ -253,3 +212,42 @@ transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 26
 
 [node name="fence_bars12" parent="NavigationRegion3D/BarFence" unique_id=337383603 instance=ExtResource("8_jh32y")]
 transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 29.511581, 0, -27.0321)
+
+[node name="Twig" parent="." unique_id=1334450351 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.46688947, 0, -0.88431567, 0, 1, 0, 0.88431567, 0, 0.46688947, -14.089657, 0.049998093, -0.28801727)
+
+[node name="Twig2" parent="." unique_id=758117547 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.87458897, -0.11318958, 0.4714684, 0, 0.97237, 0.23344539, -0.48486537, -0.20416874, 0.85042393, -14.470541, 0.23059672, -0.29740906)
+
+[node name="Twig3" parent="." unique_id=1784506649 instance=ExtResource("2_blm8a")]
+transform = Transform3D(-0.5506673, 0, 0.83472484, 0, 1, 0, -0.83472484, 0, -0.5506673, -14.470095, 0.5454877, -0.27886832)
+
+[node name="Twig4" parent="." unique_id=942908877 instance=ExtResource("2_blm8a")]
+transform = Transform3D(-0.8232962, 0.13250642, -0.5519289, -6.5161956e-09, 0.97236997, 0.23344538, 0.5676122, 0.19219469, -0.8005484, -14.090103, 0.7260863, -0.306558)
+
+[node name="Twig5" parent="." unique_id=1746172819 instance=ExtResource("2_blm8a")]
+transform = Transform3D(-0.73506916, 0, -0.67799205, 0, 1, 0, 0.67799205, 0, -0.73506916, -14.235816, 1.0058905, -0.107431695)
+
+[node name="Twig6" parent="." unique_id=1013045152 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.6928736, 0.1683279, -0.7011362, -6.5161956e-09, 0.97236997, 0.23344538, 0.72105914, -0.16174814, 0.67372936, -14.324382, 1.1864891, -0.47799462)
+
+[node name="Twig7" parent="." unique_id=1421421053 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.6656581, 0, 0.7462568, 0, 1, 0, -0.7462568, 0, 0.6656581, -14.342189, 1.5013802, -0.4728101)
+
+[node name="Twig8" parent="." unique_id=949625444 instance=ExtResource("2_blm8a")]
+transform = Transform3D(-0.7597054, -0.15180191, 0.6323003, 5.7518745e-09, 0.97236985, 0.23344536, -0.6502673, 0.17734972, -0.7387146, -14.218009, 1.6819787, -0.112616256)
+
+[node name="Twig9" parent="." unique_id=1265021620 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.86781746, 1.4901161e-08, 0.4968833, 0, 1, -7.450581e-09, -0.4968833, -1.4901161e-08, 0.86781746, 28.773808, 0.049997807, -14.387748)
+
+[node name="Twig10" parent="." unique_id=1534325012 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.86781746, 1.4901161e-08, 0.4968833, 0, 1, -7.450581e-09, -0.4968833, -1.4901161e-08, 0.86781746, 12.145627, 0.049997807, -1.2407396)
+
+[node name="Twig11" parent="." unique_id=61487519 instance=ExtResource("2_blm8a")]
+transform = Transform3D(0.3890664, 1.30037545e-08, -0.9212098, 0, 1, -7.450581e-09, 0.9212098, 1.658287e-08, 0.3890664, -31.933609, 0.049997807, -21.45017)
+
+[node name="Twig12" parent="." unique_id=178763631 instance=ExtResource("2_blm8a")]
+transform = Transform3D(-0.6086432, -7.991497e-09, -0.79344416, 0, 1, -7.450581e-09, 0.79344416, 1.9499362e-08, -0.6086432, 10.318161, 0.049997807, -22.370605)
+
+[node name="Twig13" parent="." unique_id=1266538208 instance=ExtResource("2_blm8a")]
+transform = Transform3D(-0.6086432, -7.991497e-09, -0.79344416, 0, 1, -7.450581e-09, 0.79344416, 1.9499362e-08, -0.6086432, 3.959971, 0.049997807, -11.870465)
