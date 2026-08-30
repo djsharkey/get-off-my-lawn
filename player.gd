@@ -107,12 +107,17 @@ func _physics_process(delta):
 		if !mower:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			velocity.z = move_toward(velocity.z, 0, SPEED)
-
-	if velocity.x > 0 || velocity.z > 0:
+	
+	
+	# Handle sounds
+	if mower && !(mower.get_node("AudioStreamPlayer3D") as AudioStreamPlayer3D).playing:
+		(mower.get_node("AudioStreamPlayer3D") as AudioStreamPlayer3D).play(0.0)
+	elif velocity.x > 0 || velocity.z > 0:
 		if  active_footstep_stream != null && !active_footstep_stream.playing:
 			active_footstep_stream = footstep_streams.pick_random()
 			print("active_footstep_stream: %s" % active_footstep_stream.name)
 			active_footstep_stream.play()
+
 	else:
 		if active_footstep_stream != null && active_footstep_stream.playing:
 			active_footstep_stream.stop()

@@ -18,7 +18,8 @@ func enter(newData: Dictionary = {}) -> void:
 func physics_update(delta: float) -> void:
 	elapsedTime += delta
 	if transitionTimerActive && elapsedTime >= waitTime:
-		transition_to_alternative_state("ReturnHomeState", {})
+		#transition_to_alternative_state("ReturnHomeState", {})
+		transition_to_alternative_state("PatrolState", {})
 		return
 
 func transition_to_alternative_state(stateName: String, data: Dictionary):

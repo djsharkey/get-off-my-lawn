@@ -5,6 +5,7 @@
 [ext_resource type="Material" uid="uid://gh8fg4m7wpjn" path="res://materials/rubber.tres" id="3_erdix"]
 [ext_resource type="Material" uid="uid://bimkmhb0bi7ww" path="res://materials/matte_metal.tres" id="4_fp5k4"]
 [ext_resource type="PackedScene" uid="uid://bttbikbhg2veb" path="res://models/interactable.tscn" id="5_knspm"]
+[ext_resource type="AudioStream" uid="uid://cfcqx1j1b7s2m" path="res://assets/audio/mower/mower.wav" id="6_erdix"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhjdo"]
 albedo_color = Color(0.87058824, 0.32941177, 0.105882354, 1)
@@ -119,3 +120,8 @@ collision_mask = 0
 [node name="BaseCollisionShape2" type="CollisionShape3D" parent="GrassCollider" unique_id=931247979]
 transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 0, 0)
 shape = SubResource("BoxShape3D_yqqs5")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1374657492]
+stream = ExtResource("6_erdix")
+volume_db = -5.0
+max_db = 0.0
