@@ -36,7 +36,7 @@ func _on_discarded(obj: Node3D):
 	if player.equipped_item == null:
 		return
 	var item = player.equipped_item
-	if item.item_type == Constants.ItemTypes.TOOL:
+	if item.item_type == Constants.ItemTypes.UNSET || item.item_type == Constants.ItemTypes.TOOL:
 		print("Tools can't go in the compost bin!")
 		return
 	print(item.name + " has been discarded")

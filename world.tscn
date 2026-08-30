@@ -130,6 +130,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0679026, 0, -30.437489)
 [node name="Twig" parent="." unique_id=91392894 instance=ExtResource("11_ic0uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6997182, 0.05, -27.79942)
 
+[node name="Mower" parent="." unique_id=433032282 instance=ExtResource("12_k3n1d")]
+transform = Transform3D(0.9997865, 0, 0.020667633, 0, 1, 0, -0.020667633, 0, 0.9997865, -28.728733, 0.30763298, -8.739189)
+
+[node name="GlobalAudio" parent="." unique_id=921865209 instance=ExtResource("13_2o6r5")]
+volume_db = -14.0
+
 [node name="GrassInstances" type="MultiMeshInstance3D" parent="." unique_id=2022363132 node_paths=PackedStringArray("grass_mask")]
 multimesh = SubResource("MultiMesh_d8fr4")
 script = ExtResource("13_70uel")

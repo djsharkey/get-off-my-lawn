@@ -10,22 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://1m47qsitac3c" path="res://scenes/props/fence_single.tscn" id="7_nakos"]
 [ext_resource type="PackedScene" uid="uid://dtpodsc38vtth" path="res://scenes/props/fence_bars.tscn" id="8_jh32y"]
 [ext_resource type="PackedScene" uid="uid://7xshc6ukpti" path="res://scenes/props/fence_bars_broken.tscn" id="9_be0no"]
+[ext_resource type="PackedScene" uid="uid://b2kdvnn5ionj8" path="res://scenes/shed.tscn" id="11_c00ee"]
 [ext_resource type="PackedScene" uid="uid://kwbmdw5c6nee" path="res://assets/Lizz Assets/sign_1.glb" id="11_mlgqr"]
 [ext_resource type="PackedScene" uid="uid://c7l8gduhaksyy" path="res://assets/Lizz Assets/sign_2.glb" id="12_n1psn"]
 [ext_resource type="PackedScene" uid="uid://bjwsgpssyjbds" path="res://assets/Lizz Assets/sign_3.glb" id="13_c00ee"]
 [ext_resource type="PackedScene" uid="uid://egyfngoky4o1" path="res://assets/Lizz Assets/sign_4.glb" id="14_p7tei"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
-albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
-metallic = 0.25
-roughness = 0.75
-
-[sub_resource type="BoxMesh" id="BoxMesh_fj7yv"]
-material = SubResource("StandardMaterial3D_fj7yv")
-size = Vector3(2, 3, 2)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
-size = Vector3(1.9877167, 2.9937515, 1.9414673)
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_ot21c"]
 vertices = PackedVector3Array(-33.353657, 0.43041992, -31.5, -33.353657, 0.43041992, -29.25, -23.353657, 0.43041992, -29.25, -23.103657, 0.43041992, -30.75, -21.853657, 0.43041992, -30.75, -21.603657, 0.43041992, -29.25, -9.603657, 0.43041992, -29.25, -9.103657, 0.43041992, -31.5, 5.146343, 0.43041992, -29.25, 6.896343, 0.43041992, -29.25, 6.396343, 0.43041992, -31.5, -7.603657, 0.43041992, -29, -4.853657, 0.43041992, 1.5, -4.603657, 0.43041992, 2.5, 4.396343, 0.43041992, 2.5, 4.646343, 0.43041992, 1.5, 16.396343, 0.43041992, -10.25, 18.146343, 0.43041992, -10.5, 17.896343, 0.43041992, -27.75, 16.396343, 0.43041992, 1.5, 4.896343, 0.43041992, -27.75, -7.603657, 0.43041992, -28, -8.353657, 0.43041992, -27.5, -8.353657, 0.43041992, 1.5, 32.646343, 0.43041992, -29, 33.396343, 0.43041992, -29.25, 33.396343, 0.43041992, -31.5, -33.353657, 0.43041992, 1.5, -29.853657, 0.43041992, -7, -30.103657, 0.43041992, -10, -33.353657, 0.43041992, -27.75, -26.853657, 0.43041992, -7.25, -27.103657, 0.43041992, -10.25, 33.396343, 0.43041992, -10.5, 33.396343, 0.43041992, -27.75, 17.646343, 42.43042, -9.5, 17.646343, 42.43042, 3.25, 33.396343, 42.43042, 3.25, 33.396343, 42.43042, -9.5, -29.103657, 3.43042, -9.25, -29.103657, 3.43042, -8, -27.853657, 3.43042, -8, -27.853657, 3.43042, -9.25, -28.853657, 0.43041992, -9, -28.853657, 0.43041992, -8.25, -28.103657, 0.43041992, -8.25, -28.103657, 0.43041992, -9, 18.396343, 0.43041992, -8.5, 18.396343, 0.43041992, 3, 33.146343, 0.43041992, 3, 33.146343, 0.43041992, -8.5, 4.646343, 0.43041992, 3.5, -4.853657, 0.43041992, 3.5, -6.853657, 0.43041992, 31.5, 6.646343, 0.43041992, 31.5, -6.853657, 0.43041992, 3.5, 6.646343, 0.43041992, 3.5, -33.353657, 0.43041992, 3.5, -33.353657, 0.43041992, 31.5, 16.896343, 0.43041992, 4.25, 16.646343, 0.43041992, 3.5, 33.396343, 0.43041992, 31.5, 33.396343, 0.43041992, 4.25)
@@ -58,17 +47,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16780949, -0.04364729, -20
 [node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("2_gldc4")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.282305, 0.033356495, -3.6891434)
 
-[node name="Shed" type="MeshInstance3D" parent="." unique_id=1972437985]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -8.674216)
-mesh = SubResource("BoxMesh_fj7yv")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Shed" unique_id=815638200]
-collision_layer = 11
-collision_mask = 0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Shed/StaticBody3D" unique_id=1748789698]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011672974, 3.8146973e-06, 0.0010070801)
-shape = SubResource("BoxShape3D_036b0")
+[node name="compost_bin" parent="." unique_id=1088562048 instance=ExtResource("4_nakos")]
+transform = Transform3D(-0.9999788, 0, 0.006522067, 0, 1, 0, -0.006522067, 0, -0.9999788, -21.873365, 0.020110488, -30.224117)
 
 [node name="House6" parent="." unique_id=1733043793 instance=ExtResource("4_2klcf")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.01, -4.153)
@@ -120,18 +100,6 @@ shape = SubResource("WorldBoundaryShape3D_ti2nx")
 [node name="Twig" parent="NavigationRegion3D/Ground" unique_id=91392894 instance=ExtResource("2_blm8a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.487153, 0.05, -11.290577)
 collision_layer = 4
-
-[node name="Shed" type="MeshInstance3D" parent="NavigationRegion3D" unique_id=153163156]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -8.674216)
-mesh = SubResource("BoxMesh_fj7yv")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Shed" unique_id=1298302726]
-collision_layer = 11
-collision_mask = 0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Shed/StaticBody3D" unique_id=437114085]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011672974, 3.8146973e-06, 0.0010070801)
-shape = SubResource("BoxShape3D_036b0")
 
 [node name="compost_bin" parent="NavigationRegion3D" unique_id=1088562048 instance=ExtResource("4_nakos")]
 transform = Transform3D(-0.9999788, 0, 0.006522067, 0, 1, 0, -0.006522067, 0, -0.9999788, -21.873365, 0.020110488, -30.224117)
@@ -261,6 +229,9 @@ shape = SubResource("CapsuleShape3D_ot21c")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="NavigationRegion3D/BarFence/fence_nav_buffer" unique_id=1724560337]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.558493, 0.27612305, -28.41217)
 shape = SubResource("CapsuleShape3D_ti2nx")
+
+[node name="Shed" parent="NavigationRegion3D" unique_id=1513039839 instance=ExtResource("11_c00ee")]
+transform = Transform3D(-0.018644335, 0, 1.4998841, 0, 1.5, 0, -1.4998841, 0, -0.018644335, -28.651714, 1.5010607, -8.730438)
 
 [node name="Twig" parent="." unique_id=1334450351 instance=ExtResource("2_blm8a")]
 transform = Transform3D(0.46688947, 0, -0.88431567, 0, 1, 0, 0.88431567, 0, 0.46688947, -14.089657, 0.049998093, -0.28801727)
