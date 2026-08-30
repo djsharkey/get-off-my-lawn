@@ -69,7 +69,10 @@ func _progress_increased(task: Constants.Tasks, points: float):
 	task_points[task] += points
 	task_points[Constants.Tasks.TOTAL] += points/2
 	_check_point_total(task_points[Constants.Tasks.TOTAL])
-	display_task_progress(task)
+	if task_points[task] >= points_to_win:
+		display_task_progress(Constants.Tasks.TOTAL)
+	else:
+		display_task_progress(task)
 
 
 func _task_progress_requested(task: Constants.Tasks):
