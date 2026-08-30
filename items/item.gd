@@ -14,6 +14,12 @@ var pickup_cooldown_duration: float = 2
 
 @onready var interactable: Interactable = $Interactable
 
+func _enter_tree():
+	var audioPlayer: AudioStreamPlayer3D = get_node_or_null("AudioStreamPlayer3D")
+	if audioPlayer:
+		audioPlayer.stop()
+
+
 func _ready() -> void:
 	_original_parent = self.get_parent()
 	interactable.interacted.connect(grab_item)
