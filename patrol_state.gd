@@ -1,6 +1,6 @@
 extends State
 
-var patrol_point: Vector3
+var patrol_point
 var patrol_array: Array[Vector3]
 
 var elapsedTime: float = 0.0
@@ -41,4 +41,8 @@ func next_patrol_point():
 	print("Getting next patrol point")
 	patrol_point = patrol_array.pop_front()
 	waitTime = randf_range(2.0, 5.0)
+	if !patrol_point:
+		print("go home old man!")
+		transitioned.emit("ReturnHomeState", {})
+		return
 	actor.nav_agent.set_target_position(patrol_point)
