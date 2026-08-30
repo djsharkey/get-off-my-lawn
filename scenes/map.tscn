@@ -54,6 +54,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16780949, -0.04364729, -20
 [node name="FlowerBed" parent="." unique_id=1063830560 instance=ExtResource("2_gldc4")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.282305, 0.033356495, -3.6891434)
 
+<<<<<<< Updated upstream
+=======
+[node name="Shed" type="MeshInstance3D" parent="." unique_id=1972437985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.403, 1.5, -8.674216)
+mesh = SubResource("BoxMesh_fj7yv")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Shed" unique_id=815638200]
+collision_layer = 11
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Shed/StaticBody3D" unique_id=1748789698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011672974, 3.8146973e-06, 0.0010070801)
+shape = SubResource("BoxShape3D_036b0")
+
+[node name="compost_bin" parent="." unique_id=1088562048 instance=ExtResource("4_nakos")]
+transform = Transform3D(-0.9999788, 0, 0.006522067, 0, 1, 0, -0.006522067, 0, -0.9999788, -21.873365, 0.020110488, -30.224117)
+
+>>>>>>> Stashed changes
 [node name="House6" parent="." unique_id=1733043793 instance=ExtResource("4_2klcf")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.01, -4.153)
 
