@@ -108,7 +108,7 @@ transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 
 shape = SubResource("BoxShape3D_dunvj")
 
 [node name="Interactable" parent="." unique_id=2043117790 instance=ExtResource("5_knspm")]
-transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, -0.3, 0, 0)
+transform = Transform3D(0.0011438449, 0, -1.9999996, 0, 2, 0, 1.9999996, 0, 0.0011438449, -0.3, 0, 0)
 
 [node name="PlayerAttachPoint" type="Node3D" parent="." unique_id=1154832322]
 transform = Transform3D(0.0005719736, 0, -1, 0, 1, 0, 1, 0, 0.0005719736, 2.0655947, 1.1603602, 0)
