@@ -137,6 +137,7 @@ script = ExtResource("13_70uel")
 grass_mask = NodePath("../GrassMask")
 
 [node name="GrassMask" type="Node" parent="." unique_id=470234741]
+unique_name_in_owner = true
 script = ExtResource("14_70uel")
 
 [node name="GlobalAudio" parent="." unique_id=921865209 instance=ExtResource("15_2u3nc")]

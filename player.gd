@@ -30,6 +30,8 @@ func _ready() -> void:
 
 
 func _physics_process(delta):
+	# FIXME this should be tied to mower
+	%GrassMask.stamp_world_position(global_position)
 	if equipped_item != null:
 		item_weight = equipped_item.item_weight
 	else:
