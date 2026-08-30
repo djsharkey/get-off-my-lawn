@@ -3,7 +3,65 @@
 [ext_resource type="Script" uid="uid://br8m0jtm5agxk" path="res://ui/ui_manager.gd" id="1_5tvr0"]
 [ext_resource type="PackedScene" uid="uid://dabmpyttylbcv" path="res://autoload/ui_interaction_prompt.tscn" id="2_jam4f"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
 [node name="UiManager" type="CanvasLayer" unique_id=1394922983]
 script = ExtResource("1_5tvr0")
 
 [node name="CanvasLayer" parent="." unique_id=292273841 instance=ExtResource("2_jam4f")]
+
+[node name="GameOverMenu" type="ColorRect" parent="." unique_id=56185560]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.24115604, 0.24115604, 0.24115604, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameOverMenu" unique_id=213480917]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="GameOverMenu/VBoxContainer" unique_id=1588986712]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="CenterContainer" type="CenterContainer" parent="GameOverMenu/VBoxContainer/MarginContainer" unique_id=1936569670]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameOverMenu/VBoxContainer/MarginContainer/CenterContainer" unique_id=1397439819]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GameOverMenu/VBoxContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=1166949989]
+layout_mode = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+
+[node name="YouWinLabel" type="Label" parent="GameOverMenu/VBoxContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=55506564]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "You WIN!"
+label_settings = SubResource("LabelSettings_yf5fn")
+horizontal_alignment = 1
+
+[node name="YouLoseLabel" type="Label" parent="GameOverMenu/VBoxContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=1285728878]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "You LOSE!"
+label_settings = SubResource("LabelSettings_yf5fn")
+horizontal_alignment = 1
