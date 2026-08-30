@@ -92,7 +92,7 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	if velocity.x > 0 || velocity.z > 0:
-		if  !active_footstep_stream.playing:
+		if  active_footstep_stream != null && !active_footstep_stream.playing:
 			active_footstep_stream = footstep_streams.pick_random()
 			print("active_footstep_stream: %s" % active_footstep_stream.name)
 			active_footstep_stream.play()
@@ -161,7 +161,7 @@ func check_if_can_interact(interactable: Interactable) -> bool:
 	else:
 		if interactable.item_type == Constants.ItemTypes.BIN:
 			return false
-	
+
 	return true
 
 
