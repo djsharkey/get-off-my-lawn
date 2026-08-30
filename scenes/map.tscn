@@ -10,6 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://1m47qsitac3c" path="res://scenes/props/fence_single.tscn" id="7_nakos"]
 [ext_resource type="PackedScene" uid="uid://dtpodsc38vtth" path="res://scenes/props/fence_bars.tscn" id="8_jh32y"]
 [ext_resource type="PackedScene" uid="uid://7xshc6ukpti" path="res://scenes/props/fence_bars_broken.tscn" id="9_be0no"]
+[ext_resource type="PackedScene" uid="uid://kwbmdw5c6nee" path="res://assets/Lizz Assets/sign_1.glb" id="11_mlgqr"]
+[ext_resource type="PackedScene" uid="uid://c7l8gduhaksyy" path="res://assets/Lizz Assets/sign_2.glb" id="12_n1psn"]
+[ext_resource type="PackedScene" uid="uid://bjwsgpssyjbds" path="res://assets/Lizz Assets/sign_3.glb" id="13_c00ee"]
+[ext_resource type="PackedScene" uid="uid://egyfngoky4o1" path="res://assets/Lizz Assets/sign_4.glb" id="14_p7tei"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
 albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
@@ -296,3 +300,27 @@ transform = Transform3D(-0.6086432, -7.991497e-09, -0.79344416, 0, 1, -7.450581e
 
 [node name="Twig13" parent="." unique_id=1266538208 instance=ExtResource("2_blm8a")]
 transform = Transform3D(-0.6086432, -7.991497e-09, -0.79344416, 0, 1, -7.450581e-09, 0.79344416, 1.9499362e-08, -0.6086432, 3.959971, 0.049997807, -11.870465)
+
+[node name="sign_1" parent="." unique_id=524977989 instance=ExtResource("11_mlgqr")]
+transform = Transform3D(-0.000597637, -0.5040092, 1.4127896, -0.00021320554, 1.4127897, 0.50400925, -1.4999999, 0, -0.0006345286, 19.263754, 1.6426706, -9.767363)
+
+[node name="sign_2" parent="." unique_id=274207680 instance=ExtResource("12_n1psn")]
+transform = Transform3D(0.11932787, 0, 0.9928549, 0, 1, 0, -0.9928549, 0, 0.11932787, -16.980257, 1.2726431, -28.532305)
+
+[node name="sign_3" parent="." unique_id=1416487054 instance=ExtResource("13_c00ee")]
+transform = Transform3D(0.08450612, 0.6315386, 1.3579462, 0.04383149, 1.3584807, -0.63451475, -1.4969761, 0.07542746, 0.0580791, -19.32204, 1.4393022, 2.2758424)
+
+[node name="sign_4" parent="." unique_id=437224983 instance=ExtResource("14_p7tei")]
+transform = Transform3D(0.0020864906, 0, 1.1999983, 0, 1.2, 0, -1.1999983, 0, 0.0020864906, 5.760193, 1.4163537, -10.679031)
+
+[node name="sign_5" parent="." unique_id=1242102556 instance=ExtResource("12_n1psn")]
+transform = Transform3D(-0.030212503, -0.3505197, 1.4581575, -0.0072610844, 1.4584708, 0.35044447, -1.4996781, 0, -0.031072795, -11.85475, 1.9242721, 2.3429441)
+
+[node name="sign_6" parent="." unique_id=316690465 instance=ExtResource("12_n1psn")]
+transform = Transform3D(-0.07390425, -0.18424718, 1.3858538, -0.009811518, 1.3878231, 0.18398575, -1.3980135, 0, -0.0745527, 13.45528, 1.7200885, 2.134422)
+
+[node name="sign_7" parent="." unique_id=1922936773 instance=ExtResource("13_c00ee")]
+transform = Transform3D(-0.36667833, 0, 0.93034774, 0, 1, 0, -0.93034774, 0, -0.36667833, 22.444643, 1.3978643, -28.605429)
+
+[node name="sign_8" parent="." unique_id=27486855 instance=ExtResource("14_p7tei")]
+transform = Transform3D(0.3705318, 0, 0.9288198, 0, 1, 0, -0.9288198, 0, 0.3705318, -8.723087, 1.2148242, -28.587086)
