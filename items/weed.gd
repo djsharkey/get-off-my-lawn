@@ -19,7 +19,7 @@ func _init() -> void:
 	item_name = "Weed"
 	item_weight = 0.1
 	icon = preload("res://assets/items/twig/twig_icon.png")
-	item_type = Constants.ItemTypes.FLOWER
+	item_type = Constants.ItemTypes.WEED
 	freeze = true
 
 
@@ -32,7 +32,7 @@ func _ready() -> void:
 		else:
 			return
 
-	item_type = Constants.ItemTypes.FLOWER
+	item_type = Constants.ItemTypes.WEED
 	highlighter = Highlighter.new(
 		mesh,
 		_scale_factor,
