@@ -1,10 +1,34 @@
 [gd_scene format=3 uid="uid://yj0kxcgigs0s"]
 
 [ext_resource type="Script" uid="uid://ioghmlqtd3ym" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="AudioStream" uid="uid://5rk7k8fsva6y" path="res://assets/audio/woosh1.ogg" id="2_onrkg"]
+[ext_resource type="AudioStream" uid="uid://5rk7k8fsva6y" path="res://assets/audio/whoosh/woosh1.ogg" id="2_onrkg"]
+[ext_resource type="AudioStream" uid="uid://8e4x3vo4ti62" path="res://assets/audio/whoosh/woosh2.ogg" id="3_b26j0"]
+[ext_resource type="AudioStream" uid="uid://dnnrs6uthbh2a" path="res://assets/audio/footsteps/footstep_grass_000.ogg" id="3_bwjto"]
+[ext_resource type="AudioStream" uid="uid://c6cj8j2h3s5cd" path="res://assets/audio/footsteps/footstep_grass_001.ogg" id="4_606se"]
+[ext_resource type="AudioStream" uid="uid://cp65jx6f4o6cc" path="res://assets/audio/whoosh/woosh3.ogg" id="4_n7ghd"]
+[ext_resource type="AudioStream" uid="uid://cdn13qfhtc3jw" path="res://assets/audio/whoosh/woosh4.ogg" id="5_nvl01"]
+[ext_resource type="AudioStream" uid="uid://cacgmmfv4dv2y" path="res://assets/audio/footsteps/footstep_grass_002.ogg" id="5_u1c27"]
+[ext_resource type="AudioStream" uid="uid://ccjey6gtl4cmm" path="res://assets/audio/whoosh/woosh5.ogg" id="6_ivps1"]
+[ext_resource type="AudioStream" uid="uid://b5ouskyyxf7du" path="res://assets/audio/footsteps/footstep_grass_003.ogg" id="6_op7ga"]
+[ext_resource type="AudioStream" uid="uid://cb0d0bhgu7lu1" path="res://assets/audio/footsteps/footstep_grass_004.ogg" id="7_q13i1"]
+[ext_resource type="AudioStream" uid="uid://b70136i8p6sr1" path="res://assets/audio/whoosh/woosh6.ogg" id="7_urp6f"]
+[ext_resource type="AudioStream" uid="uid://dbdbl354nvge7" path="res://assets/audio/whoosh/woosh7.ogg" id="8_bwjto"]
+[ext_resource type="AudioStream" uid="uid://bapc6l51yd8yk" path="res://assets/audio/whoosh/woosh8.ogg" id="9_606se"]
 [ext_resource type="ArrayMesh" uid="uid://ch7dyno6sgnfk" path="res://assets/Lizz Assets/player_v2_Sphere.res" id="2_sweqy"]
 [ext_resource type="ArrayMesh" uid="uid://b1tr56br438cb" path="res://assets/Lizz Assets/player_v2_Cylinder_001.res" id="3_2hs0m"]
 [ext_resource type="ArrayMesh" uid="uid://6motqjcnl6cb" path="res://assets/Lizz Assets/player_v2_Cylinder.res" id="4_1jxqw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yqqs5"]
+radius = 0.4
+height = 1.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4flbx"]
+albedo_color = Color(0, 0.38464567, 0.57139355, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ot21c"]
+material = SubResource("StandardMaterial3D_4flbx")
+radius = 0.1303711
+height = 0.44226074
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_036b0"]
 points = PackedVector3Array(0.3881191, 0.27062523, 0.06306556, -0.38808382, -0.27071372, -0.063135795, -0.3693235, -0.2702176, -0.1350647, -0.24524689, 0.5088173, -0.06356836, -0.06321028, -0.27070734, 0.38807464, 0.20561911, -0.33964363, -0.31286922, 0.04505518, 0.34287098, -0.37001473, -0.17059167, 0.3412396, 0.33233616, 0.17302772, -0.54632336, 0.1001215, 0.17195995, 0.5067779, 0.1900169, 0.33051786, -0.285758, 0.20537981, 0.18824671, 0.23299748, 0.3496226, -0.15226285, -0.39428943, -0.31365547, -0.2606558, -0.4494575, 0.17081885, -0.25974333, 0.26873043, -0.2956428, -0.36827192, 0.21553606, 0.15267783, 0.2787872, 0.41369942, -0.18883629, 0.3693468, -0.27012175, -0.13507323, -0.10063167, -0.5670225, -0.11887934, -0.045526084, 0.56443644, -0.1547427, -0.29560673, -0.26876622, 0.2597779, -0.38808474, 0.27071437, -0.063135944, -0.081281655, -0.23482506, -0.38838792, 0.31289974, 0.25027636, -0.2413927, 0.09910891, -0.3965627, 0.333525, -0.1537082, 0.5247768, 0.1719125, 0.17195995, -0.5067779, -0.1900169, -0.045651738, -0.5476922, 0.19167583, 0.04505575, 0.34287533, 0.3700194, 0.19171292, 0.5476837, 0.045583706, 0.15267776, 0.21553595, -0.36827174, 0.3700194, -0.34287533, 0.04505575)
@@ -15,11 +39,13 @@ subdivide_width = 4
 subdivide_height = 6
 subdivide_depth = 4
 
-[node name="Player" type="CharacterBody3D" unique_id=198881104]
+[node name="Player" type="CharacterBody3D" unique_id=198881104 node_paths=PackedStringArray("whoosh_streams", "footstep_streams")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 collision_layer = 7
 collision_mask = 7
 script = ExtResource("1_4flbx")
+whoosh_streams = [NodePath("WhooshSounds/TossAudioStream"), NodePath("WhooshSounds/TossAudioStream2"), NodePath("WhooshSounds/TossAudioStream3"), NodePath("WhooshSounds/TossAudioStream4"), NodePath("WhooshSounds/TossAudioStream5"), NodePath("WhooshSounds/TossAudioStream6"), NodePath("WhooshSounds/TossAudioStream7"), NodePath("WhooshSounds/TossAudioStream8")]
+footstep_streams = [NodePath("FootstepSounds/FootstepsAudioStreamGrass"), NodePath("FootstepSounds/FootstepsAudioStreamGrass2"), NodePath("FootstepSounds/FootstepsAudioStreamGrass3"), NodePath("FootstepSounds/FootstepsAudioStreamGrass4"), NodePath("FootstepSounds/FootstepsAudioStreamGrass5")]
 
 [node name="Model" type="Node3D" parent="." unique_id=1506013560]
 
@@ -46,6 +72,69 @@ shape = SubResource("ConvexPolygonShape3D_036b0")
 visible = false
 mesh = SubResource("BoxMesh_yqqs5")
 
-[node name="TossAudioStream" type="AudioStreamPlayer3D" parent="." unique_id=1045387271]
+[node name="TossAudioStream2" type="AudioStreamPlayer3D" parent="." unique_id=1085721593]
 stream = ExtResource("2_onrkg")
+volume_db = 1.235
+
+[node name="FootstepSounds" type="Node3D" parent="." unique_id=1431578730]
+
+[node name="FootstepsAudioStreamGrass" type="AudioStreamPlayer3D" parent="FootstepSounds" unique_id=1528565875]
+stream = ExtResource("3_bwjto")
+volume_db = 1.0
+
+[node name="FootstepsAudioStreamGrass2" type="AudioStreamPlayer3D" parent="FootstepSounds" unique_id=52396751]
+stream = ExtResource("4_606se")
+volume_db = 1.0
+
+[node name="FootstepsAudioStreamGrass3" type="AudioStreamPlayer3D" parent="FootstepSounds" unique_id=1813537066]
+stream = ExtResource("5_u1c27")
+volume_db = 1.0
+
+[node name="FootstepsAudioStreamGrass4" type="AudioStreamPlayer3D" parent="FootstepSounds" unique_id=1025129999]
+stream = ExtResource("6_op7ga")
+volume_db = 1.0
+
+[node name="FootstepsAudioStreamGrass5" type="AudioStreamPlayer3D" parent="FootstepSounds" unique_id=1184706503]
+stream = ExtResource("7_q13i1")
+volume_db = 1.0
+
+[node name="WhooshSounds" type="Node3D" parent="." unique_id=1541199996]
+
+[node name="TossAudioStream" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=1045387271]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("2_onrkg")
+volume_db = 1.235
+
+[node name="TossAudioStream2" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=2084738020]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("3_b26j0")
+volume_db = 1.235
+
+[node name="TossAudioStream3" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=699930942]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("4_n7ghd")
+volume_db = 1.235
+
+[node name="TossAudioStream4" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=25983278]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("5_nvl01")
+volume_db = 1.235
+
+[node name="TossAudioStream5" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=1815604725]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("6_ivps1")
+volume_db = 1.235
+
+[node name="TossAudioStream6" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=653241801]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("7_urp6f")
+volume_db = 1.235
+
+[node name="TossAudioStream7" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=785461702]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("8_bwjto")
+
+[node name="TossAudioStream8" type="AudioStreamPlayer3D" parent="WhooshSounds" unique_id=248954564]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+stream = ExtResource("9_606se")
 volume_db = 1.235

@@ -4,6 +4,10 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 @export var rotation_speed: float = TAU * 2
+@export var whoosh_streams: Array[AudioStreamPlayer3D]
+@export var footstep_streams: Array[AudioStreamPlayer3D]
+
+var active_footstep_stream: AudioStreamPlayer3D
 var equipped_item: Item
 var nearby_interactables: Array[Interactable] = []
 var baseline_weight: float = 1.0
@@ -11,9 +15,6 @@ var item_weight = 0
 var item_stack_count = 0
 
 @onready var player_model: Node3D = $Model
-#@onready var audio_streams: Array[AudioStreamPlayer3D]
-@onready var audio_stream: AudioStreamPlayer3D = $TossAudioStream
-
 
 func _ready() -> void:
 	EventBus.item_grabbed.connect(_on_item_grabbed)
@@ -21,6 +22,9 @@ func _ready() -> void:
 	EventBus.item_dropped.connect(_on_item_dropped)
 	EventBus.interactable_entered.connect(_on_interactable_entered)
 	EventBus.interactable_exited.connect(_on_interactable_exited)
+
+	if active_footstep_stream == null && !footstep_streams.is_empty():
+		active_footstep_stream = footstep_streams.pick_random()
 
 
 func _physics_process(delta):
@@ -30,7 +34,6 @@ func _physics_process(delta):
 		item_weight = 0
 
 	var total_weight = baseline_weight + item_weight
-
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -54,8 +57,10 @@ func _physics_process(delta):
 			else:
 				equipped_item.drop_item(Vector3.UP * 8)
 
-		if audio_stream != null && equipped_item != null:
-			audio_stream.play()
+		if !whoosh_streams.is_empty() && equipped_item != null:
+			var selected_sound = whoosh_streams.pick_random()
+			print("selected_sound: %s" % selected_sound)
+			selected_sound.play()
 
 	if Input.is_action_just_pressed("grab_item"):
 		var interactable: Interactable = get_current_interactable()
@@ -86,6 +91,15 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
+	if velocity.x > 0 || velocity.z > 0:
+		if  !active_footstep_stream.playing:
+			active_footstep_stream = footstep_streams.pick_random()
+			print("active_footstep_stream: %s" % active_footstep_stream.name)
+			active_footstep_stream.play()
+	else:
+		if active_footstep_stream != null && active_footstep_stream.playing:
+			active_footstep_stream.stop()
+			active_footstep_stream = footstep_streams.pick_random()
 	move_and_slide()
 
 func _on_item_grabbed(item: Item, owner: Node3D):
