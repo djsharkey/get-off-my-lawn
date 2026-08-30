@@ -30,6 +30,7 @@ func stamp_world_position(world_pos: Vector3) -> void:
 			if x < 0 or x >= resolution:
 				continue
 			if Vector2(x - px, y - py).length() <= stamp_radius_px:
+				# FIXME add completion increment here
 				_image.set_pixel(x, y, Color(1, 0, 0))
 
 	_stamps_since_update += 1
