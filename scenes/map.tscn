@@ -23,6 +23,9 @@ size = Vector2(67.645, 64)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ti2nx"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_blm8a"]
+size = Vector3(13.494568, 16.42041, 42.502533)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
 albedo_color = Color(1.0973811e-05, 0.9022396, 0.91651356, 1)
 metallic = 0.25
@@ -63,27 +66,39 @@ navigation_mesh = SubResource("NavigationMesh_ot21c")
 [node name="Ground" type="MeshInstance3D" parent="NavigationRegion3D" unique_id=546241708]
 mesh = SubResource("PlaneMesh_tjwjv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Ground" unique_id=1065622656]
+[node name="Boundaries" type="StaticBody3D" parent="NavigationRegion3D/Ground" unique_id=1065622656]
 collision_layer = 11
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Ground/StaticBody3D" unique_id=1461594152]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=1461594152]
 shape = SubResource("WorldBoundaryShape3D_nwts5")
 
-[node name="BoundryX+" type="CollisionShape3D" parent="NavigationRegion3D/Ground/StaticBody3D" unique_id=825878033]
+[node name="BoundryX+" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=825878033]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 33.8, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="BoundryX-" type="CollisionShape3D" parent="NavigationRegion3D/Ground/StaticBody3D" unique_id=6687881]
+[node name="BoundryX-" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=6687881]
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -33.866177, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="BoundryZ+" type="CollisionShape3D" parent="NavigationRegion3D/Ground/StaticBody3D" unique_id=1529235941]
+[node name="BoundryZ+" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=1529235941]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 32)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
-[node name="BoundryZ-" type="CollisionShape3D" parent="NavigationRegion3D/Ground/StaticBody3D" unique_id=2005391232]
+[node name="BoundryFence" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=1193328251]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -19.327124, 0, 2.4580288)
+shape = SubResource("WorldBoundaryShape3D_ti2nx")
+
+[node name="BoundryFenceCorner" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=10777517]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 25.505396, 20.751266, -3.042452)
+shape = SubResource("BoxShape3D_blm8a")
+
+[node name="BoundryZ-" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=2005391232]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -32)
+shape = SubResource("WorldBoundaryShape3D_ti2nx")
+
+[node name="Ceiling" type="CollisionShape3D" parent="NavigationRegion3D/Ground/Boundaries" unique_id=800448712]
+transform = Transform3D(1, 0, 0, 0, -1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 40, 0)
 shape = SubResource("WorldBoundaryShape3D_ti2nx")
 
 [node name="Twig" parent="NavigationRegion3D/Ground" unique_id=91392894 instance=ExtResource("2_blm8a")]
